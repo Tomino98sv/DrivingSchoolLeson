@@ -1,0 +1,51 @@
+Zábrana na označenie uzávierky
+Zábrana na označenie uzávierky vyznačuje uzávierku celej šírky cesty alebo jej časti.
+https://www.testynavodicak.eu/storage/znacky/701.png
+
+Smerovacia doska (šípová) (šrafovaná)
+Smerovacie dosky usmerňujú cestnú premávku v smere v smere šípky alebo v smere sklonu šikmých pruhov. 
+Smerovacie dosky môžu byť umiestnené na žltých vodiacich prahoch, ktoré majú význam Pozdĺžnej súvislej čiary žltej farby.
+https://www.testynavodicak.eu/storage/znacky/702.png
+
+Dopravný kužeľ
+Dopravné kužele umiestnené v rade za sebou vymedzujú priestor, do ktorého je zakázané vchádzať.
+https://www.testynavodicak.eu/storage/znacky/703.png
+
+Smerovacia tabuľa
+Smerovacie tabule usmerňujú cestnú premávku v smere šípky alebo šípok.
+https://www.testynavodicak.eu/storage/znacky/705.png
+
+Vodiaca tabuľa
+Vodiaca tabuľa označuje trvalú prekážku a usmerňuje cestnú premávku v smere sklonu šikmých pruhov.
+https://www.testynavodicak.eu/storage/znacky/706.png
+
+Červené a biele pruhy
+Červené a biele pruhy vyznačujú spravidla trvalé objekty obmedzujúce cestnú premávku.
+https://www.testynavodicak.eu/storage/znacky/707.png
+
+Smerový stĺpik (ľavý) (pravý)
+Smerové stĺpiky vymedzujú smerové vedenie cesty a jej šírku, prípadne čiastočnú voľnú šírku smerovo rozdelenej cesty. 
+Smerový stĺpik na moste, v jeho blízkosti alebo na iných miestach so zvýšeným nebezpečenstvom tvorby námrazy môže byť doplnený modrou plochou s odrazkou. 
+{1}
+Na bočnej strane smerového stĺpika môže byť vyznačený smer k telefónu núdzového volania {2}.
+https://www.testynavodicak.eu/storage/znacky/710.png
+{1}=https://www.testynavodicak.eu/storage/znacky/710-2.png
+{2}=https://www.testynavodicak.eu/storage/znacky/nudzovy-telefon.png
+
+Stĺpik s výstrahou (ľavý) (pravý)
+Stĺpiky s výstrahou vymedzujú šírku cesty alebo čiastočnú voľnú šírku cesty na moste, v jeho blízkosti alebo na iných miestach so zvýšeným nebezpečenstvom tvorby námrazy.
+https://www.testynavodicak.eu/storage/znacky/711.png
+
+Pojazdná uzávierková tabuľa
+Pojazdná uzávierková tabuľa vhodnou kombináciou zvislých značiek a svetelných signálov najmä krátkodobo označuje prekážku cestnej premávky, uzávierku jazdného pruhu alebo statické alebo pohyblivé pracovné miesto na ceste.
+https://www.testynavodicak.eu/storage/znacky/720.png
+
+Zelená šípka
+Zelená šípka umožňuje vodičovi po zastavení pred križovatkou odbočiť vpravo aj vtedy, ak svieti signál červenej farby. 
+Vodič smie odbočiť doprava len z pravého pruhu a nesmie pri prejazde križovatkou obmedziť ani ohroziť iných účastníkov cestnej premávky, najmä chodcov, cyklistov a vozidlá jazdiace vo voľnom smere. 
+Vhodným spôsobom možno obmedziť zelenú šípku len na cyklistov.
+https://www.testynavodicak.eu/storage/znacky/730.png
+
+Čierna šípka
+Čierna šípka umožňuje vodičovi otočiť sa v križovatke s riadenou premávkou, ak svieti signál zelenej farby. Vodič pritom nesmie ohroziť ani obmedziť iných účastníkov cestnej premávky, najmä chodcov, cyklistov a vozidlá jazdiace vo voľnom smere.
+https://www.testynavodicak.eu/storage/znacky/731.png

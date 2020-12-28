@@ -1,0 +1,117 @@
+Nebezpečenstvo
+Značka upozorňuje na iné nebezpečenstvo ako na to,na ktoré možno upozorniť vhodnou výstražnouznačkou.
+https://www.testynavodicak.eu/storage/znacky/101.png
+
+Zákruta
+Značka upozorňuje na nebezpečnú zákrutu vo vyznačenom smere, ktorej bezpečný prejazd si vyžaduje výrazné zníženie rýchlosti jazdy.
+https://www.testynavodicak.eu/storage/znacky/110.png
+
+Dvojitá zákruta
+Značka upozorňuje na dve alebo viac zákrut nasledujúcich bezprostredne za sebou vo vyznačenom smere, ktorých bezpečný prejazd si vyžaduje výrazné zníženie rýchlosti jazdy. 
+Ak je zákrut viac, vyznačí sa dĺžka nebezpečného úseku na dodatkovej tabuľke Dĺžka úseku {1}.
+https://www.testynavodicak.eu/storage/znacky/111.png
+{1}=https://www.testynavodicak.eu/storage/znacky/502.png
+
+Klesanie
+Značka upozorňuje na nebezpečné klesanie.
+https://www.testynavodicak.eu/storage/znacky/112.png
+
+Stúpanie
+Značka upozorňuje na nebezpečné stúpanie.
+https://www.testynavodicak.eu/storage/znacky/113.png
+
+Zúžená vozovka
+Značka upozorňuje na zúženú vozovku z vyznačenejstrany alebo strán.
+https://www.testynavodicak.eu/storage/znacky/114.png
+
+Nerovnosť vozovky
+Značka upozorňuje na nerovnosti povrchu vozovkyako sú výtlky, výmole alebo vyjazdené koľaje.
+https://www.testynavodicak.eu/storage/znacky/115.png
+
+Nebezpečná krajnica
+Značka upozorňuje na zníženú, nespevnenú alebo inak nebezpečnú krajnicu.
+https://www.testynavodicak.eu/storage/znacky/116.png
+
+Nebezpečenstvo šmyku
+Značka upozorňuje na zvýšené riziko vzniku šmykuvozidla aj na suchej ceste.
+https://www.testynavodicak.eu/storage/znacky/120.png
+
+Sneh alebo poľadovica
+Značka upozorňuje na ujazdený alebo zľadovatenýsneh alebo na poľadovicu.
+https://www.testynavodicak.eu/storage/znacky/121.png
+
+Štrk na vozovke
+Značka upozorňuje na zvýšené riziko odletujúcehoštrku spod kolies vozidla.
+https://www.testynavodicak.eu/storage/znacky/122.png
+
+Padnuté kamene
+Značka upozorňuje na zvýšené riziko výskytukameňov v dôsledku zosuvu alebo padania kameňovna vozovku.Ak je riziko prevažne na ľavej strane vozovky, symbolsa vyobrazuje zrkadlovo.
+https://www.testynavodicak.eu/storage/znacky/125.png
+
+Bočný vietor
+Značka upozorňuje na zvýšené riziko silného alebonárazového vetra
+https://www.testynavodicak.eu/storage/znacky/126.png
+
+Kolóny
+Značka upozorňuje na vytváranie kolóny vozidiel.
+https://www.testynavodicak.eu/storage/znacky/130.png
+
+Práca
+Značka upozorňuje na prácu na ceste alebo v jejblízkosti, ktorá môže ohroziť bezpečnosť cestnejpremávky alebo pri ktorej môžu byť ohrozenípracovníci, ktorí túto činnosť vykonávajú.
+https://www.testynavodicak.eu/storage/znacky/131.png
+
+Obojsmerná premávka
+Značka upozorňuje, že na rozdiel od doterajšiehoúseku je cestná premávka vedená v oboch smeroch.
+https://www.testynavodicak.eu/storage/znacky/132.png
+
+Svetelné signály
+Značka upozorňuje na riadenie cestnej premávkysvetelnými signálmi.
+https://www.testynavodicak.eu/storage/znacky/135.png
+
+Križovatka
+Značka upozorňuje na križovatku, kde nie je prednosťv jazde upravená dopravnými značkami a uplatňujú savšeobecné pravidlá o prednosti v jazde.
+https://www.testynavodicak.eu/storage/znacky/136.png
+
+Chodci
+Značka upozorňuje na zvýšený pohyb chodcov navozovke.
+https://www.testynavodicak.eu/storage/znacky/140.png
+
+Deti
+Značka upozorňuje na zvýšený pohyb detí a zvýšenériziko ich neočakávaného vstupu do vozovky.
+https://www.testynavodicak.eu/storage/znacky/141.png
+
+Priechod pre chodcov
+Značka upozorňuje na priechod pre chodcov.
+https://www.testynavodicak.eu/storage/znacky/142.png
+
+Cyklisti
+Značka upozorňuje na zvýšený pohyb cyklistov alebo na miesto, kde cyklisti prechádzajú cez cestu alebo na ňu vchádzajú.
+https://www.testynavodicak.eu/storage/znacky/143.png
+
+Zver
+Značka upozorňuje na zvýšené nebezpečenstvo neočakávaného pohybu voľne žijúcej zveri cez cestu.
+Ak je symbol na značke nahradený symbolom obojživelníka, značka upozorňuje na miesto, kde vo
+väčšom množstve tiahnu cez cestu drobné živočíchy. {1}
+https://www.testynavodicak.eu/storage/znacky/145.png
+{1}=https://www.testynavodicak.eu/storage/znacky/145-2.png
+
+Hospodárske zvieratá
+Značka upozorňuje na častý výskyt hnanýchhospodárskych zvierat na ceste.
+https://www.testynavodicak.eu/storage/znacky/146.png
+
+Priecestie
+Značka upozorňuje na priecestie.
+https://www.testynavodicak.eu/storage/znacky/151.png
+
+Návesť pred priecestím
+Značka informuje o vzdialenosti k priecestiu. 
+Značka s vyznačenými tromi pruhmi informuje o vzdialenosti 240 m k priecestiu, značka s dvoma pruhmi o vzdialenosti 160 m k priecestiu a značka s jedným pruhom o vzdialenosti 80 m k priecestiu. 
+V prípade iných ako uvedených vzdialeností sa
+skutočná vzdialenosť uvedie v hornej časti značky.
+https://www.testynavodicak.eu/storage/znacky/152.png
+
+Výstražný kríž
+Značka označuje priecestie.
+Ak je na značke v strede kríža vyobrazený symbol blesku, značka tiež informuje o tom, že dráha je elektrifikovaná a v jej priestore je vysoké napätie. 
+Ak z priestorových dôvodov nie je vhodné výstražný kríž umiestniť zvisle, umiestni sa vodorovne.
+https://www.testynavodicak.eu/storage/znacky/153.png

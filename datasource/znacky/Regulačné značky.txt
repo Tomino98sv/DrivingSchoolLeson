@@ -1,0 +1,249 @@
+Daj prednosť v jazde!
+Značka ukladá vodičovi povinnosť dať prednosť v jazde.
+https://www.testynavodicak.eu/storage/znacky/201.png
+
+Stoj, daj prednosť v jazde!
+Značka ukladá vodičovi povinnosť zastaviť vozidlo a dať prednosť v jazde. 
+Vodič je povinný zastaviť vozidlo 
+a) na značke STOP čiara {1} alebo 
+b) na takom mieste, odkiaľ má náležitý rozhľad na križovatku alebo na železničnú trať. 
+Ako predbežná značka k tejto značke sa používa značka Daj prednosť v jazde! {2} s dodatkovou tabuľkou Vzdialenosť k povinnému zastaveniu {3} s uvedením skutočnej vzdialenosti k miestu, na ktoré sa vzťahuje povinnosť zastaviť vozidlo.
+https://www.testynavodicak.eu/storage/znacky/202.png
+{1}=https://www.testynavodicak.eu/storage/znacky/604.png
+{2}=https://www.testynavodicak.eu/storage/znacky/201.png
+{3}=https://www.testynavodicak.eu/storage/znacky/511.png
+
+Prednosť protiidúcich vozidiel
+Značka ukladá vodičovi povinnosť dať prednosť v jazde protiidúcim vozidlám.
+https://www.testynavodicak.eu/storage/znacky/203.png
+
+Prikázaný smer jazdy
+Značka prikazuje jazdu vo vyznačenom smere alebo vyznačených smeroch.
+https://www.testynavodicak.eu/storage/znacky/210.png
+
+Prikázaný smer odbočenia
+Značka prikazuje odbočenie vo vyznačenom smere.
+https://www.testynavodicak.eu/storage/znacky/211.png
+
+Prikázaný smer obchádzania
+Značka prikazuje obchádzanie vo vyznačenom smere.
+https://www.testynavodicak.eu/storage/znacky/212.png
+
+Kruhový objazd
+Značka označuje kruhový objazd a prikazuje smer jazdy v smere vyznačenom šípkami na značke.
+https://www.testynavodicak.eu/storage/znacky/213.png
+
+Zákaz odbočenia
+Značka zakazuje odbočenie vo vyznačenom smere.
+https://www.testynavodicak.eu/storage/znacky/215.png
+
+Zákaz otáčania
+Značka zakazuje otáčanie.
+https://www.testynavodicak.eu/storage/znacky/216.png
+
+Cestička pre chodcov
+Značka označuje komunikáciu určenú pre chodcov a prikazuje chodcovi použiť takto označenú cestičku.
+https://www.testynavodicak.eu/storage/znacky/220.png
+
+Cyklistická komunikácia
+Značka označuje cestičku pre cyklistov alebo cyklistický pruh a prikazuje cyklistovi použiť takto označenú cestičku alebo pruh.
+https://www.testynavodicak.eu/storage/znacky/221.png
+
+Spoločná cestička pre chodcov a cyklistov
+Značka označuje spoločnú komunikáciu určenú pre chodcov a cyklistov a prikazuje im ju použiť
+https://www.testynavodicak.eu/storage/znacky/222.png
+
+Oddelená cestička pre chodcov a cyklistov
+Značka označuje oddelenú komunikáciu určenú pre chodcov a cyklistov a vyznačuje, ktorý pruh je určený pre chodcov a ktorý pruh je určený pre cyklistov; cyklistom a chodcom prikazuje použiť časť pre nich určenú.
+https://www.testynavodicak.eu/storage/znacky/223.png
+
+Vyhradený pruh pre verejnú dopravu
+Značka označuje vyhradený pruh pre vozidlá pravidelnej verejnej dopravy osôb a prikazuje im ho prednostne použiť.
+https://www.testynavodicak.eu/storage/znacky/224.png
+
+Koniec špeciálnej cestičky alebo pruhu
+Značka ukončuje špeciálnu cestičku alebo pruh. Na značke sa použije zhodný symbol z týchto značiek doplnený červeným šikmým pruhom.
+https://www.testynavodicak.eu/storage/znacky/225.png
+
+Zákaz vjazdu
+Značka zakazuje vjazd všetkými vozidlami
+https://www.testynavodicak.eu/storage/znacky/230.png
+
+Zákaz vjazdu pre všetky vozidlá
+Značka zakazuje vjazd všetkými vozidlami v oboch smeroch jazdy.
+https://www.testynavodicak.eu/storage/znacky/231.png
+
+Zákaz vjazdu pre všetky motorové vozidlá
+Značka zakazuje vjazd všetkými motorovými vozidlami.
+https://www.testynavodicak.eu/storage/znacky/232.png
+
+Zákaz vjazdu (vstupu) pre
+Značka zakazuje vjazd alebo vstup vozidlami alebo účastníkmi cestnej premávky vyznačeným symbolom.
+https://www.testynavodicak.eu/storage/znacky/233.png
+
+Zákaz vjazdu pre vozidlá prepravujúce nebezpečné veci
+Značka zakazuje vjazd vozidlami prepravujúcimi nebezpečné veci, ktoré musia byť označené podľa Európskej dohody o medzinárodnej cestnej preprave nebezpečných vecí (ADR).
+https://www.testynavodicak.eu/storage/znacky/234.png
+
+Zákaz vjazdu pre vozidlá prepravujúce náklad, ktorý môže spôsobiť znečistenie vody
+Značka zakazuje vjazd vozidlami prepravujúcimi najmenej 60 litrov nákladu, ktorý môže spôsobiť znečistenie vody. 
+Iné množstvo alebo druh nákladu možno vyznačiť na dodatkovej tabuľke.
+https://www.testynavodicak.eu/storage/znacky/235.png
+
+Maximálna hmotnosť
+Značka zakazuje vjazd vozidlom alebo jazdnou súpravou, ktorých okamžitá hmotnosť vrátane nákladu, vodiča a cestujúcich presahuje vyznačenú hranicu na značke. 
+Pri jazdnej súprave sa obmedzenie hmotnosti vzťahuje na každé vozidlo zapojenej súpravy osobitne. 
+Pri jazdnej súprave tvorenej ťahačom a návesom sa maximálna hmotnosť vzťahuje na okamžitú hmotnosť ťahača a hmotnosť návesu pripadajúcu na ťahač a na zostatkovú hmotnosť návesu osobitne.
+https://www.testynavodicak.eu/storage/znacky/240.png
+
+Maximálna hmotnosť na nápravu
+Značka zakazuje vjazd vozidlom, ktorého okamžitá hmotnosť vrátane nákladu, vodiča a cestujúcich pripadajúca na najviac zaťaženú nápravu presahuje vyznačenú hranicu.
+https://www.testynavodicak.eu/storage/znacky/241.png
+
+Maximálna šírka
+Značka zakazuje vjazd vozidlom, ktorého okamžitá šírka vrátane nákladu presahuje vyznačenú hranicu.
+https://www.testynavodicak.eu/storage/znacky/242.png
+
+Maximálna výška
+Značka zakazuje vjazd vozidlom, ktorého okamžitá výška vrátane nákladu presahuje vyznačenú hranicu.
+https://www.testynavodicak.eu/storage/znacky/243.png
+
+Maximálna dĺžka
+Značka zakazuje vjazd vozidlom alebo súpravou vozidiel, ktorých okamžitá dĺžka vrátane nákladu presahuje vyznačenú hranicu.
+https://www.testynavodicak.eu/storage/znacky/244.png
+
+Povinné zastavenie vozidla
+Značka zakazuje pokračovať v jazde bez zastavenia vozidla. Na značke sa stručne uvádza dôvod zastavenia.
+https://www.testynavodicak.eu/storage/znacky/245.png
+
+Nízkoemisná zóna
+Značka označuje začiatok nízkoemisnej zóny, v ktorej je premávka vozidiel regulovaná podľa zákona č. 137/2010 Z. z. o ovzduší v znení neskorších predpisov.
+https://www.testynavodicak.eu/storage/znacky/248.png
+
+Koniec nízkoemisnej zóny
+Značka označuje koniec nízkoemisnej zóny.
+https://www.testynavodicak.eu/storage/znacky/249.png
+
+Najnižšia dovolená rýchlosť
+Značka prikazuje jazdiť rýchlosťou nie nižšou ako vyznačenou rýchlosťou v kilometroch za hodinu; to neplatí, ak je to potrebné z hľadiska bezpečnosti a plynulosti cestnej premávky. 
+Značka zároveň ukončuje platnosť predchádzajúcej značky Najnižšia dovolená rýchlosť.
+https://www.testynavodicak.eu/storage/znacky/250.png
+
+Snehové reťaze
+Značka prikazuje použiť pri jazde snehové reťaze alebo iné rovnocenné zariadenie minimálne na kolesách jednej hnacej nápravy
+https://www.testynavodicak.eu/storage/znacky/251.png
+
+Najvyššia dovolená rýchlosť
+Značka zakazuje jazdiť rýchlosťou vyššou ako vyznačenou rýchlosťou v kilometroch za hodinu.
+Značka zároveň ukončuje platnosť predchádzajúcej značky Najvyššia dovolená rýchlosť.
+https://www.testynavodicak.eu/storage/znacky/253.png
+
+Zákaz predchádzania
+Značka zakazuje predchádzať vľavo motorové vozidlo okrem motocykla bez postranného vozíka.
+https://www.testynavodicak.eu/storage/znacky/254.png
+
+Zákaz predchádzania pre nákladné vozidlá
+Značka zakazuje predchádzať vľavo s nákladným vozidlom s najväčšou prípustnou celkovou hmotnosťou prevyšujúcou 3,5 t motorové vozidlo okrem motocykla bez postranného vozíka.
+https://www.testynavodicak.eu/storage/znacky/255.png
+
+Minimálna vzdialenosť medzi vozidlami
+Značka zakazuje jazdu vozidlami s najväčšou prípustnou celkovou hmotnosťou prevyšujúcou 3,5 t jazdiacimi za sebou vo vzdialenosti kratšej ako je vyznačená na značke.
+https://www.testynavodicak.eu/storage/znacky/256.png
+
+Koniec najnižšej dovolenej rýchlosti
+Značka ukončuje príkaz vyplývajúci z predchádzajúcej značky Najnižšia dovolená rýchlosť {1}.
+https://www.testynavodicak.eu/storage/znacky/260.png
+{1}=https://www.testynavodicak.eu/storage/znacky/250.png
+
+Koniec snehových reťazí
+Značka ukončuje príkaz vyplývajúci z predchádzajúcej značky Snehové reťaze {1}.
+https://www.testynavodicak.eu/storage/znacky/261.png
+{1}=https://www.testynavodicak.eu/storage/znacky/251.png
+
+Koniec najvyššej dovolenej rýchlosti
+Značka ukončuje zákaz vyplývajúci z predchádzajúcej značky Najvyššia dovolená rýchlosť {1}.
+https://www.testynavodicak.eu/storage/znacky/263.png
+{1}=https://www.testynavodicak.eu/storage/znacky/253.png
+
+Koniec zákazu predchádzania
+Značka ukončuje zákaz vyplývajúci z predchádzajúcej značky Zákaz predchádzania {1}.
+https://www.testynavodicak.eu/storage/znacky/264.png
+{1}=https://www.testynavodicak.eu/storage/znacky/254.png
+
+Koniec zákazu predchádzania pre nákladné vozidlá
+Značka ukončuje zákaz vyplývajúci z predchádzajúcej značky Zákaz predchádzania pre nákladné vozidlá {1}.
+https://www.testynavodicak.eu/storage/znacky/265.png
+{1}=https://www.testynavodicak.eu/storage/znacky/255.png
+
+Koniec viacerých zákazov
+Značka ukončuje zákazy vyplývajúce zo značiek Najvyššia dovolená rýchlosť {1}, Zákaz predchádzania {2}, Zákaz predchádzania pre nákladné vozidlá {3}, Minimálna vzdialenosť medzi vozidlami {4} a reguláciu vyplývajúcu z pruhových značiek.
+https://www.testynavodicak.eu/storage/znacky/267.png
+{1}=https://www.testynavodicak.eu/storage/znacky/253.png
+{2}=https://www.testynavodicak.eu/storage/znacky/254.png
+{3}=https://www.testynavodicak.eu/storage/znacky/255.png
+{4}=https://www.testynavodicak.eu/storage/znacky/256.png
+
+Zóna najvyššej dovolenej rýchlosti
+Značka označuje začiatok zóny, v ktorej je zakázané jazdiť rýchlosťou vyššou ako vyznačenou rýchlosťou v kilometroch za hodinu.
+https://www.testynavodicak.eu/storage/znacky/268.png
+
+Koniec zóny najvyššej dovolenej rýchlosti
+Značka označuje koniec zóny najvyššej dovolenej rýchlosti.
+https://www.testynavodicak.eu/storage/znacky/269.png
+
+Zákaz zastavenia
+Značka zakazuje zastavenie a státie. 
+Zákaz platí aj na priľahlý chodník.
+https://www.testynavodicak.eu/storage/znacky/270.png
+
+Zákaz státia
+Značka zakazuje státie. 
+Zákaz platí aj na priľahlý chodník.
+https://www.testynavodicak.eu/storage/znacky/271.png
+
+Parkovanie
+Značka označuje miesto alebo priestor, kde je dovolené zastavenie a státie vozidiel. 
+Ak je pod značkou umiestnená dodatková tabuľka so symbolom osoby so zdravotným postihnutím {1}, značka označuje vyhradené parkovanie, kde je dovolené zastavenie a státie len vozidiel s parkovacím preukazom. 
+Vhodným spôsobom možno označiť parkovaciu garáž alebo parkovací dom.
+https://www.testynavodicak.eu/storage/znacky/272.png
+{1}=https://www.testynavodicak.eu/storage/znacky/dodatkova-invalid.png
+
+Parkovanie na chodníku
+Značka umožňuje státie vozidiel s najväčšou prípustnou celkovou hmotnosťou neprevyšujúcou 3,5 t na chodníku a vyznačeným symbolom označuje spôsob ich státia. 
+Ak je pod značkou umiestnená dodatková tabuľka so symbolom osoby so zdravotným postihnutím {1}, značka označuje vyhradené parkovanie, kde je dovolené zastavenie a státie len vozidiel s parkovacím preukazom.
+https://www.testynavodicak.eu/storage/znacky/273.png
+{1}=https://www.testynavodicak.eu/storage/znacky/dodatkova-invalid.png
+
+Zóna zákazu státia
+Značka označuje začiatok zóny, v ktorej je zakázané státie okrem státia na vyznačených parkovacích miestach.
+https://www.testynavodicak.eu/storage/znacky/275.png
+
+Koniec zóny zákazu státia
+Značka označuje koniec zóny zákazu státia.
+https://www.testynavodicak.eu/storage/znacky/276.png
+
+Parkovacia zóna
+Značka označuje začiatok zóny, v ktorej je státie vozidiel dovolené len na vyznačených parkovacích miestach a len za určitých podmienok uvedených na dodatkovej tabuľke.
+https://www.testynavodicak.eu/storage/znacky/277.png
+
+Koniec parkovacej zóny
+Značka označuje koniec parkovacej zóny.
+https://www.testynavodicak.eu/storage/znacky/278.png
+
+Jazda po krajnici
+Značka umožňuje používať krajnicu ako jazdný pruh. 
+V úseku platnosti značky sa krajnica považuje za súčasť vozovky a značka Pozdĺžna súvislá čiara, ktorá vyznačuje okraj vozovky, má význam značky Pozdĺžna prerušovaná čiara.
+https://www.testynavodicak.eu/storage/znacky/280.png
+
+Opustite krajnicu
+Značka prikazuje vodičovi krajnicu čo najskôr opustiť. 
+V úseku platnosti značky sa krajnica považuje za súčasť vozovky a značka Pozdĺžna súvislá čiara, ktorá vyznačuje okraj vozovky, má význam značky Pozdĺžna súvislá čiara doplnená prerušovanou čiarou (sprava).
+https://www.testynavodicak.eu/storage/znacky/281.png
+
+Koniec jazdy po krajnici
+Značka končí platnosť predchádzajúcej značky Jazda po krajnici a Opustite krajnicu.
+https://www.testynavodicak.eu/storage/znacky/282.png
+
+Obchádzanie prekážky po krajnici
+Značka prikazuje vodičovi jazdiacemu v pravom jazdnom pruhu použiť na obchádzanie prekážky krajnicu; vodičovi jazdiacemu v inom ako pravom jazdnom pruhu značka prikazuje prejsť do vedľajšieho jazdného pruhu spôsobom vyznačeným na značke.
+https://www.testynavodicak.eu/storage/znacky/283.png

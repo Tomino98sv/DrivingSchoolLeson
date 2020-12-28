@@ -1,0 +1,143 @@
+Vzdialenosť
+Dodatková tabuľka vyznačuje vzdialenosť k 
+a) nebezpečenstvu, na ktoré upozorňuje výstražná značka, pod ktorou je umiestnená, 
+b) regulačnej značke, ktorou začína regulácia vyznačená regulačnou značkou, pod ktorou je umiestnená, 
+c) miestu, o ktorom informuje informačná značka, pod ktorou je umiestnená.
+https://www.testynavodicak.eu/storage/znacky/501.png
+
+Dĺžka úseku
+Dodatková tabuľka vyznačuje dĺžku 
+a) nebezpečného úseku, ak je umiestnená pod výstražnou značkou, 
+b) platnosti značky Snehové reťaze {1}, Najvyššia dovolená rýchlosť {2}, Zákaz predchádzania {3}, Zákaz predchádzania pre nákladné vozidlá {4} alebo Minimálna vzdialenosť medzi vozidlami {5}, pod ktorou je umiestnená, 
+c) platnosti pruhovej značky, pod ktorou je umiestnená.
+https://www.testynavodicak.eu/storage/znacky/502.png
+{1}=https://www.testynavodicak.eu/storage/znacky/251.png
+{2}=https://www.testynavodicak.eu/storage/znacky/253.png
+{3}=https://www.testynavodicak.eu/storage/znacky/254.png
+{4}=https://www.testynavodicak.eu/storage/znacky/255.png
+{5}=https://www.testynavodicak.eu/storage/znacky/256.png
+
+Smerová šípka
+Dodatková tabuľka vyznačuje smer k 
+a) nebezpečenstvu, na ktoré upozorňuje výstražná značka, pod ktorou je umiestnená, 
+b) regulačnej značke, ktorou sa začína regulácia vyznačená regulačnou značkou, pod ktorou je umiestnená, 
+c) miestu, o ktorom informuje informačná značka, pod ktorou je umiestnená.
+https://www.testynavodicak.eu/storage/znacky/503.png
+
+Smer platnosti
+Dodatková tabuľka vyznačuje smer platnosti dopravnej značky, pod ktorou je umiestnená. Dodatková tabuľka môže byť doplnená údajom o dĺžke platnosti daným smerom v metroch.
+https://www.testynavodicak.eu/storage/znacky/504.png
+
+Časové obmedzenie
+Dodatková tabuľka obmedzuje platnosť značky, pod ktorou je umiestnená, len na vyznačené časové obdobie.
+https://www.testynavodicak.eu/storage/znacky/505.png
+
+Platí pre
+Dodatková tabuľka obmedzuje platnosť značky, pod ktorou je umiestnená, len na vyznačených účastníkov cestnej premávky.
+https://www.testynavodicak.eu/storage/znacky/506.png
+
+Neplatí pre
+Dodatková tabuľka vyníma z platnosti značky, pod ktorou je umiestnená, vyznačených účastníkov cestnej premávky.
+https://www.testynavodicak.eu/storage/znacky/507.png
+
+Hmotnosť
+Dodatková tabuľka obmedzuje platnosť značky, pod ktorou je umiestnená, len na vozidlá a jazdné súpravy s celkovou hmotnosťou prevyšujúcou vyznačenú hranicu. Dodatková tabuľka umiestnená pod značkou Zákaz predchádzania pre nákladné vozidlá rozširujezákaz na všetky vozidlá a jazdné súpravy s celkovou hmotnosťou prevyšujúcou vyznačenú hranicu.
+https://www.testynavodicak.eu/storage/znacky/508.png
+
+Spresňujúce informácie
+Dodatková tabuľka podrobnejšie informuje o povahe alebo iných charakteristikách nebezpečenstva, regulácie alebo informácie vyznačenej značkou, pod ktorou je umiestnená; v prípade potreby informuje o uvedených skutočnostiach v inom ako štátnom jazyku.
+https://www.testynavodicak.eu/storage/znacky/509.png
+
+Priebeh hlavnej cesty
+Dodatková tabuľka umiestnená pod značkou Daj prednosť v jazde! {1}, Stoj, daj prednosť v jazde! {2} alebo Hlavná cesta {3} vyznačuje priebeh hlavnej cesty, ak hlavná cesta vedie cez križovatku inak ako priamo alebo je jej priebeh ťažko rozoznateľný. Hlavná cesta je vyznačená hrubšou čiarou.
+https://www.testynavodicak.eu/storage/znacky/510.png
+{1}=https://www.testynavodicak.eu/storage/znacky/201.png
+{2}=https://www.testynavodicak.eu/storage/znacky/202.png
+{3}=https://www.testynavodicak.eu/storage/znacky/302.png
+
+Vzdialenosť k povinnému zastaveniu
+Dodatková tabuľka umiestnená pod značkou Daj prednosť v jazde! {1} vyznačuje vzdialenosť k značke Stoj, daj prednosť v jazde! {2}.
+https://www.testynavodicak.eu/storage/znacky/511.png
+{1}=https://www.testynavodicak.eu/storage/znacky/201.png
+{2}=https://www.testynavodicak.eu/storage/znacky/202.png
+
+Priečna jazda električky
+Dodatková tabuľka umiestnená pod značkou Daj prednosť v jazde! {1} alebo Stoj, daj prednosť v jazde! {2} ukladá vodičovi povinnosť dať prednosť v jazde a zároveň dať prednosť v jazde električke.
+https://www.testynavodicak.eu/storage/znacky/512.png
+{1}=https://www.testynavodicak.eu/storage/znacky/201.png
+{2}=https://www.testynavodicak.eu/storage/znacky/202.png
+
+Priečna jazda cyklistov
+Dodatková tabuľka umiestnená pod značkou Daj prednosť v jazde! {1} alebo Stoj, daj prednosť v jazde! {2} ukladá vodičovi povinnosť dať prednosť v jazde a zároveň dať prednosť v jazde cyklistom sprava aj zľava idúcim súbežne s cestou. Dodatková tabuľka umiestnená pod značkou Jednosmerná cesta {3} umožňuje cyklistom jazdiť v oboch smeroch; vodič iného vozidla je povinný zvýšiť opatrnosť voči cyklistom pri odbočovaní na jednosmernú cestu a v jej priebehu.
+https://www.testynavodicak.eu/storage/znacky/513.png
+{1}=https://www.testynavodicak.eu/storage/znacky/201.png
+{2}=https://www.testynavodicak.eu/storage/znacky/202.png
+{3}=https://www.testynavodicak.eu/storage/znacky/321-1.png
+
+Obojsmerná jazda cyklistov
+Dodatková tabuľka umiestnená pod značkou Jednosmerná cesta {1} umožňuje cyklistom jazdiť v oboch smeroch; vodič iného vozidla je povinný zvýšiť opatrnosť voči cyklistom v priebehu jednosmernej cesty.
+https://www.testynavodicak.eu/storage/znacky/514.png
+{1}=https://www.testynavodicak.eu/storage/znacky/321-2.png
+
+Voľno
+Dodatková tabuľka umiestnená pod značkou označujúcou špeciálnu cestičku alebo pruh umožňuje použiť špeciálnu cestičku alebo pruh vyznačeným účastníkom cestnej premávky, avšak neprikazuje im ju použiť. 
+Ak ide o špeciálnu cestičku alebo pruh určený pre chodcov alebo pre cyklistov, účastník cestnej premávky, ktorému sa umožní takúto cestičku alebo pruh použiť, nesmie pritom obmedziť ani ohroziť chodca alebo cyklistu. 
+Dodatková tabuľka umiestnená pod značkou Pešia zóna {1} umožňuje vjazd do pešej zóny vyznačeným účastníkom cestnej premávky.
+https://www.testynavodicak.eu/storage/znacky/515.png
+{1}=https://www.testynavodicak.eu/storage/znacky/317.png
+
+Tranzit
+Dodatková tabuľka umiestnená pod značkou o zákaze vjazdu umožňuje vjazd 
+a) vozidlom, ktorého cieľ jazdy je dosiahnuteľný len cestou, na ktorú sa vzťahuje zákaz vjazdu, alebo len prostredníctvom cesty, na ktorú sa vzťahuje zákaz vjazdu, 
+b) vozidlom, ktoré je oslobodené od platby mýta za vymedzené úseky ciest, alebo 
+c) vozidlom autoškoly pri výcviku, skúške alebo preskúšaní.
+https://www.testynavodicak.eu/storage/znacky/520.png
+
+Kategória tunela
+Dodatková tabuľka umiestnená pod značkou Zákaz vjazdu pre vozidlá prepravujúce nebezpečné veci {1} obmedzuje zákaz len na vozidlá prepravujúce určité nebezpečné veci, ktoré je zakázané prepravovať cez tunel vyznačenej kategórie.
+https://www.testynavodicak.eu/storage/znacky/521.png
+{1}=https://www.testynavodicak.eu/storage/znacky/234.png
+
+Jediné vozidlo
+Dodatková tabuľka s vyznačenou hodnotou v tonách umiestnená pod značkou Maximálna hmotnosť {1} umožňuje vjazd vozidlom, ktorého okamžitá hmotnosť vrátane nákladu, ak ide o jazdnú súpravu, okamžitá hmotnosť všetkých vozidiel súpravy, síce presahuje vyznačenú hranicu na značke, nie však hranicu na dodatkovej tabuľke. 
+Dodatková tabuľka s vyznačenou hodnotou v metroch umiestnená pod značkou Maximálna dĺžka {2} umožňuje vjazd vozidlom, ktorého okamžitá dĺžka vrátane nákladu, ak ide o jazdnú súpravu, okamžitá dĺžka súpravy, síce presahuje vyznačenú hranicu na značke, nie však hranicu na dodatkovej tabuľke. 
+Vodič takého vozidla je povinný zabezpečiť, aby na daný úsek nevošlo súčasne zo žiadneho smeru iné vozidlo.
+https://www.testynavodicak.eu/storage/znacky/522.png
+{1}=https://www.testynavodicak.eu/storage/znacky/240.png
+{2}=https://www.testynavodicak.eu/storage/znacky/244.png
+
+Predchádzanie zvláštnych vozidiel
+Dodatková tabuľka umiestnená pod značkou Zákaz predchádzania {1} umožňuje predchádzať zvláštne motorové vozidlá.
+https://www.testynavodicak.eu/storage/znacky/525.png
+{1}=https://www.testynavodicak.eu/storage/znacky/254.png
+
+Rozšírenie zákazu predchádzania
+Dodatková tabuľka umiestnená pod značkou Zákaz predchádzania pre nákladné vozidlá {1} rozširuje zákaz aj na autobusy a osobné vozidlá s prívesom.
+https://www.testynavodicak.eu/storage/znacky/526.png
+{1}=https://www.testynavodicak.eu/storage/znacky/255.png
+
+Emisná trieda
+Dodatková tabuľka umiestnená pod značkou Nízkoemisná zóna {1} vyznačuje emisnú triedu, ktorá sa vzťahuje na reguláciu premávky vozidiel v nízkoemisnej zóne.
+https://www.testynavodicak.eu/storage/znacky/527.png
+{1}=https://www.testynavodicak.eu/storage/znacky/248.png
+
+Obmedzenie parkovania na krajnici
+Dodatková tabuľka umiestnená pod značkou Zákaz zastavenia {1} alebo Zákaz státia {2} rozširuje zákaz aj na krajnicu.
+https://www.testynavodicak.eu/storage/znacky/530.png
+{1}=https://www.testynavodicak.eu/storage/znacky/270.png
+{2}=https://www.testynavodicak.eu/storage/znacky/271.png
+
+Vyhradené parkovanie
+Dodatková tabuľka umiestnená pod značkou Zákaz zastavenia {1} umožňuje zastaviť a stáť na parkovacom mieste len pre určité vozidlo alebo pre určitého držiteľa parkovacieho povolenia, pre ktorého je dané miesto vyhradené.
+https://www.testynavodicak.eu/storage/znacky/531.png
+{1}=https://www.testynavodicak.eu/storage/znacky/270.png
+
+Časovo obmedzené parkovanie
+Dodatková tabuľka umiestnená pod značkou o parkovaní obmedzuje možnosť parkovania najdlhšie na vyznačenú dobu. 
+Ak je v ľavej časti dodatkovej tabuľky vyznačený symbol parkovacieho kotúča, možno na takto označenom mieste parkovať len s použitím parkovacieho kotúča. Parkovací kotúč musí byť viditeľne umiestnený v prednej časti vozidla a musí sa na ňom nastaviť čas začiatku parkovania, a to k najbližšej polhodine alebo celej hodine; takto nastavený čas sa počas parkovania nesmie meniť. 
+Na parkovacom kotúči vo forme elektronickej aplikácie sa musí nastaviť čas začiatku parkovania, ktorý sa počas parkovania nesmie meniť.
+https://www.testynavodicak.eu/storage/znacky/532.png
+
+Platené parkovanie
+Dodatková tabuľka umiestnená pod značkou o parkovaní obmedzuje možnosť parkovania len za úhradu.
+https://www.testynavodicak.eu/storage/znacky/533.png

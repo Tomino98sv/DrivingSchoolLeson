@@ -1,0 +1,161 @@
+"Signál s plným červeným svetlom so znamením ""Stoj!"""
+Signál s plným červeným svetlom so znamením “Stoj!” (č. S 1a)
+https://www.testynavodicak.eu/storage/znacky/s1a.png
+
+"Signál s plným žltým svetlom so znamením ""Pozor!"""
+Signál s plným žltým svetlom so znamením “Pozor!” (č. S 1b)
+https://www.testynavodicak.eu/storage/znacky/s1b.png
+
+"Signál s plným zeleným svetlom so znamením ""Voľno"""
+Signál s plným zelený svetom so znamením “Voľno” (č. S 1c)
+https://www.testynavodicak.eu/storage/znacky/s1c.png
+
+"Signál s červeným svetlom pre jeden smer so znamením ""Stoj!"""
+Signál s červeným svetlom pre jeden smer so znamením “Stoj!” (č. S 2a)
+https://www.testynavodicak.eu/storage/znacky/s2a.png
+
+"Signál so žltým svetlom pre jeden smer so znamením ""Pozor!"""
+Signál so žltým svetlom pre jeden smer so znamením “Pozor!” (č. S 2b)
+https://www.testynavodicak.eu/storage/znacky/s2b.png
+
+"Signál so zeleným svetlom pre jeden smer so znamením ""Voľno!"""
+Signál so zeleným svetom pre jeden smer so znamením “Voľno” (č. S 2c)
+https://www.testynavodicak.eu/storage/znacky/s2c.png
+
+"Kombinovaný signál s červeným svetlom pre dva smery so znamením ""Stoj!"""
+Signál s červeným svetlom pre dva smery so znamením “Stoj!” (č. S 3a)
+https://www.testynavodicak.eu/storage/znacky/s3a.png
+
+"Kombinovaný signál so žltým svetlom pre dva smery so znamením ""Pozor!"""
+Signál so žltým svetlom pre dva smery so znamením “Pozor!” (č. S 3b)
+https://www.testynavodicak.eu/storage/znacky/s3b.png
+
+Jazda vpravo a vľavo
+Signál so zeleným svetom pre dva smery so znamením “Voľno” (č. S 3c)
+https://www.testynavodicak.eu/storage/znacky/s3c.png
+
+Signál so zeleným svetlom v tvare šípky pre opustenie križovatky
+Signál so zeleným svetlom v tvare šípky pre opustenie križovatky (č. S 4)
+https://www.testynavodicak.eu/storage/znacky/s4.png
+
+"Signál pre chodcov s červeným svetlom so znamením ""Stoj!"" "
+Signál pre chodcov s červeným svetlom so znamením “Stoj!” (č. S 5a)
+https://www.testynavodicak.eu/storage/znacky/s5a.png
+
+"Signál pre chodcov so zeleným svetlom so znamením ""Voľno!"""
+Signál pre chodcov so zeleným svetlom so znamením “Voľno” (č. S 5b)
+https://www.testynavodicak.eu/storage/znacky/s5b.png
+
+"Kombinovaný signál pre chodcov a cyklistov s červeným svetlom so znamením ""Stoj!"""
+Kombinovaný signál pre chodcov a cyklistov s červeným svetlom so znamením “Stoj!”(č. S 5c)
+https://www.testynavodicak.eu/storage/znacky/s5c.png
+
+"Kombinovaný signál pre chodcov a cyklistov so zeleným svetlom so znamením ""Voľno!"""
+Kombinovaný signál pre chodcov a cyklistov so zeleným svetlom so znamením “Voľno” (č. S 5d)
+https://www.testynavodicak.eu/storage/znacky/s5d.png
+
+Signál so žltým svetlom v tvare chodca
+Signál so žltým svetlom v tvare chodca (č. S 6a)
+https://www.testynavodicak.eu/storage/znacky/s6a.png
+
+Signál so žltým svetlom v tvare chodca a cyklistu
+Signál so žltým svetlom v tvare chodca a cyklistu (č. S 6b)
+https://www.testynavodicak.eu/storage/znacky/s6b.png
+
+"Signál pre cyklistov s červeným svetlom so znamením ""Stoj!"""
+Signál pre cyklistov s červeným svetlom so znamením “Stoj!” (č. S 7a)
+https://www.testynavodicak.eu/storage/znacky/s7a.png
+
+"Signál pre cyklistov so žltým svetlom so znamením ""Pozor!"""
+Signál pre cyklistov so žltým svetlom so znamením “Pozor!” (č. S 7b)
+https://www.testynavodicak.eu/storage/znacky/s7b.png
+
+"Signál pre cyklistov so zeleným svetlom so znamením ""Voľno"""
+Signál pre cyklistov so zeleným svetlom so znamením “Voľno” (č. S 7c)
+https://www.testynavodicak.eu/storage/znacky/s7c.png
+
+"Signál s červenými striedavo prerušovanými svetlami pre zabezpečenie výjazdu vozidiel s právom prednosti v jazde so znamením ""Stoj!"""
+https://www.testynavodicak.eu/storage/znacky/s8.png
+
+"Signál priecestného zabezpečovacieho zariadenia s červenými striedavo prerušovanými svetlami so znamením ""Stoj!"""
+https://www.testynavodicak.eu/storage/znacky/s9.png
+
+"Signál priecestného zabezpečovacieho zariadenia s červenými striedavo prerušovanými svetlami so znamením ""Stoj!"""
+Signál priecestného zabezpečovacieho zariadenia s červenými striedavo prerušovanými svetlami so znamením “Stoj!” (č. S 9a)
+https://www.testynavodicak.eu/storage/znacky/s9a.png
+
+"Signál priecestného zabezpečovacieho zariadenia s bielym prerušovaným svetlom so znamením ""Voľno"""
+Signál priecestného zabezpečovacieho zariadenia s bielym striedavo prerušovaným svetlom so znamením “Voľno!” (č. S 9b)
+https://www.testynavodicak.eu/storage/znacky/s9b.png
+
+Doplnkový signál so zeleným svetlom v tvare šípky
+Doplnkový signál so zeleným svetlom v tvare šípky (č. S 10)
+https://www.testynavodicak.eu/storage/znacky/s10.png
+
+Doplnkový signál s plným prerušovaným žltým svetlom
+Doplnkový signál s plným prerušovaným žltým svetlom v tvare šípky (č. S 11a)
+https://www.testynavodicak.eu/storage/znacky/s11a.png
+
+Doplnkový signál s prerušovaným žltým svetlom v tvare chodca
+Doplnkový signál s prerušovaným žltým svetlom v tvare chodca (č. S 11b)
+https://www.testynavodicak.eu/storage/znacky/s11b.png
+
+Doplnkový signál s prerušovaným žltým svetlom v tvare cyklistu
+Doplnkový signál s prerušovaným žltým svetlom v tvare cyklistu (č. S 11c)
+https://www.testynavodicak.eu/storage/znacky/s11c.png
+
+Doplnkový signál s prerušovaným žltým svetlom v tvare chodca a cyklistu
+Doplnkový signál s prerušovaným žltým svetlom v tvare chodca a cyklistu (č. S 11d)
+https://www.testynavodicak.eu/storage/znacky/s11d.png
+
+Doplnkový signál s prerušovaným žltým svetlom v tvare električky
+Doplnkový signál s prerušovaným žltým svetlom v tvare električky (č. S 11e)
+https://www.testynavodicak.eu/storage/znacky/s11e.png
+
+Signál pre zakázaný vjazd vozidiel do jazdného pruhu
+Signál pre zakázaný vjazd vozidiel do jazdného pruhu (č. S 12a)
+https://www.testynavodicak.eu/storage/znacky/s12a.png
+
+"Signál ""Voľno"" pre vjazd vozidiel do jazdného pruhu"
+Signál “Voľno” pre vjazd vozidiel do jazdného pruhu (č. S 12b)
+https://www.testynavodicak.eu/storage/znacky/s12b.png
+
+Svetelná šípka doľava
+Svetelná šípka doľava (č. S 12c)
+https://www.testynavodicak.eu/storage/znacky/s12c.png
+
+Svetelná šípka doprava
+Svetelná šípka doprava (č. S 12d)
+https://www.testynavodicak.eu/storage/znacky/s12d.png
+
+Číselný odpočet svetelného signálu
+Rýchlostný signál s premenným symbolom (č. S 13)
+https://www.testynavodicak.eu/storage/znacky/s13.png
+
+Stoj!
+Stoj! (č. S 14a)
+https://www.testynavodicak.eu/storage/znacky/s14a.png
+
+Jazda priamo
+Jazda priamo (č. S 14b)
+https://www.testynavodicak.eu/storage/znacky/s14b.png
+
+Jazda vľavo
+Jazda vľavo (č. S 14c)
+https://www.testynavodicak.eu/storage/znacky/s14c.png
+
+Jazda vpravo
+Jazda vpravo (č. S 14d)
+https://www.testynavodicak.eu/storage/znacky/s14d.png
+
+Jazda priamo a vpravo
+Jazda priamo a vpravo (č. S 14e)
+https://www.testynavodicak.eu/storage/znacky/s14e.png
+
+Jazda priamo a vľavo
+Jazda priamo a vľavo (č. S 14f)
+https://www.testynavodicak.eu/storage/znacky/s14f.png
+
+Jazda vpravo a vľavo
+jazda vpravo a vľavo (č. S 14g)
+https://www.testynavodicak.eu/storage/znacky/s14g.png

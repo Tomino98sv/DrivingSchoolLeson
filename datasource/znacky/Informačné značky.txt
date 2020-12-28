@@ -1,0 +1,344 @@
+Križovatka s prednosťou v jazde
+Značka informuje o prednosti v jazde v najbližšej križovatke. 
+Na značke môže byť znázornené aj len samostatné pravé pripojenie.
+https://www.testynavodicak.eu/storage/znacky/301.png
+
+Hlavná cesta
+Značka označuje začiatok alebo priebeh hlavnej cesty.
+https://www.testynavodicak.eu/storage/znacky/302.png
+
+Koniec hlavnej cesty
+Značka informuje o ukončení hlavnej cesty
+https://www.testynavodicak.eu/storage/znacky/303.png
+
+Prednosť pred protiidúcimi vozidlami
+Značka informuje vodiča o prednosti v jazde pred protiidúcimi vozidlami.
+https://www.testynavodicak.eu/storage/znacky/304.png
+
+Obec
+Značka označuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa v obci a informuje o názve obce alebo miestnej časti obce tvoriacej samostatný sídelný útvar. 
+Ak značka informuje o názve miestnej časti obce, v spodnej časti značky sa uvádza názov obce, ku ktorej táto miestna časť administratívne patrí. {1}
+https://www.testynavodicak.eu/storage/znacky/305.png
+{1}=https://www.testynavodicak.eu/storage/znacky/305-2.png
+
+Koniec obce
+Značka označuje miesto, kde sa končí platnosť pravidiel cestnej premávky o správaní sa v obci a informuje o názve obce alebo miestnej časti obce tvoriacej samostatný sídelný útvar. {1}
+https://www.testynavodicak.eu/storage/znacky/306.png
+{1}=https://www.testynavodicak.eu/storage/znacky/306-2.png
+
+Označenie obce v jazyku národnostnej menšiny
+Značka informuje o názve obce v jazyku národnostnej menšiny na začiatku obce.
+https://www.testynavodicak.eu/storage/znacky/307.png
+
+Označenie konca obce v jazyku národnostnej menšiny
+Značka informuje o názve obce v jazyku národnostnej menšiny na konci obce.
+https://www.testynavodicak.eu/storage/znacky/308.png
+
+Diaľnica
+Značka označuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa na diaľnici a miesto, od ktorého užívanie diaľnice podlieha úhrade diaľničnou známkou.
+https://www.testynavodicak.eu/storage/znacky/309.png
+
+Koniec diaľnice
+Značka označuje koniec diaľnice.
+https://www.testynavodicak.eu/storage/znacky/310.png
+
+Cesta pre motorové vozidlá
+Značka označuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa na ceste pre motorové vozidlá.
+https://www.testynavodicak.eu/storage/znacky/311.png
+
+Koniec cesty pre motorové vozidlá
+Značka označuje koniec cesty pre motorové vozidlá.
+https://www.testynavodicak.eu/storage/znacky/312.png
+
+Úsek diaľnice spoplatnený diaľničnou známkou
+Značka označuje miesto, od ktorého užívanie diaľnice podlieha úhrade diaľničnou známkou.
+https://www.testynavodicak.eu/storage/znacky/313.png
+
+Úsek diaľnice nespoplatnený diaľničnou známkou
+Značka označuje miesto, od ktorého užívanie diaľnice nepodlieha úhrade diaľničnou známkou.
+https://www.testynavodicak.eu/storage/znacky/314.png
+
+Obytná zóna
+Značka označuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v obytnej zóne.
+https://www.testynavodicak.eu/storage/znacky/315.png
+
+Koniec obytnej zóny
+Značka označuje koniec obytnej zóny
+https://www.testynavodicak.eu/storage/znacky/316.png
+
+Pešia zóna
+Značka označuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v pešej zóne.
+https://www.testynavodicak.eu/storage/znacky/317.png
+
+Koniec pešej zóny
+Značka označuje koniec pešej zóny.
+https://www.testynavodicak.eu/storage/znacky/318.png
+
+Školská zóna
+Značka označuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v školskej zóne.
+https://www.testynavodicak.eu/storage/znacky/319.png
+
+Koniec školskej zóny
+Značka označuje koniec školskej zóny.
+https://www.testynavodicak.eu/storage/znacky/320.png
+
+Jednosmerná cesta
+Značka označuje cestu s jednosmernou premávkou a vyznačuje dovolený smer jazdy.
+https://www.testynavodicak.eu/storage/znacky/321.png
+
+Tunel
+Značka označuje tunel, v ktorom platia pravidlá cestnej premávky pre správanie sa v tuneli. Ak ide o tunel dlhší ako 500 m, môže byť v spodnej časti značky alebo na dodatkovej tabuľke uvedený názov a dĺžka tunela. {1}
+https://www.testynavodicak.eu/storage/znacky/322.png
+{1}=https://www.testynavodicak.eu/storage/znacky/322-2.png
+
+Priechod pre chodcov
+Značka označuje priechod pre chodcov.
+https://www.testynavodicak.eu/storage/znacky/325.png
+
+Priechod pre cyklistov
+Značka označuje priechod pre cyklistov.
+https://www.testynavodicak.eu/storage/znacky/326.png
+
+Podchod alebo nadchod
+Značka označuje podchod alebo nadchod. 
+Vhodným spôsobom možno označiť bezbariérový podchod alebo nadchod.
+https://www.testynavodicak.eu/storage/znacky/327.png
+
+Slepá cesta
+Značka označuje cestu, ktorá sa ďalej končí alebo ktorou nemožno ďalej pokračovať v jazde. 
+Vhodným spôsobom možno informovať o prejazdnosti slepej cesty pre cyklistov.
+https://www.testynavodicak.eu/storage/znacky/328.png
+
+Služby
+Značka vhodným symbolom označuje miesto, na ktorom sa poskytuje služba významná pre verejnosť.
+https://www.testynavodicak.eu/storage/znacky/330.png
+
+Zastávka
+Značka vhodným symbolom označuje zastávku vozidiel pravidelnej verejnej dopravy osôb.
+https://www.testynavodicak.eu/storage/znacky/331.png
+
+Stanovište taxi
+Značka označuje stanovište vozidiel taxislužby.
+https://www.testynavodicak.eu/storage/znacky/332.png
+
+Polícia
+Značka informuje o blízkosti stanovišťa alebo útvaru Policajného zboru s nepretržitou službou.
+https://www.testynavodicak.eu/storage/znacky/333.png
+
+Kontrola rýchlosti
+Značka označuje miesto, kde sa vykonáva kontrola najvyššej dovolenej rýchlosti vozidiel technickým prostriedkom konštrukčne pevne spojeným so zemou
+https://www.testynavodicak.eu/storage/znacky/334.png
+
+Núdzová odstavná plocha
+Značka označuje miesto vyhradené na núdzové státie vozidla.
+https://www.testynavodicak.eu/storage/znacky/335.png
+
+Miesto na núdzové brzdenie
+Značka vo vyznačenom smere označuje miesto na núdzové brzdenie na prudkom klesaní.
+https://www.testynavodicak.eu/storage/znacky/336.png
+
+Miestna návesť
+Značka označuje kraj, okres, časť obce, most a podobne. Ak značka označuje turisticky významný cieľ alebo turistickú trasu, má hnedú farbu.
+https://www.testynavodicak.eu/storage/znacky/340.png
+
+Štátna hranica
+Značka označuje hranicu štátu a uvádza jeho názov.
+https://www.testynavodicak.eu/storage/znacky/341.png
+
+Informácie o všeobecných pravidlách
+Značka informuje vodičov vchádzajúcich na územie Slovenskej republiky o najvyššej dovolenej rýchlosti a o dennom svietení
+https://www.testynavodicak.eu/storage/znacky/342.png
+
+Dopravné obmedzenia na horskom prechode
+Značka vhodným textom alebo symbolom informuje o dopravných obmedzeniach na horskom prechode.
+https://www.testynavodicak.eu/storage/znacky/343.png
+
+Varovná tabuľa
+Značka upozorňuje na vjazd do protismeru.
+https://www.testynavodicak.eu/storage/znacky/344.png
+
+Číslo cesty I. alebo II. triedy
+Značka informuje o čísle cesty I. triedy alebo o čísle cesty II. triedy.
+https://www.testynavodicak.eu/storage/znacky/350.png
+
+Číslo cesty III. triedy
+Značka informuje o čísle cesty III. triedy.
+https://www.testynavodicak.eu/storage/znacky/351.png
+
+Číslo diaľnice alebo rýchlostnej cesty
+Značka informuje o čísle diaľnice alebo o čísle rýchlostnej cesty
+https://www.testynavodicak.eu/storage/znacky/352.png
+
+Číslo E-cesty
+Značka informuje o čísle cesty zaradenej do medzinárodnej siete ciest kategórie E.
+https://www.testynavodicak.eu/storage/znacky/353.png
+
+Kilometrovník
+Značka informuje o približnej vzdialenosti v kilometroch od začiatku cesty alebo od iného referenčného bodu na ceste. 
+Značka môže obsahovať aj číslo cesty a smer k najbližšiemu telefónu núdzového volania
+https://www.testynavodicak.eu/storage/znacky/355.png
+
+Smerová predzvesť
+Značka vopred informuje o smere jazdy k vyznačeným cieľom. 
+Ak je značka umiestnená nad vozovkou so šípkami vyznačenými nad jednotlivými jazdnými pruhmi, informuje zároveň o potrebe včasného zaradenia sa do jazdných pruhov podľa jednotlivých cieľových blokov.
+{1}
+https://www.testynavodicak.eu/storage/znacky/360.png
+{1}=https://www.testynavodicak.eu/storage/znacky/360-2.png
+
+Smerová a pruhová predzvesť
+Značka vopred informuje o smere jazdy k vyznačeným cieľom a o radení do jazdných pruhov v priestore križovatky.
+https://www.testynavodicak.eu/storage/znacky/361.png
+
+Smerová návesť
+Značka informuje o smere jazdy k vyznačeným cieľom. 
+Ak je značka umiestnená nad vozovkou so šípkami vyznačenými nad jednotlivými jazdnými pruhmi, informuje zároveň o radení do jazdných pruhov podľa jednotlivých cieľových blokov. 
+{1}
+Značka sa nachádza bezprostredne pred alebo bezprostredne za miestom odbočenia.
+https://www.testynavodicak.eu/storage/znacky/362.png
+{1}=https://www.testynavodicak.eu/storage/znacky/362-2.png
+
+Tabuľový smerník
+Značka informuje o smere jazdy k vyznačeným cieľom; v prípade sídelných cieľov značka spravidla informuje aj o vzdialenosti do centra týchto cieľov. 
+Značka sa nachádza bezprostredne pred alebo bezprostredne za miestom odbočenia
+https://www.testynavodicak.eu/storage/znacky/363.png
+
+Šípový smerník
+Značka informuje o odbočení k vyznačeným cieľom a v prípade sídelných cieľov spravidla aj o vzdialenosti do centra týchto cieľov
+https://www.testynavodicak.eu/storage/znacky/364.png
+
+Šípový smerník k diaľnici
+Značka informuje o odbočení k diaľnici alebo k diaľniciam a podľa potreby aj o diaľkových cieľoch.
+https://www.testynavodicak.eu/storage/znacky/365.png
+
+Šípový smerník k zvláštnemu alebo miestnemu cieľu
+Značka informuje o odbočení k zvláštnym cieľom alebo v obci informuje o odbočení k miestnym cieľom.
+https://www.testynavodicak.eu/storage/znacky/366.png
+
+Šípový smerník k turistickému cieľu
+Značka informuje o odbočení k turistickým cieľom.
+https://www.testynavodicak.eu/storage/znacky/367.png
+
+Nepriama návesť
+Značka informuje o smere jazdy k vyznačeným zvláštnym alebo turistickým cieľom prostredníctvom smeru jazdy k sídelnému cieľu. Farebnosť vyznačených zvláštnych a turistických cieľov zodpovedá farebnosti príslušného šípového smerníka.
+https://www.testynavodicak.eu/storage/znacky/368.png
+
+Ohlasovacia tabuľa
+Značka informuje o blízkosti výjazdu, diaľničného uzla alebo odpočívadla a uvádza základné informácie o ňom.
+https://www.testynavodicak.eu/storage/znacky/370.png
+
+Nepriama návesť na diaľnici
+Značka informuje o doplnkových zvláštnych alebo miestnych cieľoch, ktoré sú dostupné prostredníctvom vyznačeného výjazdu.
+https://www.testynavodicak.eu/storage/znacky/371.png
+
+Smerová predzvesť na diaľnici
+Značka vopred informuje o smere jazdy k vyznačeným cieľom. 
+Ak je značka umiestnená nad vozovkou so šípkami vyznačenými nad jednotlivými jazdnými pruhmi, informuje zároveň o radení do jazdných pruhov podľa jednotlivých cieľových blokov.
+{1}
+https://www.testynavodicak.eu/storage/znacky/372.png
+{1}=https://www.testynavodicak.eu/storage/znacky/372-1.png
+
+Smerová návesť na diaľnici
+Značka informuje o smere jazdy k vyznačeným cieľom. 
+Ak je značka umiestnená nad vozovkou so šípkami vyznačenými nad jednotlivými jazdnými pruhmi, informuje zároveň o radení do jazdných pruhov podľa jednotlivých cieľových blokov.
+{1}
+https://www.testynavodicak.eu/storage/znacky/373.png
+{1}=https://www.testynavodicak.eu/storage/znacky/373-1.png
+
+Výjazdová tabuľa
+Značka vhodným nápisom označuje miesto a smer výjazdu alebo odbočenia na odpočívadlo.
+https://www.testynavodicak.eu/storage/znacky/374.png
+
+Diaľková tabuľa
+Značka informuje o vzdialenostiach k vyznačeným diaľkovým cieľom. 
+V blízkosti odbočenia na inú diaľnicu uvádza značka pod čiarou informácie o diaľkových cieľoch tejto diaľnice. 
+Značku možno použiť aj mimo diaľnice; základná plocha značky je v takom prípade modrej farby.
+https://www.testynavodicak.eu/storage/znacky/376.png
+
+Turistická tabuľa
+Značka informuje o významnej atraktivite cestovného ruchu, ktorá je dostupná prostredníctvom nasledujúceho výjazdu.
+https://www.testynavodicak.eu/storage/znacky/377.jpg
+
+Tabuľový smerník na odpočívadle
+Značka na odpočívadle informuje o smere jazdy k vyznačeným objektom služieb, k parkovacím miestam podľa druhu vozidiel alebo o smere jazdy z odpočívadla.
+https://www.testynavodicak.eu/storage/znacky/378.png
+
+Cyklistický smerník tabuľový
+Značka informuje o smere jazdy k vyznačeným cieľom po cyklistickej trase a podľa potreby aj o vzdialenosti k týmto cieľom a o čísle alebo inom označení cyklotrasy. 
+Ak sa na značke vyobrazujú turistické ciele, nápisy a symboly sú hnedej farby.
+https://www.testynavodicak.eu/storage/znacky/380.png
+
+Cyklistický smerník šípový
+Značka informuje o smere odbočenia k vyznačeným cieľom po cyklistickej trase a podľa potreby aj o vzdialenosti k týmto cieľom a o čísle alebo inom označení cyklotrasy. 
+Ak sa na značke vyobrazujú turistické ciele, nápisy a symboly sú hnedej farby
+https://www.testynavodicak.eu/storage/znacky/381.png
+
+Cyklistický medzismerník
+Značka informuje o priebehu cyklotrasy cez križovatku.
+https://www.testynavodicak.eu/storage/znacky/382.png
+
+Číslo cyklotrasy
+Značka v spojení s cyklistickým smerníkom informuje o čísle alebo inom označení cyklotrasy.
+https://www.testynavodicak.eu/storage/znacky/383.png
+
+Náhradná trasa
+Značka informuje o smere jazdy po trvalo určenej náhradnej trase k diaľnici. Značka bez šípky informuje o začiatku náhradnej trasy a prečiarknutá značka bez šípky o konci náhradnej trasy. 
+Náhradná trasa k diaľnici vedie od výjazdu spravidla k nasledujúcemu vjazdu na tú istú diaľnicu a slúži na obchádzanie úseku diaľnice v prípade kolóny alebo iného dopravného obmedzenia. 
+Tam, kde sa stretáva viac náhradných trás, môže byť nad značkou pre lepšiu orientáciu umiestnená tabuľka vyznačujúca diaľkový cieľ príslušnej diaľnice alebo jej číslo.
+https://www.testynavodicak.eu/storage/znacky/390.png
+
+Zmena náhradnej trasy
+Značka informuje o pokračovaní náhradnej trasy po inej náhradnej trase.
+https://www.testynavodicak.eu/storage/znacky/391.png
+
+Uzávierková predzvesť
+Značka vopred informuje o čiastočnej alebo úplnej uzávierke cesty a podľa potreby o obchádzkovej trase.
+https://www.testynavodicak.eu/storage/znacky/392.png
+
+Ohlasovacia tabuľa obchádzky
+Značka informuje o blízkosti čiastočnej alebo úplnej uzávierky a k nej ustanovenej obchádzkovej trasy. 
+Na značke môže byť namiesto nápisu „obchádzka“ vyznačené číslo obchádzkovej trasy, diaľkový cieľ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka určená.
+https://www.testynavodicak.eu/storage/znacky/393.png
+
+Tabuľový smerník na vyznačenie obchádzky
+Značka informuje o smere jazdy po obchádzkovej trase. 
+Ak je obchádzková trasa číslovaná, uvádza sa jej číslo v hornej časti značky; značka bez šípky s uvedeným číslom obchádzkovej trasy informuje o začiatku obchádzkovej trasy a prečiarknutá značka bez šípky o konci náhradnej trasy. 
+Ak je obchádzková trasa určená pre určitý druh vozidiel, vyznačuje sa symbol vozidla na samostatnej tabuľke nad značkou; takto môže byť pre lepšiu orientáciu uvedený tiež diaľkový cieľ obchádzanej cesty alebo jej číslo. Ak obchádzková trasa nie je číslovaná, môžu sa tieto informácie uvádzať v hornej časti značky.
+https://www.testynavodicak.eu/storage/znacky/394.png
+
+Šípový smerník na vyznačenie obchádzky
+Značka označuje miesto a smer odbočenia obchádzkovej trasy; nachádza sa bezprostredne za miestom odbočenia. 
+Na značke môže byť namiesto nápisu „obchádzka“ vyznačené číslo obchádzkovej trasy, diaľkový cieľ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka určená.
+https://www.testynavodicak.eu/storage/znacky/395.png
+
+Koniec obchádzky
+Značka informuje o konci obchádzkovej trasy. 
+Na značke môže byť namiesto nápisu „obchádzka“ vyznačené číslo obchádzkovej trasy, diaľkový cieľ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka určená.
+https://www.testynavodicak.eu/storage/znacky/396.png
+
+Bloková obchádzka
+Značka vhodným spôsobom informuje v obci o križovatke, na ktorej je zakázané odbočenie alebo prikázaný smer jazdy a vyznačuje smer obchádzania.
+https://www.testynavodicak.eu/storage/znacky/397.png
+
+Počet jazdných pruhov
+Značka informuje o počte jazdných pruhov.
+https://www.testynavodicak.eu/storage/znacky/401-409.png
+
+Zníženie počtu jazdných pruhov
+Značka informuje o znížení počtu jazdných pruhov a o spôsobe jeho zníženia.
+https://www.testynavodicak.eu/storage/znacky/411-419.png
+
+Zvýšenie počtu jazdných pruhov
+Značka informuje o zvýšení počtu jazdných pruhov a o spôsobe jeho zvýšenia.
+https://www.testynavodicak.eu/storage/znacky/421-429.png
+
+Bezkolízne pripojenie
+Značka informuje o bezkolíznom spojení ciest a o spôsobe vedenia jazdných pruhov.
+https://www.testynavodicak.eu/storage/znacky/431-439.png
+
+Presmerovanie jazdných pruhov
+Značka informuje o presmerovaní jazdných pruhov do protismerného jazdného pásu, k okraju vozovky alebo o inej zmene smerovania jazdných pruhov.
+https://www.testynavodicak.eu/storage/znacky/441-449.png
+
+Radenie do jazdných pruhov pred križovatkou
+Značka informuje na viacpruhovej ceste o potrebe včasného zaradenia sa do jazdných pruhov pred križovatkou podľa jednotlivých smerov jazdy tam, kde je usporiadanie radiacich pruhov v križovatke neobvyklé alebo inak neočakávateľné
+https://www.testynavodicak.eu/storage/znacky/451-459.png

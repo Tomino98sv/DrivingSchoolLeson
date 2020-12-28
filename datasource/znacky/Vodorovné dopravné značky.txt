@@ -1,0 +1,76 @@
+Pozdĺžna súvislá čiara
+Značka vyznačuje jazdný pruh alebo okraj vozovky. 
+Ak značka vyznačuje jazdný pruh, je zakázané ju prechádzať alebo nákladom presahovať, ak to nie je potrebné na obchádzanie prekážky cestnej premávky. 
+Ak značka vyznačuje vyhradený pruh pre verejnú dopravu, je značka širšia a vnútri pruhu je v pravidelných vzdialenostiach doplnená symbolom BUS. 
+Ak značka vyznačuje cyklistický pruh, je značka širšia a vnútri pruhu je v pravidelných vzdialenostiach doplnená symbolom bicykla. 
+Ak značka vyznačuje vyhradený pruh pre verejnú dopravu alebo cyklistický pruh, má pre ostatných účastníkov cestnej premávky význam značky vyznačujúcej okraj vozovky. 
+Ak značka oddeľuje protismerné jazdné pruhy, môže byť vyznačená ako dvojitá čiara.
+https://www.testynavodicak.eu/storage/znacky/601.png
+
+Pozdĺžna prerušovaná čiara
+Značka vyznačuje jazdný pruh alebo okraj vozovky. 
+Značku možno prechádzať pri dodržaní pravidiel cestnej premávky. 
+Značka doplnená symbolom bicykla v pravidelných vzdialenostiach vyznačuje ochranný pruh pre cyklistov. Do ochranného pruhu pre cyklistov smie vodič motorového vozidla vojsť len v prípade nevyhnutnej potreby, pričom nesmie ohroziť cyklistov. 
+Ak je značka vyznačená ako dvojitá čiara, vyznačuje jazdný pruh používaný striedavo pre jeden aj druhý smer jazdy.
+https://www.testynavodicak.eu/storage/znacky/602.png
+
+Pozdĺžna súvislá čiara doplnená prerušovanou čiarou
+Značka vyznačuje jazdný pruh. 
+Vodič je povinný riadiť sa významom bližšej čiary.
+https://www.testynavodicak.eu/storage/znacky/603.png
+
+STOP čiara
+Značka vyznačuje miesto, kde je vodič povinný zastaviť na príkaz značky Stoj, daj prednosť v jazde! {1} alebo pred križovatkou s riadenou premávkou. 
+Značka môže byť doplnená nápisom STOP. 
+Značkou možno vyznačiť predsunutý priestor určený pre cyklistov čakajúcich na svetelný signál zelenej farby, pričom cyklista je povinný zastaviť až pred vzdialenejšou čiarou
+https://www.testynavodicak.eu/storage/znacky/604.png
+{1}=https://www.testynavodicak.eu/storage/znacky/202.png
+
+Čakacia čiara
+Značka vyznačuje miesto, kde sa vodičovi odporúča zastaviť vozidlo, ak dáva prednosť v jazde. 
+Značka môže byť vyznačená aj prerušovanou čiarou tvorenou malými plnými trojuholníkmi vrcholmi orientovanými proti smeru jazdy.
+{1}
+https://www.testynavodicak.eu/storage/znacky/605.png
+{1}=https://www.testynavodicak.eu/storage/znacky/605-2.jpg
+
+Priechod pre chodcov
+Značka vyznačuje priechod pre chodcov.
+https://www.testynavodicak.eu/storage/znacky/610.png
+
+Miesto na prechádzanie
+Značka vyznačuje miesto prispôsobené na prechádzanie chodcov a cyklistov.
+https://www.testynavodicak.eu/storage/znacky/611.png
+
+Priechod pre cyklistov
+Značka vyznačuje priechod pre cyklistov. 
+Ak je priechod pre cyklistov primknutý k priechodu pre chodcov, vyznačuje sa len jednou čiarou.
+https://www.testynavodicak.eu/storage/znacky/612.png
+
+Vyšrafovaný priestor
+Značka vyznačuje priestor, do ktorého je zakázané vchádzať alebo doň nákladom presahovať, ak to nie je potrebné na obchádzanie prekážky cestnej premávky.
+https://www.testynavodicak.eu/storage/znacky/620.jpg
+
+Cikcak čiara
+Značka vyznačuje priestor, kde je zakázané státie vozidiel. 
+Značka doplnená symbolom BUS alebo TRAM vyznačuje zastávku vozidiel pravidelnej verejnej dopravy osôb, na ktorej je zastavenie a státie dovolené len pre vozidlá pravidelnej verejnej dopravy osôb. 
+Značka doplnená symbolom TAXI vyznačuje stanovište taxíkov, na ktorom je zastavenie a státie dovolené len pre vozidlá taxislužby na vykonávanie zmluvnej prepravy osôb.
+https://www.testynavodicak.eu/storage/znacky/621.jpg
+
+Parkovacie miesta
+Značka vhodným spôsobom vyznačuje miesto, kde je dovolené zastavenie a státie a určený spôsob státia. 
+Ak značka vyznačuje priestor parkovacieho miesta s vyhradeným státím, môže byť doplnená vhodným nápisom alebo symbolom.
+https://www.testynavodicak.eu/storage/znacky/622.png
+
+Smerové šípky
+Smerové šípky vyznačené medzi pozdĺžnymi čiarami vyjadrujú spôsob radenia do jazdných pruhov a prikázaný smer jazdy cez nasledujúcu križovatku alebo odbočenie vo vyznačenom smere. 
+Značka doplnená symbolom BUS vyznačuje prikázaný smer jazdy cez nasledujúcu križovatku alebo odbočenie vo vyznačenom smere len pre vozidlá pravidelnej verejnej dopravy osôb.
+https://www.testynavodicak.eu/storage/znacky/630.png
+
+Predbežné šípky
+Značka umiestnená v osi priebežného jazdného pruhu vyznačuje jeho blížiace sa skončenie. 
+Značka umiestnená v osi Pozdĺžnej prerušovanej čiary na ceste s obojsmernou premávkou vyznačuje blížiaci sa prechod Pozdĺžnej prerušovanej čiary do Pozdĺžnej súvislej čiary.
+https://www.testynavodicak.eu/storage/znacky/631.png
+
+Koridor pre cyklistov
+Značka vyznačuje smer jazdy cyklistov. Vodičov motorových vozidiel upozorňuje, že sa nachádzajú na vozovke so zvýšeným pohybom cyklistov.
+https://www.testynavodicak.eu/storage/znacky/635.png
