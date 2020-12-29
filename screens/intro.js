@@ -2,26 +2,17 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, Dimensions, Animated, ScrollView, SafeAreaView } from 'react-native';
 import { globalStyles } from '../styles/global'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Component } from 'react';
 
-export default class IntroScreen extends Component {
+export default function IntroScreen({navigation}) {
  
-      state = {
-            oflineModeInfo: false,
-            oflineModeAnime: new Animated.Value(0),
-            onlineModeInfo: false,
-            onlineModeAnime: new Animated.Value(0),
-      }
+      const [oflineModeInfo, setOflineModeInfo] = useState(false);
+      const [onlineModeInfo, setOnlineModeInfo] = useState(false);
 
-      componentDidMount() {
-            // Animated.timing(this.state.fadeAnim, {
-            //       toValue: 0,
-            //       duration: 5000,
-            //       useNativeDriver: true
-            //     }).start();
-      }
+      const [oflineModeAnime, setOflineModeAnime] = useState(new Animated.Value(0));
+      const [onlineModeAnime, setOnlineModeAnime] = useState(new Animated.Value(0));
 
-      fadeIn(anim: Animated.Value): Animated.CompositeAnimation{
+
+      function fadeIn(anim){
             // Will change fadeAnim value to 1 in 5 seconds
             return Animated.timing(anim, {
                   toValue: 1,
@@ -30,7 +21,7 @@ export default class IntroScreen extends Component {
                 });
           };
         
-        fadeOut(anim: Animated.Value): Animated.CompositeAnimation{
+      function fadeOut(anim){
             // Will change fadeAnim value to 0 in 5 seconds
             return Animated.timing(anim, {
               toValue: 0,
@@ -40,9 +31,8 @@ export default class IntroScreen extends Component {
           };
      
 
-      render() {
 
-            return ( 
+      return ( 
                   <View style={styles.container}>
                         <ImageBackground source={require('../assets/images/introBCKG.png')} style={styles.image}>
 
@@ -53,7 +43,7 @@ export default class IntroScreen extends Component {
                         <View style = {styles.buttonsContainer}>
                               <ScrollView>
 
-                                    <TouchableOpacity onPress={() => {}} style={styles.buttoncontainer}>
+                                    <TouchableOpacity onPress={() => {navigation.navigate('FirstAid')}} style={styles.buttoncontainer}>
                                             <ImageBackground source = {require('../assets/images/blackbutton.png')} style={styles.blckbutton}>
                                                   <Text style = {styles.buttonText}>offline mode</Text>
                                             </ImageBackground>
@@ -62,21 +52,21 @@ export default class IntroScreen extends Component {
                                       <View style={styles.infoContainer}>
 
                                       <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobnosti</Text>
-                                      {this.state.oflineModeInfo ? (
-                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {this.fadeOut(this.state.oflineModeAnime).start(()=> {this.setState({oflineModeInfo: false})})}}/>
+                                      {oflineModeInfo ? (
+                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {fadeOut(oflineModeAnime).start(()=> {setOflineModeInfo(false)})}}/>
 
                                             ) : (
-                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-up-drop-circle" size={34} color="black" onPress={() => {this.setState({oflineModeInfo: true});this.fadeIn(this.state.oflineModeAnime).start()}}/>
+                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-up-drop-circle" size={34} color="black" onPress={() => {setOflineModeInfo(true);fadeIn(oflineModeAnime).start()}}/>
                                           )} 
                                     </View>
 
                                             <Animated.View
                                                 style={[
                                                       {
-                                                            opacity: this.state.oflineModeAnime,
+                                                            opacity: oflineModeAnime,
                                                             transform: [
                                                                   {
-                                                                        scale: this.state.oflineModeAnime.interpolate({
+                                                                        scale: oflineModeAnime.interpolate({
                                                                               inputRange: [0, 1],
                                                                               outputRange: [0.85, 1]
                                                                         })
@@ -86,14 +76,14 @@ export default class IntroScreen extends Component {
                                                       styles.infoContainer
                                                 ]} 
                                             >
-                                             {this.state.oflineModeInfo ?
-                                                <Animated.Text style={[styles.infoText, {opacity: this.state.oflineModeAnime}]}>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,</Animated.Text>   
+                                             {oflineModeInfo ?
+                                                <Animated.Text style={[styles.infoText, {opacity: oflineModeAnime}]}>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,</Animated.Text>   
                                                 :null}
                                             </Animated.View> 
                                              
                                       
 
-                                       <TouchableOpacity onPress={() => {}} style={styles.buttoncontainer}>
+                                       <TouchableOpacity onPress={() => {navigation.navigate('Login')}} style={styles.buttoncontainer}>
                                             <ImageBackground source = {require('../assets/images/redbutton.png')} style={styles.redbutton}>
                                                   <Text style = {styles.buttonText}>online mode</Text>
                                             </ImageBackground>
@@ -102,21 +92,21 @@ export default class IntroScreen extends Component {
                                       <View style={styles.infoContainer}>
 
                                       <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobnosti</Text>
-                                      {this.state.onlineModeInfo ? (
-                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {this.fadeOut(this.state.onlineModeAnime).start(()=> {this.setState({onlineModeInfo: false})})}}/>
+                                      {onlineModeInfo ? (
+                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {fadeOut(onlineModeAnime).start(()=> {setOnlineModeInfo(false)})}}/>
 
                                             ) : (
-                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-up-drop-circle" size={34} color="black" onPress={() => {this.setState({onlineModeInfo: true});this.fadeIn(this.state.onlineModeAnime).start()}}/>
+                                                      <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-up-drop-circle" size={34} color="black" onPress={() => {setOnlineModeInfo(true);fadeIn(onlineModeAnime).start()}}/>
                                           )} 
                                     </View>
 
                                             <Animated.View
                                                 style={[
                                                       {
-                                                            opacity: this.state.onlineModeAnime,
+                                                            opacity: onlineModeAnime,
                                                             transform: [
                                                                   {
-                                                                        scale: this.state.onlineModeAnime.interpolate({
+                                                                        scale: onlineModeAnime.interpolate({
                                                                               inputRange: [0, 1],
                                                                               outputRange: [0.85, 1]
                                                                         })
@@ -126,8 +116,8 @@ export default class IntroScreen extends Component {
                                                       styles.infoContainer
                                                 ]} 
                                             >
-                                             {this.state.onlineModeInfo ?
-                                                <Animated.Text style={[styles.infoText, {opacity: this.state.onlineModeAnime}]}>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,</Animated.Text>   
+                                             {onlineModeInfo ?
+                                                <Animated.Text style={[styles.infoText, {opacity: onlineModeAnime}]}>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,</Animated.Text>   
                                                 :null}
                                             </Animated.View>  
 
@@ -137,8 +127,7 @@ export default class IntroScreen extends Component {
 
                         </ImageBackground>
                   </View>  
-              )
-      }
+      )
 
 
 }

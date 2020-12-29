@@ -1,26 +1,19 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, Dimensions, Animated, ScrollView, SafeAreaView } from 'react-native';
-import { globalStyles } from '../styles/global'
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Component } from 'react';
+import { Button } from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, TouchableOpacity} from 'react-native';
 import Header from '../components/header';
 
-export default class TrafficSignScreen extends Component {
-     
-
-      render() {
-
+export default function FirstAid({navigation}) {
+          
             return ( 
                   <View style={styles.container}>
                         <ImageBackground source={require('../assets/images/introBCKG.png')} style={styles.image}>
 
-                             <Header title="dopravné značky"/>
-
+                             <Header title="prva pomoc" nav={navigation}/>
 
                         </ImageBackground>
                   </View>  
               )
-      }
 
 
 }

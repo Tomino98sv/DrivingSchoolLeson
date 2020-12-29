@@ -4,7 +4,7 @@
     "slug": "schoolDrivingLesson",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/iconkine.png",
+    "icon": "./assets/icons/iconkine.png",
     "splash": {
       "image": "./assets/images/patienceplease.png",
       "resizeMode": "contain",
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/iconkine.png",
+        "foregroundImage": "./assets/icons/iconkine.png",
         "backgroundColor": "#FFFFFF"
       }
     },
