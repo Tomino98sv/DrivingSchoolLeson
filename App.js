@@ -26,6 +26,7 @@ const [fontLoaded,setFontLoaded] = useState(false);
             startAsync={getFonts}
             onFinish={()=> setFontLoaded(true)}
             onError={console.warn}/>
+
 }
 
 const styles = StyleSheet.create({

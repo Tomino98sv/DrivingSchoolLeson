@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, Dimensions, Animated, ScrollView, SafeAreaView } from 'react-native';
-import { globalStyles } from '../styles/global'
+import { globalStyles } from '../global/globalStyles'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function IntroScreen({navigation}) {

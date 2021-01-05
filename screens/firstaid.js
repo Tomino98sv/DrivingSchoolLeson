@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Button } from 'react-native';
-import { StyleSheet, View, Text, ImageBackground, TouchableOpacity} from 'react-native';
+import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, FlatList} from 'react-native';
 import Header from '../components/header';
+import FirstAidItem from '../components/firstAidItem';
+import secNames from '../assets/sources/firstAidSections';
 
 export default function FirstAid({navigation}) {
           
@@ -11,8 +13,16 @@ export default function FirstAid({navigation}) {
 
                              <Header title="prva pomoc" nav={navigation}/>
 
+                             <FlatList
+                                    data={secNames}
+                                    renderItem={({item, index}) => <FirstAidItem title={item} />}
+                                    keyExtractor={(item, index) => index.toString()}
+
+                        /> 
+
                         </ImageBackground>
                   </View>  
+
               )
 
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, Dimensions, Animated, ScrollView, SafeAreaView } from 'react-native';
-import { globalStyles } from '../styles/global'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Component } from 'react';
 import Header from '../components/header';

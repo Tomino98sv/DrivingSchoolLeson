@@ -4,7 +4,7 @@ import React from 'react';
 import { StyleSheet, View, Text, Image, Dimensions } from 'react-native';
 import { Avatar, Divider  } from 'react-native-elements';
 
-import {Colors} from '../styles/global'
+import {Colors} from '../global/globalStyles'
 
 import IntroScreen from '../screens/intro';
 import TrafficSignScreen from '../screens/trafficsigns';
@@ -21,7 +21,8 @@ const DrawerContent = (props) => (
             alignItems: 'center',
             justifyContent: 'center',
             flexDirection: 'row',
-            marginLeft: 14
+            paddingLeft: 14,
+            backgroundColor: Colors.lightGreen,
           }}
         >
               <View style={{flex: 1}}>
@@ -35,7 +36,7 @@ const DrawerContent = (props) => (
         </View>
         <Divider style={{ backgroundColor: Colors.black, height: 1,}} />
 
-        <DrawerItems {...props} />
+        <DrawerItems {...props}/>
       </View>
     )
 
@@ -49,16 +50,16 @@ const RootDrawerNavigator = createDrawerNavigator({
                   drawerIcon: () => null
             }
       },
-      Settings: {
-            screen: Settings,
+      Test: {
+            screen: Tests,
             navigationOptions: {
-                  drawerLabel: 'Nastavenia',
+                  drawerLabel: 'Testy',
                   drawerIcon: ({focused}) => (
                         <Image
-                              source={!focused ? require('../assets/icons/setting.png') : require('../assets/icons/settingActiveY.png')}
+                              source={!focused ? require('../assets/icons/test.png') : require('../assets/icons/testActiveY.png')}
                               style={[focused ? styles.drawerActive : styles.drawerInActive]}
                               />
-                      )
+                  )
             }
       },
       TrafficSign: {
@@ -85,16 +86,16 @@ const RootDrawerNavigator = createDrawerNavigator({
                       )
             }
       },
-      Test: {
-            screen: Tests,
+      Settings: {
+            screen: Settings,
             navigationOptions: {
-                  drawerLabel: 'Testy',
+                  drawerLabel: 'Nastavenia',
                   drawerIcon: ({focused}) => (
                         <Image
-                              source={!focused ? require('../assets/icons/test.png') : require('../assets/icons/testActiveY.png')}
+                              source={!focused ? require('../assets/icons/setting.png') : require('../assets/icons/settingActiveY.png')}
                               style={[focused ? styles.drawerActive : styles.drawerInActive]}
                               />
-                  )
+                      )
             }
       },
 },{
@@ -102,7 +103,7 @@ const RootDrawerNavigator = createDrawerNavigator({
       contentComponent: DrawerContent,
       contentOptions: {
             activeTintColor: Colors.yellow,
-            activeBackgroundColor: 'transparent',
+            activeBackgroundColor: '#0E8B5B',
             inactiveTintColor: Colors.black,
             inactiveBackgroundColor: 'transparent',
             labelStyle: {
@@ -116,13 +117,13 @@ export default createAppContainer(RootDrawerNavigator);
 
 const styles = StyleSheet.create({
       drawerActive: {
-            height: 50,
-            width: 50,
+            height: 40,
+            width: 40,
             marginLeft: 14
       },
       drawerInActive: {
-            height: 35,
-            width: 35,
+            height: 25,
+            width: 25,
             marginLeft: 14
       },
 });

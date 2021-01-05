@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Text, TouchableOpacity, Dimensions } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import {Colors} from '../styles/global'
+import {Colors} from '../global/globalStyles'
 
 
 
