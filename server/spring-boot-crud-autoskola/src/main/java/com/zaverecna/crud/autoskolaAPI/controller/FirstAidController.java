@@ -36,8 +36,14 @@ public class FirstAidController {
         return service.getSectionNames();
     }
 
+    @GetMapping("/getTest")
+    public String getTest(){
+        return "testovacia linka";
+    }
+
     @PostMapping("/getAllQuestionsBySection")
     public List<FirstAidQuestion> getAllQuestionsBySection(@RequestBody String section){
+        System.out.println(section.getClass());
         return service.getAllQuestionBySection(section);
     }
 
