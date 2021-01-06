@@ -53,7 +53,7 @@ function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: a
                               [data.question,data.sectionGroup,data.count],
                               (txObj, resultSet) => {
                                     console.log("insert question complete")
-                                    insertFirstAidAnswers(txObj, data.id, data.answers)
+                                    insertFirstAidAnswers(txObj, resultSet.insertId, data.answers)
                                     }, 
                               ) 
                         })
@@ -75,6 +75,17 @@ function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: a
 export const downloadFirstAidQuestions = (section: string, callback: any) => {
       console.log("no toto")
 
+      const controller = new AbortController();
+      var counter = 0;
+      var myVar = setInterval(() => {
+            counter++;
+            if(counter == 10) {
+                  controller.abort()
+            }
+      }, 1000);
+
+
+
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "text/plain");
       
@@ -82,7 +93,8 @@ export const downloadFirstAidQuestions = (section: string, callback: any) => {
             method: 'POST',
             headers: myHeaders,
             redirect: 'follow',
-            body: section
+            body: section,
+            signal: controller.signal
           })
         .then(response => response.text()
         )
@@ -92,12 +104,18 @@ export const downloadFirstAidQuestions = (section: string, callback: any) => {
               insertFirstAidQuestions(res, (confirmed: boolean) => {
                     if(confirmed) {
                         callback(true)
+                        clearInterval(myVar);
+                        counter = 0;
                     }else {
-                          callback(false)
+                          callback(false) 
+                          clearInterval(myVar);
+                        counter = 0;
                     }
               });
         })
         .catch(error => {
+              clearInterval(myVar);
+              counter = 0;
               console.log('error', error);
               callback(false);
         });
@@ -143,8 +161,11 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
                         question.question = results.rows.item(i).question;
                         question.sectionGroup = results.rows.item(i).sectionGroup;
 
+                        // console.log(question)
+
                         firstAidQuestions.push(question)
                   }
+                  // console.log(section,": ",firstAidQuestions.length)
                   callback(firstAidQuestions)
                   }
              )
@@ -154,6 +175,31 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
           },
           () => {
             console.log("Transaction getFirstAidQuestionsBySection done");
+          })
+}
+
+
+export const getFirstAidQuestionsBySectionVsetko = (section: string,callback:any) => {
+
+      const firstAidQuestions: FirstAidQuestionModel[] = [];
+
+      db.transaction(tx => {
+            tx.executeSql('SELECT * FROM FirstAidQuestion where sectionGroup LIKE ?;',
+            [section],
+            (tx, results) => {
+                  for (let i = 0; i < results.rows.length; ++i) {
+                        console.log(results.rows.item(i))
+                  }
+                  // console.log(section,": ",firstAidQuestions.length)
+                  callback(firstAidQuestions)
+                  } 
+             )
+          },
+          error => {
+            console.log("Transaction getFirstAidQuestionsBySectionVsetko error", error);
+          },
+          () => {
+            console.log("Transaction getFirstAidQuestionsBySectionVsetko done");
           })
 }
 

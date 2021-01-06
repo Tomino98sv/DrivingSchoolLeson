@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
             textAlign: 'center',
             color: Colors.white,
             fontSize: 24,
-            fontFamily: 'AndadaSC-Regular',
+            fontFamily: 'MerriweatherSans-Medium',
+            // fontFamily: 'AndadaSC-Regular',
             textAlignVertical: 'center',
             padding: 15
       }

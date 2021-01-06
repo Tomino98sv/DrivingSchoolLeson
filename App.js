@@ -11,6 +11,7 @@ const getFonts = () => Font.loadAsync({
   'AndadaSC-Regular':require('./assets/fonts/AndadaSC-Regular.otf'),
   'Crimson-Semibold':require('./assets/fonts/Crimson-Semibold.otf'),
   'Crimson-SemiboldItalic':require('./assets/fonts/Crimson-SemiboldItalic.otf'),
+  'MerriweatherSans-Medium':require('./assets/fonts/MerriweatherSans-Medium.ttf'),
 });
 
 

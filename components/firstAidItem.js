@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../global/globalStyles';
-import {deleteFirstAidQuestionsBySection} from './../global/services';
-import {downloadFirstAidQuestions} from './../global/services';
+import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from './../global/services';
 
 export default function FirstAidItem({title}) {
 
       const [downloaded, setDownloaded] = useState(false);
+      const [loading, setLoading] = useState(false);
+
+      useEffect(() => {
+            getFirstAidQuestionsBySection(title, result => {
+                  if(result.length !== 0) {
+                        setDownloaded(true)
+                  }
+            })
+          }); 
 
          return (
             <View style={styles.cardContainer}>
@@ -44,7 +52,10 @@ export default function FirstAidItem({title}) {
                   }
       
                   <TouchableOpacity onPress={() => {  
+                        setLoading(true);
                         downloadFirstAidQuestions(title, value => {
+                              console.log(value)
+                              setLoading(false);
                               if(value) {
                                     setDownloaded(value) 
                               }else {
@@ -53,12 +64,12 @@ export default function FirstAidItem({title}) {
                               }
                         })}
                         } style={{alignItems: 'center', justifyContent: 'center', flex: 3}} disabled={downloaded}>
-                        <Image
+                              { loading ? <ActivityIndicator size="large" color={Colors.yellow}/> : <Image
                               source={downloaded ? require('../assets/icons/correct.png') : require('../assets/icons/icloud-download-475016_orange.png')}
                               style={styles.iconDownload}
-                              />
+                              />}
+                        
                   </TouchableOpacity>
-
 
                   </View>
 
@@ -94,7 +105,8 @@ const styles = StyleSheet.create({
             textAlign: 'center',
             color: Colors.white,
             fontSize: 24,
-            fontFamily: 'AndadaSC-Regular',
+            fontFamily: 'MerriweatherSans-Medium',
+            // fontFamily: 'AndadaSC-Regular',
             textAlignVertical: 'center',
             padding: 15
       }
