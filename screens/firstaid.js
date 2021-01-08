@@ -15,7 +15,7 @@ export default function FirstAid({navigation}) {
 
                              <FlatList
                                     data={secNames}
-                                    renderItem={({item, index}) => <FirstAidItem title={item} />}
+                                    renderItem={({item, index}) => <FirstAidItem title={item} nav={navigation} />}
                                     keyExtractor={(item, index) => index.toString()}
 
                         /> 

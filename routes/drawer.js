@@ -11,7 +11,7 @@ import TrafficSignScreen from '../screens/trafficsigns';
 import FirstAid from '../screens/firstaid';
 import Tests from '../screens/tests';
 import Settings from '../screens/settings';
-
+import FirstAidTest from '../components/firstAidTest';
 
 const DrawerContent = (props) => (
       <View>
@@ -98,6 +98,16 @@ const RootDrawerNavigator = createDrawerNavigator({
                       )
             }
       },
+      FirstAidTest: {
+            screen: FirstAidTest,
+            navigationOptions: {
+                  drawerLockMode: 'locked-closed',
+                  drawerLabel: () => null,
+                  title: null,
+                  drawerIcon: () => null
+            }
+            
+      }
 },{
       drawerBackgroundColor: Colors.navigation,
       contentComponent: DrawerContent,

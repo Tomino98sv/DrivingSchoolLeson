@@ -10,7 +10,7 @@ interface FirstAidAnswerModel {
       correctness: boolean
   }
   
-interface FirstAidQuestionModel {
+  interface FirstAidQuestionModel {
       id: number,
       question: string,
       sectionGroup: string,

@@ -5,21 +5,24 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../global/globalStyles';
 import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from './../global/services';
 
-export default function FirstAidItem({title}) {
+export default function FirstAidItem({nav,title}) {
 
       const [downloaded, setDownloaded] = useState(false);
       const [loading, setLoading] = useState(false);
 
+      let data = new Array();
+
       useEffect(() => {
             getFirstAidQuestionsBySection(title, result => {
                   if(result.length !== 0) {
+                        data = result;
                         setDownloaded(true)
                   }
             })
           }); 
 
          return (
-            <View style={styles.cardContainer}>
+            <TouchableOpacity style={styles.cardContainer} disabled={!downloaded} onPress={() => {nav.navigate('FirstAidTest',{title: title, data: data})}}>
 
                   <View style={{flex: 3, marginTop: 25, marginBottom: 25}}>
                         <Text style={styles.title}>{title}</Text>
@@ -73,7 +76,7 @@ export default function FirstAidItem({title}) {
 
                   </View>
 
-            </View>
+            </TouchableOpacity>
            ) 
 }
 
