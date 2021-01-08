@@ -52,7 +52,7 @@ public class FirstAidController {
         List<FirstAidQuestion> questionList = new ArrayList<>();
         int questionCount = 0;
         try {
-            FileInputStream fis = new FileInputStream("..\\datasource\\prvapomoc\\prvaPomoc1.docx");
+            FileInputStream fis = new FileInputStream("..\\datasource\\prvapomoc\\prvaPomoc_repaired.docx");
             XWPFDocument xdoc = new XWPFDocument(OPCPackage.open(fis));
 
             String section = "";
@@ -62,8 +62,9 @@ public class FirstAidController {
             List<FirstAidAnswer> answerList = new ArrayList<>();
             for (XWPFParagraph paragraph : xdoc.getParagraphs()) {
 
+
                 for (XWPFRun run : paragraph.getRuns()) {
-                    if(!run.toString().isBlank()){
+                    if(!run.toString().isEmpty()){ //there was !run.toString().isBlank()
                         if(run.isBold() && run.isItalic() && run.getUnderline().toString().equals("SINGLE")){
                             section = run.toString();
                         }else if(run.isBold()) {
@@ -83,6 +84,7 @@ public class FirstAidController {
                             answer.setAnswer(run.toString());
                             answer.setCorrectness(run.getUnderline().toString().equals("SINGLE"));
                             answerList.add(answer);
+//                            System.out.println("Question "+firstAidQuestion.getCount()+"\n\t answer: "+answer+" underline "+run.getUnderline().toString());
                             firstAidQuestion.setAnswers(answerList);
                         }
 

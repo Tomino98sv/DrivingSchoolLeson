@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-crud-autoskola" target="11" />
+      <module name="spring-boot-crud-autoskola" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
