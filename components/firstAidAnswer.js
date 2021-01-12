@@ -1,25 +1,55 @@
 import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../global/globalStyles';
-import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from './../global/services';
+import { useLinkedState } from "use-linked-state";
+import { connect } from 'react-redux';
 
-export default function FirstAidAnswer({answer, correctness}) {
 
-      const [answerChosen, setAnswerChosen] = useState(false);
+function FirstAidAnswer(props) {
+
+      const {answerText, correctness, indexAnswer, sharedStates, category, completed} = props;
+
+      // const [answer, setanswered] =  useLinkedState(sharedStates);
+      // const [answered, setanswered] =  sharedStates;
+      const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];
+      const [completedValue, setCompleted] = completed;
+
 
 
          return (
-            <View style={{backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}}>
-                  <TouchableOpacity onPress={() => {setAnswerChosen(!answerChosen)}}>
+            <View style={[
+                  {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
+                  answer.answerChosen ?  
+                                    props.rate_answr_immid ? 
+                                                      correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.red, borderTopWidth: 5 } 
+                                                      : {borderColor: Colors.yellow, borderTopWidth: 5 } 
+                                    : {}
+            ]}>
+                  
+                  <TouchableOpacity onPress={() => {
+
+                         sharedStates.forEach((value, indx, theArray) => {
+                              const [answerIterating, setAnswer] = value;
+                               if(category == "Otázky z jednou odpoveďou:" || "Otázky hodnotové s jednou odpoveďou" || "Otázky typu pravda/nepravda") {
+                                     if(indexAnswer == answerIterating.answerI){
+                                           var chosen = !answerIterating.answerChosen;
+                                           setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
+                                          setCompleted(chosen)
+                                     }else {
+                                          setAnswer({answerChosen:false, answerI: answerIterating.answerI, correctnessOfanswer: answerIterating.correctnessOfanswer});
+                                     }
+                               }
+                         })
+
+                        }} >
                         <Image
-                              source={answerChosen ? require('../assets/images/answerIcon.png') : require('../assets/images/checked.png')}
+                              source={!answer.answerChosen ? require('../assets/images/answerIconThumbnail.png') : props.rate_answr_immid ? correctness ? require('../assets/images/checkedCorrectThumbnail.png') : require('../assets/images/checkedWrongThumbnail.png') : require('../assets/images/checkedThumbnail.png')}
                               style={{ width: 50, height: 50}}
                         />
                   </TouchableOpacity>
 
-                  <Text style={{color: 'white'}}>{answer}</Text>
+                  <Text style={{color: 'white'}}>{answerText}</Text>
             </View>
            ) 
 }
@@ -27,3 +57,20 @@ export default function FirstAidAnswer({answer, correctness}) {
 const styles = StyleSheet.create({
       
 })
+
+//how to get store data into component
+const mapStateToProps = (state) => {
+      return {
+            rate_answr_immid: state.setting.rate_answer_immidiately
+      } 
+}
+
+export default connect(mapStateToProps)(FirstAidAnswer)
+
+
+      // "Otázky z jednou odpoveďou:",
+      // "Otázky hodnotové s jednou odpoveďou",
+      // "Otázky typu pravda/nepravda",
+      // "Otázky s viacnásobnou odpoveďou",
+      // "Otázky kde sú všetky odpovede správne",
+      // "Modelové situácie"

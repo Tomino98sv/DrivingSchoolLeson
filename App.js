@@ -1,10 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font'
 import AppLoading from 'expo-app-loading';
-import IntroScreen from './screens/intro';
 import Drawer from './routes/drawer';
+
+import {Provider} from 'react-redux';
+import configureStore from './stateManagement/store.js'
 
 const getFonts = () => Font.loadAsync({
   'AndadaSC-Bold':require('./assets/fonts/AndadaSC-Bold.otf'),
@@ -21,7 +22,9 @@ const [fontLoaded,setFontLoaded] = useState(false);
 
 
     if(fontLoaded) {
-        return <Drawer/>
+        return <Provider store={configureStore()}>
+                    <Drawer/>
+                </Provider>
     }
         return <AppLoading
             startAsync={getFonts}

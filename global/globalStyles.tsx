@@ -21,6 +21,7 @@ export const Colors = {
       black: "black",
       header: "#BB968E",
       navigation: "#195F44",
+      brown: '#562D3F'
 }
 
 
@@ -32,3 +33,7 @@ export const Colors = {
 //       console.log("width: ",width)
 //       console.log("height: ",height)
 //     }}
+
+// useEffect(() => {
+//       // action here
+//  }, [props.counter]); // checks for changes in the values in this array

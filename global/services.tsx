@@ -228,3 +228,4 @@ export const deleteFirstAidQuestionsBySection = (section: string, callback: any)
             console.log("Transaction deleteFirstAidQuestionsBySection done");
           })
 }
+
