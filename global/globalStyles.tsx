@@ -37,3 +37,5 @@ export const Colors = {
 // useEffect(() => {
 //       // action here
 //  }, [props.counter]); // checks for changes in the values in this array
+
+// the ability to persist a value across renders without causing a re-render is so fundamental that React comes with a built-in Hook for it called useRef

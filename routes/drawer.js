@@ -111,6 +111,7 @@ const RootDrawerNavigator = createDrawerNavigator({
 },{
       drawerBackgroundColor: Colors.navigation,
       contentComponent: DrawerContent,
+      unmountInactiveRoutes: true,
       contentOptions: {
             activeTintColor: Colors.yellow,
             activeBackgroundColor: '#0E8B5B',

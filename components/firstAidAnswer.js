@@ -2,18 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
 import {Colors} from '../global/globalStyles';
-import { useLinkedState } from "use-linked-state";
 import { connect } from 'react-redux';
 
 
 function FirstAidAnswer(props) {
 
-      const {answerText, correctness, indexAnswer, sharedStates, category, completed} = props;
+      const {answerText, correctness, indexAnswer, sharedStates, category, completed, viewPager, currentPage, rate_answr_immid} = props;
 
-      // const [answer, setanswered] =  useLinkedState(sharedStates);
-      // const [answered, setanswered] =  sharedStates;
       const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];
-      const [completedValue, setCompleted] = completed;
+      const completedRef = completed;
 
 
 
@@ -21,7 +18,7 @@ function FirstAidAnswer(props) {
             <View style={[
                   {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
                   answer.answerChosen ?  
-                                    props.rate_answr_immid ? 
+                                    rate_answr_immid ? 
                                                       correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.red, borderTopWidth: 5 } 
                                                       : {borderColor: Colors.yellow, borderTopWidth: 5 } 
                                     : {}
@@ -34,8 +31,11 @@ function FirstAidAnswer(props) {
                                if(category == "Otázky z jednou odpoveďou:" || "Otázky hodnotové s jednou odpoveďou" || "Otázky typu pravda/nepravda") {
                                      if(indexAnswer == answerIterating.answerI){
                                            var chosen = !answerIterating.answerChosen;
+                                           if(chosen) {
+                                                viewPager.current.setPage(currentPage+1)
+                                           }
                                            setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
-                                          setCompleted(chosen)
+                                           completedRef.current = chosen;
                                      }else {
                                           setAnswer({answerChosen:false, answerI: answerIterating.answerI, correctnessOfanswer: answerIterating.correctnessOfanswer});
                                      }
