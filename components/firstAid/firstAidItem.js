@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
-import {Colors} from '../global/globalStyles';
-import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from './../global/services';
+import {Colors} from '../../global/globalStyles';
+import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from '../../global/services';
 
 export default function FirstAidItem({nav,title}) {
 
@@ -43,9 +43,9 @@ export default function FirstAidItem({nav,title}) {
                               alert("error while deleting question and answers from ",title) 
                         }
                   })}} style={{flex: 1,}}>
-                                            <ImageBackground source = {require('../assets/images/deleteShapeWithShadows.png')} style={{ width: 90, height: 35, alignSelf: 'flex-end', alignItems: 'center', elevation: 5}}>
+                                            <ImageBackground source = {require('../../assets/images/deleteShapeWithShadows.png')} style={{ width: 90, height: 35, alignSelf: 'flex-end', alignItems: 'center', elevation: 5}}>
                                             <Image
-                                                source={require('../assets/icons/trashIconAngle.png')}
+                                                source={require('../../assets/icons/trashIconAngle.png')}
                                                 style={{width: 25, height: 25, margin: 5, marginLeft: 20}}
                                                 />                                            
 
@@ -68,7 +68,7 @@ export default function FirstAidItem({nav,title}) {
                         })}
                         } style={{alignItems: 'center', justifyContent: 'center', flex: 3}} disabled={downloaded}>
                               { loading ? <ActivityIndicator size="large" color={Colors.yellow}/> : <Image
-                              source={downloaded ? require('../assets/icons/correct.png') : require('../assets/icons/icloud-download-475016_orange.png')}
+                              source={downloaded ? require('../../assets/icons/correct.png') : require('../../assets/icons/icloud-download-475016_orange.png')}
                               style={styles.iconDownload}
                               />}
                         

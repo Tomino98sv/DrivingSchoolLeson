@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
-import {Colors} from '../global/globalStyles';
+import {Colors} from '../../global/globalStyles';
 import { connect } from 'react-redux';
 
 
 function FirstAidAnswer(props) {
 
-      const {answerText, correctness, indexAnswer, sharedStates, category, completed, viewPager, currentPage, rate_answr_immid} = props;
+      const {answerText, correctness, indexAnswer, sharedStates, category, completed, viewPager, currentPage, rate_answr_immid, indexQ} = props;
 
       const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];
       const completedRef = completed;
 
+
+      useEffect(() => {
+
+            console.log("ComponentMount FirstAidAnswer answerIndex ",indexAnswer," question Index ",indexQ);
+
+      return () => {
+            console.log("ComponentUnMount FirstAidAnswer answerIndex",indexAnswer," question Index ",indexQ);
+      }
+
+      }, [completedRef.current])  
 
 
          return (
@@ -21,7 +31,7 @@ function FirstAidAnswer(props) {
                                     rate_answr_immid ? 
                                                       correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.red, borderTopWidth: 5 } 
                                                       : {borderColor: Colors.yellow, borderTopWidth: 5 } 
-                                    : {}
+                                    :{}
             ]}>
                   
                   <TouchableOpacity onPress={() => {
@@ -42,9 +52,9 @@ function FirstAidAnswer(props) {
                                }
                          })
 
-                        }} >
+                        }} disabled={rate_answr_immid && completedRef.current}>
                         <Image
-                              source={!answer.answerChosen ? require('../assets/images/answerIconThumbnail.png') : props.rate_answr_immid ? correctness ? require('../assets/images/checkedCorrectThumbnail.png') : require('../assets/images/checkedWrongThumbnail.png') : require('../assets/images/checkedThumbnail.png')}
+                              source={!answer.answerChosen ? require('../../assets/images/answerIconThumbnail.png') : props.rate_answr_immid ? correctness ? require('../../assets/images/checkedCorrectThumbnail.png') : require('../../assets/images/checkedWrongThumbnail.png') : require('../../assets/images/checkedThumbnail.png')}
                               style={{ width: 50, height: 50}}
                         />
                   </TouchableOpacity>

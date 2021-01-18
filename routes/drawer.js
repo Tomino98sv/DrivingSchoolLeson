@@ -11,7 +11,7 @@ import TrafficSignScreen from '../screens/trafficsigns';
 import FirstAid from '../screens/firstaid';
 import Tests from '../screens/tests';
 import Settings from '../screens/settings';
-import FirstAidTest from '../components/firstAidTest';
+import FirstAidTest from '../components/firstAid/firstAidTest';
 
 const DrawerContent = (props) => (
       <View>

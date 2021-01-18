@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-native';
 import { StyleSheet, View, Text, ImageBackground, TouchableOpacity, FlatList} from 'react-native';
 import Header from '../components/header';
-import FirstAidItem from '../components/firstAidItem';
+import FirstAidItem from '../components/firstAid/firstAidItem';
 import secNames from '../assets/sources/firstAidSections';
 
 export default function FirstAid({navigation}) {

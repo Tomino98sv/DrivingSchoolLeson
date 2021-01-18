@@ -37,7 +37,7 @@ export default function IntroScreen({navigation}) {
                         <ImageBackground source={require('../assets/images/introBCKG.png')} style={styles.image}>
 
                               <View style = {styles.header}>
-                                      <Text style = {[globalStyles.headText, styles.title]}>Chces sa ucit soferovat ty debil?</Text>
+                                      <Text style = {[globalStyles.headText, styles.title]}>Want to drive noob?</Text>
                                 </View>
 
                         <View style = {styles.buttonsContainer}>
