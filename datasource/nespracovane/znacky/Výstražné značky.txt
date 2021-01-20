@@ -1,0 +1,121 @@
+Nebezpeèenstvo
+<span>Znaèka upozoròuje na iné nebezpeèenstvo ako na to,<br>na ktoré mono upozorni vhodnou vıstranou<br>znaèkou.</span>
+https://www.testynavodicak.eu/storage/znacky/101.png
+
+Zákruta
+<span>Znaèka upozoròuje na nebezpeènú zákrutu vo vyznaèenom smere, ktorej bezpeènı prejazd si vyaduje vırazné zníenie rıchlosti jazdy.</span>
+https://www.testynavodicak.eu/storage/znacky/110.png
+
+Dvojitá zákruta
+<span>Znaèka upozoròuje na dve alebo viac zákrut nasledujúcich bezprostredne za sebou vo vyznaèenom smere, ktorıch bezpeènı prejazd si vyaduje vırazné zníenie rıchlosti jazdy. 
+<br>
+<br>Ak je zákrut viac, vyznaèí sa dåka nebezpeèného úseku na dodatkovej tabu¾ke Dåka úseku <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/502.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/111.png
+
+Klesanie
+<span>Znaèka upozoròuje na nebezpeèné klesanie.</span>
+https://www.testynavodicak.eu/storage/znacky/112.png
+
+Stúpanie
+<span>Znaèka upozoròuje na nebezpeèné stúpanie.</span>
+https://www.testynavodicak.eu/storage/znacky/113.png
+
+Zúená vozovka
+<span>Znaèka upozoròuje na zúenú vozovku z vyznaèenej<br>strany alebo strán.</span>
+https://www.testynavodicak.eu/storage/znacky/114.png
+
+Nerovnos vozovky
+<span>Znaèka upozoròuje na nerovnosti povrchu vozovky<br>ako sú vıtlky, vımole alebo vyjazdené ko¾aje.</span>
+https://www.testynavodicak.eu/storage/znacky/115.png
+
+Nebezpeèná krajnica
+<span>Znaèka upozoròuje na zníenú, nespevnenú alebo inak nebezpeènú krajnicu.</span>
+https://www.testynavodicak.eu/storage/znacky/116.png
+
+Nebezpeèenstvo šmyku
+<span>Znaèka upozoròuje na zvıšené riziko vzniku šmyku<br>vozidla aj na suchej ceste.</span>
+https://www.testynavodicak.eu/storage/znacky/120.png
+
+Sneh alebo po¾adovica
+<span>Znaèka upozoròuje na ujazdenı alebo z¾adovatenı<br>sneh alebo na po¾adovicu.</span>
+https://www.testynavodicak.eu/storage/znacky/121.png
+
+Štrk na vozovke
+<span>Znaèka upozoròuje na zvıšené riziko odletujúceho<br>štrku spod kolies vozidla.</span>
+https://www.testynavodicak.eu/storage/znacky/122.png
+
+Padnuté kamene
+<span>Znaèka upozoròuje na zvıšené riziko vıskytu<br>kameòov v dôsledku zosuvu alebo padania kameòov<br>na vozovku.<br>Ak je riziko prevane na ¾avej strane vozovky, symbol<br>sa vyobrazuje zrkadlovo.</span>
+https://www.testynavodicak.eu/storage/znacky/125.png
+
+Boènı vietor
+<span>Znaèka upozoròuje na zvıšené riziko silného alebo<br>nárazového vetra</span>
+https://www.testynavodicak.eu/storage/znacky/126.png
+
+Kolóny
+<span>Znaèka upozoròuje na vytváranie kolóny vozidiel.</span>
+https://www.testynavodicak.eu/storage/znacky/130.png
+
+Práca
+<span>Znaèka upozoròuje na prácu na ceste alebo v jej<br>blízkosti, ktorá môe ohrozi bezpeènos cestnej<br>premávky alebo pri ktorej môu by ohrození<br>pracovníci, ktorí túto èinnos vykonávajú.</span>
+https://www.testynavodicak.eu/storage/znacky/131.png
+
+Obojsmerná premávka
+<span>Znaèka upozoròuje, e na rozdiel od doterajšieho<br>úseku je cestná premávka vedená v oboch smeroch.</span>
+https://www.testynavodicak.eu/storage/znacky/132.png
+
+Svetelné signály
+<span>Znaèka upozoròuje na riadenie cestnej premávky<br>svetelnımi signálmi.</span>
+https://www.testynavodicak.eu/storage/znacky/135.png
+
+Kriovatka
+<span>Znaèka upozoròuje na kriovatku, kde nie je prednos<br>v jazde upravená dopravnımi znaèkami a uplatòujú sa<br>všeobecné pravidlá o prednosti v jazde.</span>
+https://www.testynavodicak.eu/storage/znacky/136.png
+
+Chodci
+<span>Znaèka upozoròuje na zvıšenı pohyb chodcov na<br>vozovke.</span>
+https://www.testynavodicak.eu/storage/znacky/140.png
+
+Deti
+<span>Znaèka upozoròuje na zvıšenı pohyb detí a zvıšené<br>riziko ich neoèakávaného vstupu do vozovky.</span>
+https://www.testynavodicak.eu/storage/znacky/141.png
+
+Priechod pre chodcov
+<span>Znaèka upozoròuje na priechod pre chodcov.</span>
+https://www.testynavodicak.eu/storage/znacky/142.png
+
+Cyklisti
+<span>Znaèka upozoròuje na zvıšenı pohyb cyklistov alebo na miesto, kde cyklisti prechádzajú cez cestu alebo na òu vchádzajú.</span>
+https://www.testynavodicak.eu/storage/znacky/143.png
+
+Zver
+<span>Znaèka upozoròuje na zvıšené nebezpeèenstvo neoèakávaného pohybu vo¾ne ijúcej zveri cez cestu.
+<br>Ak je symbol na znaèke nahradenı symbolom obojivelníka, znaèka upozoròuje na miesto, kde vo
+<br>väèšom mnostve tiahnu cez cestu drobné ivoèíchy. <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/145-2.png'></span>
+https://www.testynavodicak.eu/storage/znacky/145.png
+
+Hospodárske zvieratá
+<span>Znaèka upozoròuje na èastı vıskyt hnanıch<br>hospodárskych zvierat na ceste.</span>
+https://www.testynavodicak.eu/storage/znacky/146.png
+
+Priecestie
+<span>Znaèka upozoròuje na priecestie.</span>
+https://www.testynavodicak.eu/storage/znacky/151.png
+
+Náves pred priecestím
+<span>Znaèka informuje o vzdialenosti k priecestiu. 
+<br>
+<br>Znaèka s vyznaèenımi tromi pruhmi informuje o vzdialenosti 240 m k priecestiu, znaèka s dvoma pruhmi o vzdialenosti 160 m k priecestiu a znaèka s jednım pruhom o vzdialenosti 80 m k priecestiu. 
+<br>
+<br>V prípade inıch ako uvedenıch vzdialeností sa
+<br>skutoèná vzdialenos uvedie v hornej èasti znaèky.</span>
+https://www.testynavodicak.eu/storage/znacky/152.png
+
+Vıstranı krí
+<span>Znaèka oznaèuje priecestie.
+<br>
+<br>Ak je na znaèke v strede kría vyobrazenı symbol blesku, znaèka tie informuje o tom, e dráha je elektrifikovaná a v jej priestore je vysoké napätie. 
+<br>
+<br>Ak z priestorovıch dôvodov nie je vhodné vıstranı krí umiestni zvisle, umiestni sa vodorovne.</span>
+https://www.testynavodicak.eu/storage/znacky/153.png
+

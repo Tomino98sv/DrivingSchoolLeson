@@ -1,0 +1,56 @@
+Zábrana na oznaèenie uzávierky
+<span>Zábrana na oznaèenie uzávierky vyznaèuje uzávierku celej šírky cesty alebo jej èasti.</span>
+https://www.testynavodicak.eu/storage/znacky/701.png
+
+Smerovacia doska (šípová) (šrafovaná)
+<span>Smerovacie dosky usmeròujú cestnú premávku v smere v smere šípky alebo v smere sklonu šikmıch pruhov. 
+<br>
+<br>Smerovacie dosky môu by umiestnené na ltıch vodiacich prahoch, ktoré majú vıznam Pozdånej súvislej èiary ltej farby.</span>
+https://www.testynavodicak.eu/storage/znacky/702.png
+
+Dopravnı kue¾
+<span>Dopravné kuele umiestnené v rade za sebou vymedzujú priestor, do ktorého je zakázané vchádza.</span>
+https://www.testynavodicak.eu/storage/znacky/703.png
+
+Smerovacia tabu¾a
+<span>Smerovacie tabule usmeròujú cestnú premávku v smere šípky alebo šípok.</span>
+https://www.testynavodicak.eu/storage/znacky/705.png
+
+Vodiaca tabu¾a
+<span>Vodiaca tabu¾a oznaèuje trvalú prekáku a usmeròuje cestnú premávku v smere sklonu šikmıch pruhov.</span>
+https://www.testynavodicak.eu/storage/znacky/706.png
+
+Èervené a biele pruhy
+<span>Èervené a biele pruhy vyznaèujú spravidla trvalé objekty obmedzujúce cestnú premávku.</span>
+https://www.testynavodicak.eu/storage/znacky/707.png
+
+Smerovı ståpik (¾avı) (pravı)
+<span>Smerové ståpiky vymedzujú smerové vedenie cesty a jej šírku, prípadne èiastoènú vo¾nú šírku smerovo rozdelenej cesty. 
+<br>
+<br>Smerovı ståpik na moste, v jeho blízkosti alebo na inıch miestach so zvıšenım nebezpeèenstvom tvorby námrazy môe by doplnenı modrou plochou s odrazkou. 
+<br>
+<br><img style='width: auto' src='https://www.testynavodicak.eu/storage/znacky/710-2.png'>
+<br>
+<br>Na boènej strane smerového ståpika môe by vyznaèenı smer k telefónu núdzového volania <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/nudzovy-telefon.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/710.png
+
+Ståpik s vıstrahou (¾avı) (pravı)
+<span>Ståpiky s vıstrahou vymedzujú šírku cesty alebo èiastoènú vo¾nú šírku cesty na moste, v jeho blízkosti alebo na inıch miestach so zvıšenım nebezpeèenstvom tvorby námrazy.</span>
+https://www.testynavodicak.eu/storage/znacky/711.png
+
+Pojazdná uzávierková tabu¾a
+<span>Pojazdná uzávierková tabu¾a vhodnou kombináciou zvislıch znaèiek a svetelnıch signálov najmä krátkodobo oznaèuje prekáku cestnej premávky, uzávierku jazdného pruhu alebo statické alebo pohyblivé pracovné miesto na ceste.</span>
+https://www.testynavodicak.eu/storage/znacky/720.png
+
+Zelená šípka
+<span>Zelená šípka umoòuje vodièovi po zastavení pred kriovatkou odboèi vpravo aj vtedy, ak svieti signál èervenej farby. 
+<br>
+<br>Vodiè smie odboèi doprava len z pravého pruhu a nesmie pri prejazde kriovatkou obmedzi ani ohrozi inıch úèastníkov cestnej premávky, najmä chodcov, cyklistov a vozidlá jazdiace vo vo¾nom smere. 
+<br>
+<br>Vhodnım spôsobom mono obmedzi zelenú šípku len na cyklistov.</span>
+https://www.testynavodicak.eu/storage/znacky/730.png
+
+Èierna šípka
+<span>Èierna šípka umoòuje vodièovi otoèi sa v kriovatke s riadenou premávkou, ak svieti signál zelenej farby. Vodiè pritom nesmie ohrozi ani obmedzi inıch úèastníkov cestnej premávky, najmä chodcov, cyklistov a vozidlá jazdiace vo vo¾nom smere.</span>
+https://www.testynavodicak.eu/storage/znacky/731.png
+

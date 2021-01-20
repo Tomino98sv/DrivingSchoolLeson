@@ -1,0 +1,124 @@
+Vzdialenos
+<span>Dodatková tabu¾ka vyznaèuje vzdialenos k 
+<br>a) nebezpeèenstvu, na ktoré upozoròuje vıstraná znaèka, pod ktorou je umiestnená, 
+<br>b) regulaènej znaèke, ktorou zaèína regulácia vyznaèená regulaènou znaèkou, pod ktorou je umiestnená, 
+<br>c) miestu, o ktorom informuje informaèná znaèka, pod ktorou je umiestnená.</span>
+https://www.testynavodicak.eu/storage/znacky/501.png
+
+Dåka úseku
+<span>Dodatková tabu¾ka vyznaèuje dåku 
+<br>a) nebezpeèného úseku, ak je umiestnená pod vıstranou znaèkou, 
+<br>b) platnosti znaèky Snehové reaze <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/251.png'>, Najvyššia dovolená rıchlos <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/253.png'>, Zákaz predchádzania <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/254.png'>, Zákaz predchádzania pre nákladné vozidlá <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/255.png'> alebo Minimálna vzdialenos medzi vozidlami <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/256.png'>, pod ktorou je umiestnená, 
+<br>c) platnosti pruhovej znaèky, pod ktorou je umiestnená.</span>
+https://www.testynavodicak.eu/storage/znacky/502.png
+
+Smerová šípka
+<span>Dodatková tabu¾ka vyznaèuje smer k 
+<br>a) nebezpeèenstvu, na ktoré upozoròuje vıstraná znaèka, pod ktorou je umiestnená, 
+<br>b) regulaènej znaèke, ktorou sa zaèína regulácia vyznaèená regulaènou znaèkou, pod ktorou je umiestnená, 
+<br>c) miestu, o ktorom informuje informaèná znaèka, pod ktorou je umiestnená.</span>
+https://www.testynavodicak.eu/storage/znacky/503.png
+
+Smer platnosti
+<span>Dodatková tabu¾ka vyznaèuje smer platnosti dopravnej znaèky, pod ktorou je umiestnená. Dodatková tabu¾ka môe by doplnená údajom o dåke platnosti danım smerom v metroch.</span>
+https://www.testynavodicak.eu/storage/znacky/504.png
+
+Èasové obmedzenie
+<span>Dodatková tabu¾ka obmedzuje platnos znaèky, pod ktorou je umiestnená, len na vyznaèené èasové obdobie.</span>
+https://www.testynavodicak.eu/storage/znacky/505.png
+
+Platí pre
+<span>Dodatková tabu¾ka obmedzuje platnos znaèky, pod ktorou je umiestnená, len na vyznaèenıch úèastníkov cestnej premávky.</span>
+https://www.testynavodicak.eu/storage/znacky/506.png
+
+Neplatí pre
+<span>Dodatková tabu¾ka vyníma z platnosti znaèky, pod ktorou je umiestnená, vyznaèenıch úèastníkov cestnej premávky.</span>
+https://www.testynavodicak.eu/storage/znacky/507.png
+
+Hmotnos
+<span>Dodatková tabu¾ka obmedzuje platnos znaèky, pod ktorou je umiestnená, len na vozidlá a jazdné súpravy s celkovou hmotnosou prevyšujúcou vyznaèenú hranicu. Dodatková tabu¾ka umiestnená pod znaèkou Zákaz predchádzania pre nákladné vozidlá rozširuje<br>zákaz na všetky vozidlá a jazdné súpravy s celkovou hmotnosou prevyšujúcou vyznaèenú hranicu.</span>
+https://www.testynavodicak.eu/storage/znacky/508.png
+
+Spresòujúce informácie
+<span>Dodatková tabu¾ka podrobnejšie informuje o povahe alebo inıch charakteristikách nebezpeèenstva, regulácie alebo informácie vyznaèenej znaèkou, pod ktorou je umiestnená; v prípade potreby informuje o uvedenıch skutoènostiach v inom ako štátnom jazyku.</span>
+https://www.testynavodicak.eu/storage/znacky/509.png
+
+Priebeh hlavnej cesty
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/201.png'>, Stoj, daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/202.png'> alebo Hlavná cesta <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/302.png'> vyznaèuje priebeh hlavnej cesty, ak hlavná cesta vedie cez kriovatku inak ako priamo alebo je jej priebeh ako rozoznate¾nı. Hlavná cesta je vyznaèená hrubšou èiarou.</span>
+https://www.testynavodicak.eu/storage/znacky/510.png
+
+Vzdialenos k povinnému zastaveniu
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/201.png'> vyznaèuje vzdialenos k znaèke Stoj, daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/202.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/511.png
+
+Prieèna jazda elektrièky
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/201.png'> alebo Stoj, daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/202.png'> ukladá vodièovi povinnos da prednos v jazde a zároveò da prednos v jazde elektrièke.</span>
+https://www.testynavodicak.eu/storage/znacky/512.png
+
+Prieèna jazda cyklistov
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/201.png'> alebo Stoj, daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/202.png'> ukladá vodièovi povinnos da prednos v jazde a zároveò da prednos v jazde cyklistom sprava aj z¾ava idúcim súbene s cestou. Dodatková tabu¾ka umiestnená pod znaèkou Jednosmerná cesta <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/321-1.png'> umoòuje cyklistom jazdi v oboch smeroch; vodiè iného vozidla je povinnı zvıši opatrnos voèi cyklistom pri odboèovaní na jednosmernú cestu a v jej priebehu.</span>
+https://www.testynavodicak.eu/storage/znacky/513.png
+
+Obojsmerná jazda cyklistov
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Jednosmerná cesta <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/321-2.png'> umoòuje cyklistom jazdi v oboch smeroch; vodiè iného vozidla je povinnı zvıši opatrnos voèi cyklistom v priebehu jednosmernej cesty.</span>
+https://www.testynavodicak.eu/storage/znacky/514.png
+
+Vo¾no
+<span>Dodatková tabu¾ka umiestnená pod znaèkou oznaèujúcou špeciálnu cestièku alebo pruh umoòuje poui špeciálnu cestièku alebo pruh vyznaèenım úèastníkom cestnej premávky, avšak neprikazuje im ju poui. 
+<br>
+<br>Ak ide o špeciálnu cestièku alebo pruh urèenı pre chodcov alebo pre cyklistov, úèastník cestnej premávky, ktorému sa umoní takúto cestièku alebo pruh poui, nesmie pritom obmedzi ani ohrozi chodca alebo cyklistu. 
+<br>
+<br>Dodatková tabu¾ka umiestnená pod znaèkou Pešia zóna <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/317.png'> umoòuje vjazd do pešej zóny vyznaèenım úèastníkom cestnej premávky.</span>
+https://www.testynavodicak.eu/storage/znacky/515.png
+
+Tranzit
+<span>Dodatková tabu¾ka umiestnená pod znaèkou o zákaze vjazdu umoòuje vjazd 
+<br>a) vozidlom, ktorého cie¾ jazdy je dosiahnute¾nı len cestou, na ktorú sa vzahuje zákaz vjazdu, alebo len prostredníctvom cesty, na ktorú sa vzahuje zákaz vjazdu, 
+<br>b) vozidlom, ktoré je oslobodené od platby mıta za vymedzené úseky ciest, alebo 
+<br>c) vozidlom autoškoly pri vıcviku, skúške alebo preskúšaní.</span>
+https://www.testynavodicak.eu/storage/znacky/520.png
+
+Kategória tunela
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Zákaz vjazdu pre vozidlá prepravujúce nebezpeèné veci <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/234.png'> obmedzuje zákaz len na vozidlá prepravujúce urèité nebezpeèné veci, ktoré je zakázané prepravova cez tunel vyznaèenej kategórie.</span>
+https://www.testynavodicak.eu/storage/znacky/521.png
+
+Jediné vozidlo
+<span>Dodatková tabu¾ka s vyznaèenou hodnotou v tonách umiestnená pod znaèkou Maximálna hmotnos <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/240.png'> umoòuje vjazd vozidlom, ktorého okamitá hmotnos vrátane nákladu, ak ide o jazdnú súpravu, okamitá hmotnos všetkıch vozidiel súpravy, síce presahuje vyznaèenú hranicu na znaèke, nie však hranicu na dodatkovej tabu¾ke. 
+<br>
+<br>Dodatková tabu¾ka s vyznaèenou hodnotou v metroch umiestnená pod znaèkou Maximálna dåka <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/244.png'> umoòuje vjazd vozidlom, ktorého okamitá dåka vrátane nákladu, ak ide o jazdnú súpravu, okamitá dåka súpravy, síce presahuje vyznaèenú hranicu na znaèke, nie však hranicu na dodatkovej tabu¾ke. 
+<br>
+<br>Vodiè takého vozidla je povinnı zabezpeèi, aby na danı úsek nevošlo súèasne zo iadneho smeru iné vozidlo.</span>
+https://www.testynavodicak.eu/storage/znacky/522.png
+
+Predchádzanie zvláštnych vozidiel
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Zákaz predchádzania <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/254.png'> umoòuje predchádza zvláštne motorové vozidlá.</span>
+https://www.testynavodicak.eu/storage/znacky/525.png
+
+Rozšírenie zákazu predchádzania
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Zákaz predchádzania pre nákladné vozidlá <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/255.png'> rozširuje zákaz aj na autobusy a osobné vozidlá s prívesom.</span>
+https://www.testynavodicak.eu/storage/znacky/526.png
+
+Emisná trieda
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Nízkoemisná zóna <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/248.png'> vyznaèuje emisnú triedu, ktorá sa vzahuje na reguláciu premávky vozidiel v nízkoemisnej zóne.</span>
+https://www.testynavodicak.eu/storage/znacky/527.png
+
+Obmedzenie parkovania na krajnici
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Zákaz zastavenia <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/270.png'> alebo Zákaz státia <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/271.png'> rozširuje zákaz aj na krajnicu.</span>
+https://www.testynavodicak.eu/storage/znacky/530.png
+
+Vyhradené parkovanie
+<span>Dodatková tabu¾ka umiestnená pod znaèkou Zákaz zastavenia <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/270.png'> umoòuje zastavi a stá na parkovacom mieste len pre urèité vozidlo alebo pre urèitého drite¾a parkovacieho povolenia, pre ktorého je dané miesto vyhradené.</span>
+https://www.testynavodicak.eu/storage/znacky/531.png
+
+Èasovo obmedzené parkovanie
+<span>Dodatková tabu¾ka umiestnená pod znaèkou o parkovaní obmedzuje monos parkovania najdlhšie na vyznaèenú dobu. 
+<br>
+<br>Ak je v ¾avej èasti dodatkovej tabu¾ky vyznaèenı symbol parkovacieho kotúèa, mono na takto oznaèenom mieste parkova len s pouitím parkovacieho kotúèa. Parkovací kotúè musí by vidite¾ne umiestnenı v prednej èasti vozidla a musí sa na òom nastavi èas zaèiatku parkovania, a to k najblišej polhodine alebo celej hodine; takto nastavenı èas sa poèas parkovania nesmie meni. 
+<br>
+<br>Na parkovacom kotúèi vo forme elektronickej aplikácie sa musí nastavi èas zaèiatku parkovania, ktorı sa poèas parkovania nesmie meni.</span>
+https://www.testynavodicak.eu/storage/znacky/532.png
+
+Platené parkovanie
+<span>Dodatková tabu¾ka umiestnená pod znaèkou o parkovaní obmedzuje monos parkovania len za úhradu.</span>
+https://www.testynavodicak.eu/storage/znacky/533.png
+

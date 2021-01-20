@@ -14,7 +14,7 @@ for x in range(1, 61):
 
     br.select_form(nr=2)
     response2 = br.submit().get_data()
-    f = open("C:\\Users\\Tomas\\Desktop\\zaverecna\\odpovede_autoskola\\odpovedeTest"+converted_num+".txt", "w+")
+    f = open("C:\\Users\\Tomas\\\Documents\\\DrivingSchoolLeson\\\datasource\\nespracovane\\odpovedeTest\\odpovedeTest"+converted_num+".txt", "w+")
 
     document = BeautifulSoup(response2,features="html5lib")
     moznosti = document.find_all("div", {"class": "moznosti"})

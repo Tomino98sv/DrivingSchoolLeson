@@ -1,0 +1,94 @@
+Pozdåna súvislá èiara
+<span>Znaèka vyznaèuje jazdnı pruh alebo okraj vozovky. 
+<br>
+<br>Ak znaèka vyznaèuje jazdnı pruh, je zakázané ju prechádza alebo nákladom presahova, ak to nie je potrebné na obchádzanie prekáky cestnej premávky. 
+<br>
+<br>Ak znaèka vyznaèuje vyhradenı pruh pre verejnú dopravu, je znaèka širšia a vnútri pruhu je v pravidelnıch vzdialenostiach doplnená symbolom BUS. 
+<br>
+<br>Ak znaèka vyznaèuje cyklistickı pruh, je znaèka širšia a vnútri pruhu je v pravidelnıch vzdialenostiach doplnená symbolom bicykla. 
+<br>
+<br>Ak znaèka vyznaèuje vyhradenı pruh pre verejnú dopravu alebo cyklistickı pruh, má pre ostatnıch úèastníkov cestnej premávky vıznam znaèky vyznaèujúcej okraj vozovky. 
+<br>
+<br>Ak znaèka odde¾uje protismerné jazdné pruhy, môe by vyznaèená ako dvojitá èiara.</span>
+https://www.testynavodicak.eu/storage/znacky/601.png
+
+Pozdåna prerušovaná èiara
+<span>Znaèka vyznaèuje jazdnı pruh alebo okraj vozovky. 
+<br>
+<br>Znaèku mono prechádza pri dodraní pravidiel cestnej premávky. 
+<br>
+<br>Znaèka doplnená symbolom bicykla v pravidelnıch vzdialenostiach vyznaèuje ochrannı pruh pre cyklistov. Do ochranného pruhu pre cyklistov smie vodiè motorového vozidla vojs len v prípade nevyhnutnej potreby, prièom nesmie ohrozi cyklistov. 
+<br>
+<br>Ak je znaèka vyznaèená ako dvojitá èiara, vyznaèuje jazdnı pruh pouívanı striedavo pre jeden aj druhı smer jazdy.</span>
+https://www.testynavodicak.eu/storage/znacky/602.png
+
+Pozdåna súvislá èiara doplnená prerušovanou èiarou
+<span>Znaèka vyznaèuje jazdnı pruh. 
+<br>
+<br>Vodiè je povinnı riadi sa vıznamom blišej èiary.</span>
+https://www.testynavodicak.eu/storage/znacky/603.png
+
+STOP èiara
+<span>Znaèka vyznaèuje miesto, kde je vodiè povinnı zastavi na príkaz znaèky Stoj, daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/202.png'> alebo pred kriovatkou s riadenou premávkou. 
+<br>
+<br>Znaèka môe by doplnená nápisom STOP. 
+<br>
+<br>Znaèkou mono vyznaèi predsunutı priestor urèenı pre cyklistov èakajúcich na svetelnı signál zelenej farby, prièom cyklista je povinnı zastavi a pred vzdialenejšou èiarou</span>
+https://www.testynavodicak.eu/storage/znacky/604.png
+
+Èakacia èiara
+<span>Znaèka vyznaèuje miesto, kde sa vodièovi odporúèa zastavi vozidlo, ak dáva prednos v jazde. 
+<br>
+<br>Znaèka môe by vyznaèená aj prerušovanou èiarou tvorenou malımi plnımi trojuholníkmi vrcholmi orientovanımi proti smeru jazdy.
+<br>
+<br><img src='https://www.testynavodicak.eu/storage/znacky/605-2.jpg'></span>
+https://www.testynavodicak.eu/storage/znacky/605.png
+
+Priechod pre chodcov
+<span>Znaèka vyznaèuje priechod pre chodcov.</span>
+https://www.testynavodicak.eu/storage/znacky/610.png
+
+Miesto na prechádzanie
+<span>Znaèka vyznaèuje miesto prispôsobené na prechádzanie chodcov a cyklistov.</span>
+https://www.testynavodicak.eu/storage/znacky/611.png
+
+Priechod pre cyklistov
+<span>Znaèka vyznaèuje priechod pre cyklistov. 
+<br>
+<br>Ak je priechod pre cyklistov primknutı k priechodu pre chodcov, vyznaèuje sa len jednou èiarou.</span>
+https://www.testynavodicak.eu/storage/znacky/612.png
+
+Vyšrafovanı priestor
+<span>Znaèka vyznaèuje priestor, do ktorého je zakázané vchádza alebo doò nákladom presahova, ak to nie je potrebné na obchádzanie prekáky cestnej premávky.</span>
+https://www.testynavodicak.eu/storage/znacky/620.jpg
+
+Cikcak èiara
+<span>Znaèka vyznaèuje priestor, kde je zakázané státie vozidiel. 
+<br>
+<br>Znaèka doplnená symbolom BUS alebo TRAM vyznaèuje zastávku vozidiel pravidelnej verejnej dopravy osôb, na ktorej je zastavenie a státie dovolené len pre vozidlá pravidelnej verejnej dopravy osôb. 
+<br>
+<br>Znaèka doplnená symbolom TAXI vyznaèuje stanovište taxíkov, na ktorom je zastavenie a státie dovolené len pre vozidlá taxisluby na vykonávanie zmluvnej prepravy osôb.</span>
+https://www.testynavodicak.eu/storage/znacky/621.jpg
+
+Parkovacie miesta
+<span>Znaèka vhodnım spôsobom vyznaèuje miesto, kde je dovolené zastavenie a státie a urèenı spôsob státia. 
+<br>
+<br>Ak znaèka vyznaèuje priestor parkovacieho miesta s vyhradenım státím, môe by doplnená vhodnım nápisom alebo symbolom.</span>
+https://www.testynavodicak.eu/storage/znacky/622.png
+
+Smerové šípky
+<span>Smerové šípky vyznaèené medzi pozdånymi èiarami vyjadrujú spôsob radenia do jazdnıch pruhov a prikázanı smer jazdy cez nasledujúcu kriovatku alebo odboèenie vo vyznaèenom smere. 
+<br>
+<br>Znaèka doplnená symbolom BUS vyznaèuje prikázanı smer jazdy cez nasledujúcu kriovatku alebo odboèenie vo vyznaèenom smere len pre vozidlá pravidelnej verejnej dopravy osôb.</span>
+https://www.testynavodicak.eu/storage/znacky/630.png
+
+Predbené šípky
+<span>Znaèka umiestnená v osi priebeného jazdného pruhu vyznaèuje jeho blíiace sa skonèenie. 
+<br>
+<br>Znaèka umiestnená v osi Pozdånej prerušovanej èiary na ceste s obojsmernou premávkou vyznaèuje blíiaci sa prechod Pozdånej prerušovanej èiary do Pozdånej súvislej èiary.</span>
+https://www.testynavodicak.eu/storage/znacky/631.png
+
+Koridor pre cyklistov
+<span>Znaèka vyznaèuje smer jazdy cyklistov. Vodièov motorovıch vozidiel upozoròuje, e sa nachádzajú na vozovke so zvıšenım pohybom cyklistov.</span>
+https://www.testynavodicak.eu/storage/znacky/635.png
+

@@ -51,7 +51,7 @@ def getTraffic_Signs(link):
     return znacky
 
 def writeTraffic_SignsToFile(title,array):
-    f = open("C:\\Users\\Tomas\\Desktop\\zaverecna\\znacky\\"+title+".txt", "w")
+    f = open("C:\\Users\\Tomas\\\Documents\\\DrivingSchoolLeson\\\datasource\\nespracovane\\znacky\\"+title+".txt", "w")
     for znacka in array:
         f.write(znacka.getTitle()+"\n")
         f.write(znacka.getDescription()+"\n")

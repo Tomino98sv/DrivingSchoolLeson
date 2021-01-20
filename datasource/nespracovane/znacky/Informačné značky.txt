@@ -1,0 +1,364 @@
+Kriovatka s prednosou v jazde
+<span>Znaèka informuje o prednosti v jazde v najblišej kriovatke. 
+<br>
+<br>Na znaèke môe by znázornené aj len samostatné pravé pripojenie.</span>
+https://www.testynavodicak.eu/storage/znacky/301.png
+
+Hlavná cesta
+<span>Znaèka oznaèuje zaèiatok alebo priebeh hlavnej cesty.</span>
+https://www.testynavodicak.eu/storage/znacky/302.png
+
+Koniec hlavnej cesty
+<span>Znaèka informuje o ukonèení hlavnej cesty</span>
+https://www.testynavodicak.eu/storage/znacky/303.png
+
+Prednos pred protiidúcimi vozidlami
+<span>Znaèka informuje vodièa o prednosti v jazde pred protiidúcimi vozidlami.</span>
+https://www.testynavodicak.eu/storage/znacky/304.png
+
+Obec
+<span>Znaèka oznaèuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa v obci a informuje o názve obce alebo miestnej èasti obce tvoriacej samostatnı sídelnı útvar. 
+<br>
+<br>Ak znaèka informuje o názve miestnej èasti obce, v spodnej èasti znaèky sa uvádza názov obce, ku ktorej táto miestna èas administratívne patrí. <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/305-2.png'></span>
+https://www.testynavodicak.eu/storage/znacky/305.png
+
+Koniec obce
+<span>Znaèka oznaèuje miesto, kde sa konèí platnos pravidiel cestnej premávky o správaní sa v obci a informuje o názve obce alebo miestnej èasti obce tvoriacej samostatnı sídelnı útvar. <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/306-2.png'></span>
+https://www.testynavodicak.eu/storage/znacky/306.png
+
+Oznaèenie obce v jazyku národnostnej menšiny
+<span>Znaèka informuje o názve obce v jazyku národnostnej menšiny na zaèiatku obce.</span>
+https://www.testynavodicak.eu/storage/znacky/307.png
+
+Oznaèenie konca obce v jazyku národnostnej menšiny
+<span>Znaèka informuje o názve obce v jazyku národnostnej menšiny na konci obce.</span>
+https://www.testynavodicak.eu/storage/znacky/308.png
+
+Dia¾nica
+<span>Znaèka oznaèuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa na dia¾nici a miesto, od ktorého uívanie dia¾nice podlieha úhrade dia¾niènou známkou.</span>
+https://www.testynavodicak.eu/storage/znacky/309.png
+
+Koniec dia¾nice
+<span>Znaèka oznaèuje koniec dia¾nice.</span>
+https://www.testynavodicak.eu/storage/znacky/310.png
+
+Cesta pre motorové vozidlá
+<span>Znaèka oznaèuje miesto, od ktorého platia pravidlá cestnej premávky o správaní sa na ceste pre motorové vozidlá.</span>
+https://www.testynavodicak.eu/storage/znacky/311.png
+
+Koniec cesty pre motorové vozidlá
+<span>Znaèka oznaèuje koniec cesty pre motorové vozidlá.</span>
+https://www.testynavodicak.eu/storage/znacky/312.png
+
+Úsek dia¾nice spoplatnenı dia¾niènou známkou
+<span>Znaèka oznaèuje miesto, od ktorého uívanie dia¾nice podlieha úhrade dia¾niènou známkou.</span>
+https://www.testynavodicak.eu/storage/znacky/313.png
+
+Úsek dia¾nice nespoplatnenı dia¾niènou známkou
+<span>Znaèka oznaèuje miesto, od ktorého uívanie dia¾nice nepodlieha úhrade dia¾niènou známkou.</span>
+https://www.testynavodicak.eu/storage/znacky/314.png
+
+Obytná zóna
+<span>Znaèka oznaèuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v obytnej zóne.</span>
+https://www.testynavodicak.eu/storage/znacky/315.png
+
+Koniec obytnej zóny
+<span>Znaèka oznaèuje koniec obytnej zóny</span>
+https://www.testynavodicak.eu/storage/znacky/316.png
+
+Pešia zóna
+<span>Znaèka oznaèuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v pešej zóne.</span>
+https://www.testynavodicak.eu/storage/znacky/317.png
+
+Koniec pešej zóny
+<span>Znaèka oznaèuje koniec pešej zóny.</span>
+https://www.testynavodicak.eu/storage/znacky/318.png
+
+Školská zóna
+<span>Znaèka oznaèuje miesto, od ktorého platia osobitné ustanovenia o cestnej premávke v školskej zóne.</span>
+https://www.testynavodicak.eu/storage/znacky/319.png
+
+Koniec školskej zóny
+<span>Znaèka oznaèuje koniec školskej zóny.</span>
+https://www.testynavodicak.eu/storage/znacky/320.png
+
+Jednosmerná cesta
+<span>Znaèka oznaèuje cestu s jednosmernou premávkou a vyznaèuje dovolenı smer jazdy.</span>
+https://www.testynavodicak.eu/storage/znacky/321.png
+
+Tunel
+<span>Znaèka oznaèuje tunel, v ktorom platia pravidlá cestnej premávky pre správanie sa v tuneli. Ak ide o tunel dlhší ako 500 m, môe by v spodnej èasti znaèky alebo na dodatkovej tabu¾ke uvedenı názov a dåka tunela. <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/322-2.png'></span>
+https://www.testynavodicak.eu/storage/znacky/322.png
+
+Priechod pre chodcov
+<span>Znaèka oznaèuje priechod pre chodcov.</span>
+https://www.testynavodicak.eu/storage/znacky/325.png
+
+Priechod pre cyklistov
+<span>Znaèka oznaèuje priechod pre cyklistov.</span>
+https://www.testynavodicak.eu/storage/znacky/326.png
+
+Podchod alebo nadchod
+<span>Znaèka oznaèuje podchod alebo nadchod. 
+<br>
+<br>Vhodnım spôsobom mono oznaèi bezbariérovı podchod alebo nadchod.</span>
+https://www.testynavodicak.eu/storage/znacky/327.png
+
+Slepá cesta
+<span>Znaèka oznaèuje cestu, ktorá sa ïalej konèí alebo ktorou nemono ïalej pokraèova v jazde. 
+<br>
+<br>Vhodnım spôsobom mono informova o prejazdnosti slepej cesty pre cyklistov.</span>
+https://www.testynavodicak.eu/storage/znacky/328.png
+
+Sluby
+<span>Znaèka vhodnım symbolom oznaèuje miesto, na ktorom sa poskytuje sluba vıznamná pre verejnos.</span>
+https://www.testynavodicak.eu/storage/znacky/330.png
+
+Zastávka
+<span>Znaèka vhodnım symbolom oznaèuje zastávku vozidiel pravidelnej verejnej dopravy osôb.</span>
+https://www.testynavodicak.eu/storage/znacky/331.png
+
+Stanovište taxi
+<span>Znaèka oznaèuje stanovište vozidiel taxisluby.</span>
+https://www.testynavodicak.eu/storage/znacky/332.png
+
+Polícia
+<span>Znaèka informuje o blízkosti stanoviša alebo útvaru Policajného zboru s nepretritou slubou.</span>
+https://www.testynavodicak.eu/storage/znacky/333.png
+
+Kontrola rıchlosti
+<span>Znaèka oznaèuje miesto, kde sa vykonáva kontrola najvyššej dovolenej rıchlosti vozidiel technickım prostriedkom konštrukène pevne spojenım so zemou</span>
+https://www.testynavodicak.eu/storage/znacky/334.png
+
+Núdzová odstavná plocha
+<span>Znaèka oznaèuje miesto vyhradené na núdzové státie vozidla.</span>
+https://www.testynavodicak.eu/storage/znacky/335.png
+
+Miesto na núdzové brzdenie
+<span>Znaèka vo vyznaèenom smere oznaèuje miesto na núdzové brzdenie na prudkom klesaní.</span>
+https://www.testynavodicak.eu/storage/znacky/336.png
+
+Miestna náves
+<span>Znaèka oznaèuje kraj, okres, èas obce, most a podobne. Ak znaèka oznaèuje turisticky vıznamnı cie¾ alebo turistickú trasu, má hnedú farbu.</span>
+https://www.testynavodicak.eu/storage/znacky/340.png
+
+Štátna hranica
+<span>Znaèka oznaèuje hranicu štátu a uvádza jeho názov.</span>
+https://www.testynavodicak.eu/storage/znacky/341.png
+
+Informácie o všeobecnıch pravidlách
+<span>Znaèka informuje vodièov vchádzajúcich na územie Slovenskej republiky o najvyššej dovolenej rıchlosti a o dennom svietení</span>
+https://www.testynavodicak.eu/storage/znacky/342.png
+
+Dopravné obmedzenia na horskom prechode
+<span>Znaèka vhodnım textom alebo symbolom informuje o dopravnıch obmedzeniach na horskom prechode.</span>
+https://www.testynavodicak.eu/storage/znacky/343.png
+
+Varovná tabu¾a
+<span>Znaèka upozoròuje na vjazd do protismeru.</span>
+https://www.testynavodicak.eu/storage/znacky/344.png
+
+Èíslo cesty I. alebo II. triedy
+<span>Znaèka informuje o èísle cesty I. triedy alebo o èísle cesty II. triedy.</span>
+https://www.testynavodicak.eu/storage/znacky/350.png
+
+Èíslo cesty III. triedy
+<span>Znaèka informuje o èísle cesty III. triedy.</span>
+https://www.testynavodicak.eu/storage/znacky/351.png
+
+Èíslo dia¾nice alebo rıchlostnej cesty
+<span>Znaèka informuje o èísle dia¾nice alebo o èísle rıchlostnej cesty</span>
+https://www.testynavodicak.eu/storage/znacky/352.png
+
+Èíslo E-cesty
+<span>Znaèka informuje o èísle cesty zaradenej do medzinárodnej siete ciest kategórie E.</span>
+https://www.testynavodicak.eu/storage/znacky/353.png
+
+Kilometrovník
+<span>Znaèka informuje o priblinej vzdialenosti v kilometroch od zaèiatku cesty alebo od iného referenèného bodu na ceste. 
+<br>
+<br>Znaèka môe obsahova aj èíslo cesty a smer k najblišiemu telefónu núdzového volania</span>
+https://www.testynavodicak.eu/storage/znacky/355.png
+
+Smerová predzves
+<span>Znaèka vopred informuje o smere jazdy k vyznaèenım cie¾om. 
+<br>
+<br>Ak je znaèka umiestnená nad vozovkou so šípkami vyznaèenımi nad jednotlivımi jazdnımi pruhmi, informuje zároveò o potrebe vèasného zaradenia sa do jazdnıch pruhov pod¾a jednotlivıch cie¾ovıch blokov.
+<br>
+<br><img src='https://www.testynavodicak.eu/storage/znacky/360-2.png'></span>
+https://www.testynavodicak.eu/storage/znacky/360.png
+
+Smerová a pruhová predzves
+<span>Znaèka vopred informuje o smere jazdy k vyznaèenım cie¾om a o radení do jazdnıch pruhov v priestore kriovatky.</span>
+https://www.testynavodicak.eu/storage/znacky/361.png
+
+Smerová náves
+<span>Znaèka informuje o smere jazdy k vyznaèenım cie¾om. 
+<br>
+<br>Ak je znaèka umiestnená nad vozovkou so šípkami vyznaèenımi nad jednotlivımi jazdnımi pruhmi, informuje zároveò o radení do jazdnıch pruhov pod¾a jednotlivıch cie¾ovıch blokov. 
+<br>
+<br><img src='https://www.testynavodicak.eu/storage/znacky/362-2.png'>
+<br>
+<br>Znaèka sa nachádza bezprostredne pred alebo bezprostredne za miestom odboèenia.</span>
+https://www.testynavodicak.eu/storage/znacky/362.png
+
+Tabu¾ovı smerník
+<span>Znaèka informuje o smere jazdy k vyznaèenım cie¾om; v prípade sídelnıch cie¾ov znaèka spravidla informuje aj o vzdialenosti do centra tıchto cie¾ov. 
+<br>
+<br>Znaèka sa nachádza bezprostredne pred alebo bezprostredne za miestom odboèenia</span>
+https://www.testynavodicak.eu/storage/znacky/363.png
+
+Šípovı smerník
+<span>Znaèka informuje o odboèení k vyznaèenım cie¾om a v prípade sídelnıch cie¾ov spravidla aj o vzdialenosti do centra tıchto cie¾ov</span>
+https://www.testynavodicak.eu/storage/znacky/364.png
+
+Šípovı smerník k dia¾nici
+<span>Znaèka informuje o odboèení k dia¾nici alebo k dia¾niciam a pod¾a potreby aj o dia¾kovıch cie¾och.</span>
+https://www.testynavodicak.eu/storage/znacky/365.png
+
+Šípovı smerník k zvláštnemu alebo miestnemu cie¾u
+<span>Znaèka informuje o odboèení k zvláštnym cie¾om alebo v obci informuje o odboèení k miestnym cie¾om.</span>
+https://www.testynavodicak.eu/storage/znacky/366.png
+
+Šípovı smerník k turistickému cie¾u
+<span>Znaèka informuje o odboèení k turistickım cie¾om.</span>
+https://www.testynavodicak.eu/storage/znacky/367.png
+
+Nepriama náves
+<span>Znaèka informuje o smere jazdy k vyznaèenım zvláštnym alebo turistickım cie¾om prostredníctvom smeru jazdy k sídelnému cie¾u. Farebnos vyznaèenıch zvláštnych a turistickıch cie¾ov zodpovedá farebnosti príslušného šípového smerníka.</span>
+https://www.testynavodicak.eu/storage/znacky/368.png
+
+Ohlasovacia tabu¾a
+<span>Znaèka informuje o blízkosti vıjazdu, dia¾nièného uzla alebo odpoèívadla a uvádza základné informácie o òom.</span>
+https://www.testynavodicak.eu/storage/znacky/370.png
+
+Nepriama náves na dia¾nici
+<span>Znaèka informuje o doplnkovıch zvláštnych alebo miestnych cie¾och, ktoré sú dostupné prostredníctvom vyznaèeného vıjazdu.</span>
+https://www.testynavodicak.eu/storage/znacky/371.png
+
+Smerová predzves na dia¾nici
+<span>Znaèka vopred informuje o smere jazdy k vyznaèenım cie¾om. 
+<br>
+<br>Ak je znaèka umiestnená nad vozovkou so šípkami vyznaèenımi nad jednotlivımi jazdnımi pruhmi, informuje zároveò o radení do jazdnıch pruhov pod¾a jednotlivıch cie¾ovıch blokov.
+<br>
+<br><img src='https://www.testynavodicak.eu/storage/znacky/372-1.png'></span>
+https://www.testynavodicak.eu/storage/znacky/372.png
+
+Smerová náves na dia¾nici
+<span>Znaèka informuje o smere jazdy k vyznaèenım cie¾om. 
+<br>
+<br>Ak je znaèka umiestnená nad vozovkou so šípkami vyznaèenımi nad jednotlivımi jazdnımi pruhmi, informuje zároveò o radení do jazdnıch pruhov pod¾a jednotlivıch cie¾ovıch blokov.
+<br>
+<br><img src='https://www.testynavodicak.eu/storage/znacky/373-1.png'></span>
+https://www.testynavodicak.eu/storage/znacky/373.png
+
+Vıjazdová tabu¾a
+<span>Znaèka vhodnım nápisom oznaèuje miesto a smer vıjazdu alebo odboèenia na odpoèívadlo.</span>
+https://www.testynavodicak.eu/storage/znacky/374.png
+
+Dia¾ková tabu¾a
+<span>Znaèka informuje o vzdialenostiach k vyznaèenım dia¾kovım cie¾om. 
+<br>
+<br>V blízkosti odboèenia na inú dia¾nicu uvádza znaèka pod èiarou informácie o dia¾kovıch cie¾och tejto dia¾nice. 
+<br>
+<br>Znaèku mono poui aj mimo dia¾nice; základná plocha znaèky je v takom prípade modrej farby.</span>
+https://www.testynavodicak.eu/storage/znacky/376.png
+
+Turistická tabu¾a
+<span>Znaèka informuje o vıznamnej atraktivite cestovného ruchu, ktorá je dostupná prostredníctvom nasledujúceho vıjazdu.</span>
+https://www.testynavodicak.eu/storage/znacky/377.jpg
+
+Tabu¾ovı smerník na odpoèívadle
+<span>Znaèka na odpoèívadle informuje o smere jazdy k vyznaèenım objektom sluieb, k parkovacím miestam pod¾a druhu vozidiel alebo o smere jazdy z odpoèívadla.</span>
+https://www.testynavodicak.eu/storage/znacky/378.png
+
+Cyklistickı smerník tabu¾ovı
+<span>Znaèka informuje o smere jazdy k vyznaèenım cie¾om po cyklistickej trase a pod¾a potreby aj o vzdialenosti k tımto cie¾om a o èísle alebo inom oznaèení cyklotrasy. 
+<br>
+<br>Ak sa na znaèke vyobrazujú turistické ciele, nápisy a symboly sú hnedej farby.</span>
+https://www.testynavodicak.eu/storage/znacky/380.png
+
+Cyklistickı smerník šípovı
+<span>Znaèka informuje o smere odboèenia k vyznaèenım cie¾om po cyklistickej trase a pod¾a potreby aj o vzdialenosti k tımto cie¾om a o èísle alebo inom oznaèení cyklotrasy. 
+<br>
+<br>Ak sa na znaèke vyobrazujú turistické ciele, nápisy a symboly sú hnedej farby</span>
+https://www.testynavodicak.eu/storage/znacky/381.png
+
+Cyklistickı medzismerník
+<span>Znaèka informuje o priebehu cyklotrasy cez kriovatku.</span>
+https://www.testynavodicak.eu/storage/znacky/382.png
+
+Èíslo cyklotrasy
+<span>Znaèka v spojení s cyklistickım smerníkom informuje o èísle alebo inom oznaèení cyklotrasy.</span>
+https://www.testynavodicak.eu/storage/znacky/383.png
+
+Náhradná trasa
+<span>Znaèka informuje o smere jazdy po trvalo urèenej náhradnej trase k dia¾nici. Znaèka bez šípky informuje o zaèiatku náhradnej trasy a preèiarknutá znaèka bez šípky o konci náhradnej trasy. 
+<br>
+<br>Náhradná trasa k dia¾nici vedie od vıjazdu spravidla k nasledujúcemu vjazdu na tú istú dia¾nicu a slúi na obchádzanie úseku dia¾nice v prípade kolóny alebo iného dopravného obmedzenia. 
+<br>
+<br>Tam, kde sa stretáva viac náhradnıch trás, môe by nad znaèkou pre lepšiu orientáciu umiestnená tabu¾ka vyznaèujúca dia¾kovı cie¾ príslušnej dia¾nice alebo jej èíslo.</span>
+https://www.testynavodicak.eu/storage/znacky/390.png
+
+Zmena náhradnej trasy
+<span>Znaèka informuje o pokraèovaní náhradnej trasy po inej náhradnej trase.</span>
+https://www.testynavodicak.eu/storage/znacky/391.png
+
+Uzávierková predzves
+<span>Znaèka vopred informuje o èiastoènej alebo úplnej uzávierke cesty a pod¾a potreby o obchádzkovej trase.</span>
+https://www.testynavodicak.eu/storage/znacky/392.png
+
+Ohlasovacia tabu¾a obchádzky
+<span>Znaèka informuje o blízkosti èiastoènej alebo úplnej uzávierky a k nej ustanovenej obchádzkovej trasy. 
+<br>
+<br>Na znaèke môe by namiesto nápisu „obchádzka“ vyznaèené èíslo obchádzkovej trasy, dia¾kovı cie¾ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka urèená.</span>
+https://www.testynavodicak.eu/storage/znacky/393.png
+
+Tabu¾ovı smerník na vyznaèenie obchádzky
+<span>Znaèka informuje o smere jazdy po obchádzkovej trase. 
+<br>
+<br>Ak je obchádzková trasa èíslovaná, uvádza sa jej èíslo v hornej èasti znaèky; znaèka bez šípky s uvedenım èíslom obchádzkovej trasy informuje o zaèiatku obchádzkovej trasy a preèiarknutá znaèka bez šípky o konci náhradnej trasy. 
+<br>
+<br>Ak je obchádzková trasa urèená pre urèitı druh vozidiel, vyznaèuje sa symbol vozidla na samostatnej tabu¾ke nad znaèkou; takto môe by pre lepšiu orientáciu uvedenı tie dia¾kovı cie¾ obchádzanej cesty alebo jej èíslo. Ak obchádzková trasa nie je èíslovaná, môu sa tieto informácie uvádza v hornej èasti znaèky.</span>
+https://www.testynavodicak.eu/storage/znacky/394.png
+
+Šípovı smerník na vyznaèenie obchádzky
+<span>Znaèka oznaèuje miesto a smer odboèenia obchádzkovej trasy; nachádza sa bezprostredne za miestom odboèenia. 
+<br>
+<br>Na znaèke môe by namiesto nápisu „obchádzka“ vyznaèené èíslo obchádzkovej trasy, dia¾kovı cie¾ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka urèená.</span>
+https://www.testynavodicak.eu/storage/znacky/395.png
+
+Koniec obchádzky
+<span>Znaèka informuje o konci obchádzkovej trasy. 
+<br>
+<br>Na znaèke môe by namiesto nápisu „obchádzka“ vyznaèené èíslo obchádzkovej trasy, dia¾kovı cie¾ obchádzanej cesty alebo symbol druhu vozidiel, pre ktoré je obchádzka urèená.</span>
+https://www.testynavodicak.eu/storage/znacky/396.png
+
+Bloková obchádzka
+<span>Znaèka vhodnım spôsobom informuje v obci o kriovatke, na ktorej je zakázané odboèenie alebo prikázanı smer jazdy a vyznaèuje smer obchádzania.</span>
+https://www.testynavodicak.eu/storage/znacky/397.png
+
+Poèet jazdnıch pruhov
+<span>Znaèka informuje o poète jazdnıch pruhov.</span>
+https://www.testynavodicak.eu/storage/znacky/401-409.png
+
+Zníenie poètu jazdnıch pruhov
+<span>Znaèka informuje o zníení poètu jazdnıch pruhov a o spôsobe jeho zníenia.</span>
+https://www.testynavodicak.eu/storage/znacky/411-419.png
+
+Zvıšenie poètu jazdnıch pruhov
+<span>Znaèka informuje o zvıšení poètu jazdnıch pruhov a o spôsobe jeho zvıšenia.</span>
+https://www.testynavodicak.eu/storage/znacky/421-429.png
+
+Bezkolízne pripojenie
+<span>Znaèka informuje o bezkolíznom spojení ciest a o spôsobe vedenia jazdnıch pruhov.</span>
+https://www.testynavodicak.eu/storage/znacky/431-439.png
+
+Presmerovanie jazdnıch pruhov
+<span>Znaèka informuje o presmerovaní jazdnıch pruhov do protismerného jazdného pásu, k okraju vozovky alebo o inej zmene smerovania jazdnıch pruhov.</span>
+https://www.testynavodicak.eu/storage/znacky/441-449.png
+
+Radenie do jazdnıch pruhov pred kriovatkou
+<span>Znaèka informuje na viacpruhovej ceste o potrebe vèasného zaradenia sa do jazdnıch pruhov pred kriovatkou pod¾a jednotlivıch smerov jazdy tam, kde je usporiadanie radiacich pruhov v kriovatke neobvyklé alebo inak neoèakávate¾né</span>
+https://www.testynavodicak.eu/storage/znacky/451-459.png
+

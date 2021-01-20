@@ -1,0 +1,250 @@
+Daj prednos v jazde!
+<span>Znaèka ukladá vodièovi povinnos da prednos v jazde.</span>
+https://www.testynavodicak.eu/storage/znacky/201.png
+
+Stoj, daj prednos v jazde!
+<span>Znaèka ukladá vodièovi povinnos zastavi vozidlo a da prednos v jazde. 
+<br>
+<br>Vodiè je povinnı zastavi vozidlo 
+<br>a) na znaèke STOP èiara <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/604.png'> alebo 
+<br>b) na takom mieste, odkia¾ má náleitı rozh¾ad na kriovatku alebo na elezniènú tra. 
+<br>
+<br>Ako predbená znaèka k tejto znaèke sa pouíva znaèka Daj prednos v jazde! <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/201.png'> s dodatkovou tabu¾kou Vzdialenos k povinnému zastaveniu <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/511.png'> s uvedením skutoènej vzdialenosti k miestu, na ktoré sa vzahuje povinnos zastavi vozidlo.</span>
+https://www.testynavodicak.eu/storage/znacky/202.png
+
+Prednos protiidúcich vozidiel
+<span>Znaèka ukladá vodièovi povinnos da prednos v jazde protiidúcim vozidlám.</span>
+https://www.testynavodicak.eu/storage/znacky/203.png
+
+Prikázanı smer jazdy
+<span>Znaèka prikazuje jazdu vo vyznaèenom smere alebo vyznaèenıch smeroch.</span>
+https://www.testynavodicak.eu/storage/znacky/210.png
+
+Prikázanı smer odboèenia
+<span>Znaèka prikazuje odboèenie vo vyznaèenom smere.</span>
+https://www.testynavodicak.eu/storage/znacky/211.png
+
+Prikázanı smer obchádzania
+<span>Znaèka prikazuje obchádzanie vo vyznaèenom smere.</span>
+https://www.testynavodicak.eu/storage/znacky/212.png
+
+Kruhovı objazd
+<span>Znaèka oznaèuje kruhovı objazd a prikazuje smer jazdy v smere vyznaèenom šípkami na znaèke.</span>
+https://www.testynavodicak.eu/storage/znacky/213.png
+
+Zákaz odboèenia
+<span>Znaèka zakazuje odboèenie vo vyznaèenom smere.</span>
+https://www.testynavodicak.eu/storage/znacky/215.png
+
+Zákaz otáèania
+<span>Znaèka zakazuje otáèanie.</span>
+https://www.testynavodicak.eu/storage/znacky/216.png
+
+Cestièka pre chodcov
+<span>Znaèka oznaèuje komunikáciu urèenú pre chodcov a prikazuje chodcovi poui takto oznaèenú cestièku.</span>
+https://www.testynavodicak.eu/storage/znacky/220.png
+
+Cyklistická komunikácia
+<span>Znaèka oznaèuje cestièku pre cyklistov alebo cyklistickı pruh a prikazuje cyklistovi poui takto oznaèenú cestièku alebo pruh.</span>
+https://www.testynavodicak.eu/storage/znacky/221.png
+
+Spoloèná cestièka pre chodcov a cyklistov
+<span>Znaèka oznaèuje spoloènú komunikáciu urèenú pre chodcov a cyklistov a prikazuje im ju poui</span>
+https://www.testynavodicak.eu/storage/znacky/222.png
+
+Oddelená cestièka pre chodcov a cyklistov
+<span>Znaèka oznaèuje oddelenú komunikáciu urèenú pre chodcov a cyklistov a vyznaèuje, ktorı pruh je urèenı pre chodcov a ktorı pruh je urèenı pre cyklistov; cyklistom a chodcom prikazuje poui èas pre nich urèenú.</span>
+https://www.testynavodicak.eu/storage/znacky/223.png
+
+Vyhradenı pruh pre verejnú dopravu
+<span>Znaèka oznaèuje vyhradenı pruh pre vozidlá pravidelnej verejnej dopravy osôb a prikazuje im ho prednostne poui.</span>
+https://www.testynavodicak.eu/storage/znacky/224.png
+
+Koniec špeciálnej cestièky alebo pruhu
+<span>Znaèka ukonèuje špeciálnu cestièku alebo pruh. Na znaèke sa pouije zhodnı symbol z tıchto znaèiek doplnenı èervenım šikmım pruhom.</span>
+https://www.testynavodicak.eu/storage/znacky/225.png
+
+Zákaz vjazdu
+<span>Znaèka zakazuje vjazd všetkımi vozidlami</span>
+https://www.testynavodicak.eu/storage/znacky/230.png
+
+Zákaz vjazdu pre všetky vozidlá
+<span>Znaèka zakazuje vjazd všetkımi vozidlami v oboch smeroch jazdy.</span>
+https://www.testynavodicak.eu/storage/znacky/231.png
+
+Zákaz vjazdu pre všetky motorové vozidlá
+<span>Znaèka zakazuje vjazd všetkımi motorovımi vozidlami.</span>
+https://www.testynavodicak.eu/storage/znacky/232.png
+
+Zákaz vjazdu (vstupu) pre
+<span>Znaèka zakazuje vjazd alebo vstup vozidlami alebo úèastníkmi cestnej premávky vyznaèenım symbolom.</span>
+https://www.testynavodicak.eu/storage/znacky/233.png
+
+Zákaz vjazdu pre vozidlá prepravujúce nebezpeèné veci
+<span>Znaèka zakazuje vjazd vozidlami prepravujúcimi nebezpeèné veci, ktoré musia by oznaèené pod¾a Európskej dohody o medzinárodnej cestnej preprave nebezpeènıch vecí (ADR).</span>
+https://www.testynavodicak.eu/storage/znacky/234.png
+
+Zákaz vjazdu pre vozidlá prepravujúce náklad, ktorı môe spôsobi zneèistenie vody
+<span>Znaèka zakazuje vjazd vozidlami prepravujúcimi najmenej 60 litrov nákladu, ktorı môe spôsobi zneèistenie vody. 
+<br>
+<br>Iné mnostvo alebo druh nákladu mono vyznaèi na dodatkovej tabu¾ke.</span>
+https://www.testynavodicak.eu/storage/znacky/235.png
+
+Maximálna hmotnos
+<span>Znaèka zakazuje vjazd vozidlom alebo jazdnou súpravou, ktorıch okamitá hmotnos vrátane nákladu, vodièa a cestujúcich presahuje vyznaèenú hranicu na znaèke. 
+<br>
+<br>Pri jazdnej súprave sa obmedzenie hmotnosti vzahuje na kadé vozidlo zapojenej súpravy osobitne. 
+<br>
+<br>Pri jazdnej súprave tvorenej ahaèom a návesom sa maximálna hmotnos vzahuje na okamitú hmotnos ahaèa a hmotnos návesu pripadajúcu na ahaè a na zostatkovú hmotnos návesu osobitne.</span>
+https://www.testynavodicak.eu/storage/znacky/240.png
+
+Maximálna hmotnos na nápravu
+<span>Znaèka zakazuje vjazd vozidlom, ktorého okamitá hmotnos vrátane nákladu, vodièa a cestujúcich pripadajúca na najviac zaaenú nápravu presahuje vyznaèenú hranicu.</span>
+https://www.testynavodicak.eu/storage/znacky/241.png
+
+Maximálna šírka
+<span>Znaèka zakazuje vjazd vozidlom, ktorého okamitá šírka vrátane nákladu presahuje vyznaèenú hranicu.</span>
+https://www.testynavodicak.eu/storage/znacky/242.png
+
+Maximálna vıška
+<span>Znaèka zakazuje vjazd vozidlom, ktorého okamitá vıška vrátane nákladu presahuje vyznaèenú hranicu.</span>
+https://www.testynavodicak.eu/storage/znacky/243.png
+
+Maximálna dåka
+<span>Znaèka zakazuje vjazd vozidlom alebo súpravou vozidiel, ktorıch okamitá dåka vrátane nákladu presahuje vyznaèenú hranicu.</span>
+https://www.testynavodicak.eu/storage/znacky/244.png
+
+Povinné zastavenie vozidla
+<span>Znaèka zakazuje pokraèova v jazde bez zastavenia vozidla. Na znaèke sa struène uvádza dôvod zastavenia.</span>
+https://www.testynavodicak.eu/storage/znacky/245.png
+
+Nízkoemisná zóna
+<span>Znaèka oznaèuje zaèiatok nízkoemisnej zóny, v ktorej je premávka vozidiel regulovaná pod¾a zákona è. 137/2010 Z. z. o ovzduší v znení neskorších predpisov.</span>
+https://www.testynavodicak.eu/storage/znacky/248.png
+
+Koniec nízkoemisnej zóny
+<span>Znaèka oznaèuje koniec nízkoemisnej zóny.</span>
+https://www.testynavodicak.eu/storage/znacky/249.png
+
+Najnišia dovolená rıchlos
+<span>Znaèka prikazuje jazdi rıchlosou nie nišou ako vyznaèenou rıchlosou v kilometroch za hodinu; to neplatí, ak je to potrebné z h¾adiska bezpeènosti a plynulosti cestnej premávky. 
+<br>
+<br>Znaèka zároveò ukonèuje platnos predchádzajúcej znaèky Najnišia dovolená rıchlos.</span>
+https://www.testynavodicak.eu/storage/znacky/250.png
+
+Snehové reaze
+<span>Znaèka prikazuje poui pri jazde snehové reaze alebo iné rovnocenné zariadenie minimálne na kolesách jednej hnacej nápravy</span>
+https://www.testynavodicak.eu/storage/znacky/251.png
+
+Najvyššia dovolená rıchlos
+<span>Znaèka zakazuje jazdi rıchlosou vyššou ako vyznaèenou rıchlosou v kilometroch za hodinu.
+<br>
+<br>Znaèka zároveò ukonèuje platnos predchádzajúcej znaèky Najvyššia dovolená rıchlos.</span>
+https://www.testynavodicak.eu/storage/znacky/253.png
+
+Zákaz predchádzania
+<span>Znaèka zakazuje predchádza v¾avo motorové vozidlo okrem motocykla bez postranného vozíka.</span>
+https://www.testynavodicak.eu/storage/znacky/254.png
+
+Zákaz predchádzania pre nákladné vozidlá
+<span>Znaèka zakazuje predchádza v¾avo s nákladnım vozidlom s najväèšou prípustnou celkovou hmotnosou prevyšujúcou 3,5 t motorové vozidlo okrem motocykla bez postranného vozíka.</span>
+https://www.testynavodicak.eu/storage/znacky/255.png
+
+Minimálna vzdialenos medzi vozidlami
+<span>Znaèka zakazuje jazdu vozidlami s najväèšou prípustnou celkovou hmotnosou prevyšujúcou 3,5 t jazdiacimi za sebou vo vzdialenosti kratšej ako je vyznaèená na znaèke.</span>
+https://www.testynavodicak.eu/storage/znacky/256.png
+
+Koniec najnišej dovolenej rıchlosti
+<span>Znaèka ukonèuje príkaz vyplıvajúci z predchádzajúcej znaèky Najnišia dovolená rıchlos <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/250.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/260.png
+
+Koniec snehovıch reazí
+<span>Znaèka ukonèuje príkaz vyplıvajúci z predchádzajúcej znaèky Snehové reaze <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/251.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/261.png
+
+Koniec najvyššej dovolenej rıchlosti
+<span>Znaèka ukonèuje zákaz vyplıvajúci z predchádzajúcej znaèky Najvyššia dovolená rıchlos <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/253.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/263.png
+
+Koniec zákazu predchádzania
+<span>Znaèka ukonèuje zákaz vyplıvajúci z predchádzajúcej znaèky Zákaz predchádzania <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/254.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/264.png
+
+Koniec zákazu predchádzania pre nákladné vozidlá
+<span>Znaèka ukonèuje zákaz vyplıvajúci z predchádzajúcej znaèky Zákaz predchádzania pre nákladné vozidlá <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/255.png'>.</span>
+https://www.testynavodicak.eu/storage/znacky/265.png
+
+Koniec viacerıch zákazov
+<span>Znaèka ukonèuje zákazy vyplıvajúce zo znaèiek Najvyššia dovolená rıchlos <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/253.png'>, Zákaz predchádzania <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/254.png'>, Zákaz predchádzania pre nákladné vozidlá <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/255.png'>, Minimálna vzdialenos medzi vozidlami <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/256.png'> a reguláciu vyplıvajúcu z pruhovıch znaèiek.</span>
+https://www.testynavodicak.eu/storage/znacky/267.png
+
+Zóna najvyššej dovolenej rıchlosti
+<span>Znaèka oznaèuje zaèiatok zóny, v ktorej je zakázané jazdi rıchlosou vyššou ako vyznaèenou rıchlosou v kilometroch za hodinu.</span>
+https://www.testynavodicak.eu/storage/znacky/268.png
+
+Koniec zóny najvyššej dovolenej rıchlosti
+<span>Znaèka oznaèuje koniec zóny najvyššej dovolenej rıchlosti.</span>
+https://www.testynavodicak.eu/storage/znacky/269.png
+
+Zákaz zastavenia
+<span>Znaèka zakazuje zastavenie a státie. 
+<br>
+<br>Zákaz platí aj na pri¾ahlı chodník.</span>
+https://www.testynavodicak.eu/storage/znacky/270.png
+
+Zákaz státia
+<span>Znaèka zakazuje státie. 
+<br>
+<br>Zákaz platí aj na pri¾ahlı chodník.</span>
+https://www.testynavodicak.eu/storage/znacky/271.png
+
+Parkovanie
+<span>Znaèka oznaèuje miesto alebo priestor, kde je dovolené zastavenie a státie vozidiel. 
+<br>
+<br>Ak je pod znaèkou umiestnená dodatková tabu¾ka so symbolom osoby so zdravotnım postihnutím <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/dodatkova-invalid.png'>, znaèka oznaèuje vyhradené parkovanie, kde je dovolené zastavenie a státie len vozidiel s parkovacím preukazom. 
+<br>
+<br>Vhodnım spôsobom mono oznaèi parkovaciu gará alebo parkovací dom.</span>
+https://www.testynavodicak.eu/storage/znacky/272.png
+
+Parkovanie na chodníku
+<span>Znaèka umoòuje státie vozidiel s najväèšou prípustnou celkovou hmotnosou neprevyšujúcou 3,5 t na chodníku a vyznaèenım symbolom oznaèuje spôsob ich státia. 
+<br>
+<br>Ak je pod znaèkou umiestnená dodatková tabu¾ka so symbolom osoby so zdravotnım postihnutím <img style='height:40px; width: auto' src='https://www.testynavodicak.eu/storage/znacky/dodatkova-invalid.png'>, znaèka oznaèuje vyhradené parkovanie, kde je dovolené zastavenie a státie len vozidiel s parkovacím preukazom.</span>
+https://www.testynavodicak.eu/storage/znacky/273.png
+
+Zóna zákazu státia
+<span>Znaèka oznaèuje zaèiatok zóny, v ktorej je zakázané státie okrem státia na vyznaèenıch parkovacích miestach.</span>
+https://www.testynavodicak.eu/storage/znacky/275.png
+
+Koniec zóny zákazu státia
+<span>Znaèka oznaèuje koniec zóny zákazu státia.</span>
+https://www.testynavodicak.eu/storage/znacky/276.png
+
+Parkovacia zóna
+<span>Znaèka oznaèuje zaèiatok zóny, v ktorej je státie vozidiel dovolené len na vyznaèenıch parkovacích miestach a len za urèitıch podmienok uvedenıch na dodatkovej tabu¾ke.</span>
+https://www.testynavodicak.eu/storage/znacky/277.png
+
+Koniec parkovacej zóny
+<span>Znaèka oznaèuje koniec parkovacej zóny.</span>
+https://www.testynavodicak.eu/storage/znacky/278.png
+
+Jazda po krajnici
+<span>Znaèka umoòuje pouíva krajnicu ako jazdnı pruh. 
+<br>
+<br>V úseku platnosti znaèky sa krajnica povauje za súèas vozovky a znaèka Pozdåna súvislá èiara, ktorá vyznaèuje okraj vozovky, má vıznam znaèky Pozdåna prerušovaná èiara.</span>
+https://www.testynavodicak.eu/storage/znacky/280.png
+
+Opustite krajnicu
+<span>Znaèka prikazuje vodièovi krajnicu èo najskôr opusti. 
+<br>
+<br>V úseku platnosti znaèky sa krajnica povauje za súèas vozovky a znaèka Pozdåna súvislá èiara, ktorá vyznaèuje okraj vozovky, má vıznam znaèky Pozdåna súvislá èiara doplnená prerušovanou èiarou (sprava).</span>
+https://www.testynavodicak.eu/storage/znacky/281.png
+
+Koniec jazdy po krajnici
+<span>Znaèka konèí platnos predchádzajúcej znaèky Jazda po krajnici a Opustite krajnicu.</span>
+https://www.testynavodicak.eu/storage/znacky/282.png
+
+Obchádzanie prekáky po krajnici
+<span>Znaèka prikazuje vodièovi jazdiacemu v pravom jazdnom pruhu poui na obchádzanie prekáky krajnicu; vodièovi jazdiacemu v inom ako pravom jazdnom pruhu znaèka prikazuje prejs do ved¾ajšieho jazdného pruhu spôsobom vyznaèenım na znaèke.</span>
+https://www.testynavodicak.eu/storage/znacky/283.png
+
