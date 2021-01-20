@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, TouchableWithoutFeedback  } from "react-native";
 import {Colors} from '../../global/globalStyles';
 import { connect } from 'react-redux';
 
@@ -23,8 +23,28 @@ function FirstAidAnswer(props) {
 
       }, [completedRef.current])  
 
+      function onPress() {
+            sharedStates.forEach((value, indx, theArray) => {
+                  const [answerIterating, setAnswer] = value;
+                   if(category == "Otázky z jednou odpoveďou:" || "Otázky hodnotové s jednou odpoveďou" || "Otázky typu pravda/nepravda") {
+                         if(indexAnswer == answerIterating.answerI){
+                               var chosen = !answerIterating.answerChosen;
+                               if(chosen) {
+                                    viewPager.current.setPage(currentPage+1)
+                               }
+                               setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
+                               completedRef.current = chosen;
+                         }else {
+                              setAnswer({answerChosen:false, answerI: answerIterating.answerI, correctnessOfanswer: answerIterating.correctnessOfanswer});
+                         }
+                   }
+             })
+      }
+
 
          return (
+               <TouchableWithoutFeedback onPress={() => onPress()}>
+
             <View style={[
                   {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
                   answer.answerChosen ?  
@@ -34,33 +54,18 @@ function FirstAidAnswer(props) {
                                     :{}
             ]}>
                   
-                  <TouchableOpacity onPress={() => {
-
-                         sharedStates.forEach((value, indx, theArray) => {
-                              const [answerIterating, setAnswer] = value;
-                               if(category == "Otázky z jednou odpoveďou:" || "Otázky hodnotové s jednou odpoveďou" || "Otázky typu pravda/nepravda") {
-                                     if(indexAnswer == answerIterating.answerI){
-                                           var chosen = !answerIterating.answerChosen;
-                                           if(chosen) {
-                                                viewPager.current.setPage(currentPage+1)
-                                           }
-                                           setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
-                                           completedRef.current = chosen;
-                                     }else {
-                                          setAnswer({answerChosen:false, answerI: answerIterating.answerI, correctnessOfanswer: answerIterating.correctnessOfanswer});
-                                     }
-                               }
-                         })
-
-                        }} disabled={rate_answr_immid && completedRef.current}>
+                  <TouchableOpacity onPress={() => onPress()} disabled={rate_answr_immid && completedRef.current}>
                         <Image
-                              source={!answer.answerChosen ? require('../../assets/images/answerIconThumbnail.png') : props.rate_answr_immid ? correctness ? require('../../assets/images/checkedCorrectThumbnail.png') : require('../../assets/images/checkedWrongThumbnail.png') : require('../../assets/images/checkedThumbnail.png')}
-                              style={{ width: 50, height: 50}}
+                              source={!answer.answerChosen ? require('../../assets/images/answerIconPurpleThumbnail.png') : props.rate_answr_immid ? correctness ? require('../../assets/images/checkedCorrectThumbnail.png') : require('../../assets/images/checkedWrongThumbnail.png') : require('../../assets/images/checkedThumbnail.png')}
+                              style={{ width: 25, height: 25}}
                         />
                   </TouchableOpacity>
 
-                  <Text style={{color: 'white'}}>{answerText}</Text>
+                  <Text style={{color: 'white', marginLeft: 10}}>{answerText}</Text>
             </View>
+
+
+               </TouchableWithoutFeedback>
            ) 
 }
 

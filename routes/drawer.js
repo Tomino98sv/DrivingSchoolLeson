@@ -30,7 +30,7 @@ const DrawerContent = (props) => (
               </View>
 
           <Text style={{ color: Colors.white, fontSize: 20, margin: 25, flex: 3 }}>
-            Bobek Rdacovsky
+            Bobek Opravar
           </Text>
 
         </View>
@@ -65,7 +65,7 @@ const RootDrawerNavigator = createDrawerNavigator({
       TrafficSign: {
             screen: TrafficSignScreen,
             navigationOptions: {
-                  drawerLabel: 'Dopravne znacky',
+                  drawerLabel: 'Dopravné značky',
                   drawerIcon: ({focused}) => (
                         <Image
                               source={!focused ? require('../assets/icons/trafficsignicon.png') : require('../assets/icons/trafficsigniconActiveY.png')}
@@ -77,7 +77,7 @@ const RootDrawerNavigator = createDrawerNavigator({
       FirstAid:{
             screen: FirstAid,
             navigationOptions: {
-                  drawerLabel: 'Prva pomoc',
+                  drawerLabel: 'Prvá pomoc',
                   drawerIcon: ({focused}) => (
                         <Image
                               source={!focused ? require('../assets/icons/prvapomoc.png') : require('../assets/icons/prvapomocActiveY.png')}

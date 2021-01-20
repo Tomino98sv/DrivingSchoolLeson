@@ -16,20 +16,19 @@ function FirstAidAnswer_Evaluating(props) {
 
 
          return (
-            // <View style={[
-            //       {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
-            //       answer.answerChosen ?  
-            //                               correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.yellow, borderTopWidth: 5 } : {}
-            // ]}>
+            <View style={[
+                  {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
+                  answer.answerChosen ?  
+                                          correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.red, borderTopWidth: 5 } : correctness ? {borderColor: Colors.green, borderTopWidth: 5 }: {borderColor: Colors.red, borderTopWidth: 5 }
+            ]}>
                   
-            //             <Image
-            //                   source={answer.answerChosen ? correctness ? require('../../assets/images/checkedCorrectThumbnail.png') : require('../../assets/images/checkedThumbnail.png') : require('../../assets/images/answerIconThumbnail.png')}
-            //                   style={{ width: 50, height: 50}}
-            //             />
+                        <Image
+                              source={answer.answerChosen ? correctness ? require('../../assets/images/checkedCorrectThumbnail.png') : require('../../assets/images/checkedWrongThumbnail.png') : require('../../assets/images/answerIconPurpleThumbnail.png')}
+                              style={{ width: 25, height: 25}}
+                        />
 
-            //       <Text style={{color: 'white'}}>{answerText}</Text>
-            // </View>
-            <View><Text>{answerText}</Text></View>
+                  <Text style={{color: 'white', marginLeft: 10}}>{answerText}</Text>
+            </View>
            ) 
 }
 

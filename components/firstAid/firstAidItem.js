@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator, Button  } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../../global/globalStyles';
-import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection } from '../../global/services';
+import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection, resetDB} from '../../global/services';
 
 export default function FirstAidItem({nav,title}) {
 
@@ -30,8 +30,6 @@ export default function FirstAidItem({nav,title}) {
 
                         </View>
                   </View>
-
-
 
                   <View style={{flexDirection: 'column', flex: 1, justifyContent: 'space-between'}}>
 

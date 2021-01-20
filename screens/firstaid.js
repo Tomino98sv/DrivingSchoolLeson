@@ -11,7 +11,7 @@ export default function FirstAid({navigation}) {
                   <View style={styles.container}>
                         <ImageBackground source={require('../assets/images/introBCKG.png')} style={styles.image}>
 
-                             <Header title="prva pomoc" nav={navigation}/>
+                             <Header title="prvá pomoc" nav={navigation}/>
 
                              <FlatList
                                     data={secNames}

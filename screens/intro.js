@@ -51,7 +51,7 @@ export default function IntroScreen({navigation}) {
 
                                       <View style={styles.infoContainer}>
 
-                                      <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobnosti</Text>
+                                      <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobností</Text>
                                       {oflineModeInfo ? (
                                                       <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {fadeOut(oflineModeAnime).start(()=> {setOflineModeInfo(false)})}}/>
 
@@ -91,7 +91,7 @@ export default function IntroScreen({navigation}) {
                                      
                                       <View style={styles.infoContainer}>
 
-                                      <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobnosti</Text>
+                                      <Text style={{flex:5,fontFamily: 'Crimson-Semibold', textAlign:'center', textAlignVertical: 'center'}}>Viac podrobností</Text>
                                       {onlineModeInfo ? (
                                                       <MaterialCommunityIcons style={{flex: 1, justifyContent: 'flex-end'}} name="arrow-down-drop-circle" size={34} color="black" onPress={() => {fadeOut(onlineModeAnime).start(()=> {setOnlineModeInfo(false)})}}/>
 

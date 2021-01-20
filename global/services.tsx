@@ -229,3 +229,22 @@ export const deleteFirstAidQuestionsBySection = (section: string, callback: any)
           })
 }
 
+export const resetDB = (callback: any) => {
+      console.log("calling resetDB")
+      db.transaction(tx => {
+            tx.executeSql('DROP database autoskola)',
+            [],
+            (tx, results) => {
+                  console.log("database droped");
+                  callback(true)
+            }
+             )
+          },
+          error => {
+            console.log("Transaction resetDB error", error);
+            callback(false)
+          },
+          () => {
+            console.log("Transaction resetDB done");
+          })
+}
