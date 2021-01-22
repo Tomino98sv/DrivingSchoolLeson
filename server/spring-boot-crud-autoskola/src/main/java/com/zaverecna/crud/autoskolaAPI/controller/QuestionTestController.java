@@ -44,67 +44,73 @@ public class QuestionTestController {
     @GetMapping("/loadTests")
     public void load_Write_TestQ(){
 
-        for(int i=1;i<=60;i++){
-            List<TestQuestion> all_Question_inTest = new ArrayList<TestQuestion>();
+        if (service.getAllQuestions().size() != 0){
+            System.out.println("ALREADY INSERTED Question Tests ");
 
-            try {
-                File test = new File("..\\datasource\\testy_autoskola\\test"+i+".txt");
-                File testOdpoved = new File("..\\datasource\\odpovede_autoskola\\odpovedeTest"+i+".txt");
+        }else {
+            System.out.println("Inserting Question Tests ");
+            for(int i=1;i<=60;i++){
+                List<TestQuestion> all_Question_inTest = new ArrayList<TestQuestion>();
 
-                List<Character> char_answers = new ArrayList<>();
+                try {
+                    File test = new File("..\\datasource\\testy_autoskola\\test"+i+".txt");
+                    File testOdpoved = new File("..\\datasource\\odpovede_autoskola\\odpovedeTest"+i+".txt");
 
-                Scanner myReader = new Scanner(testOdpoved);
-                while (myReader.hasNextLine()){
-                    char_answers.add(myReader.nextLine().charAt(0));
-                }
+                    List<Character> char_answers = new ArrayList<>();
 
-                int questionCounter = 0;
-                int questionParts = 0;
-                TestQuestion testQuestion = new TestQuestion();
-                List<TestAnswer> testAnswers = new ArrayList<TestAnswer>();
-                myReader = new Scanner(test);
+                    Scanner myReader = new Scanner(testOdpoved);
+                    while (myReader.hasNextLine()){
+                        char_answers.add(myReader.nextLine().charAt(0));
+                    }
 
-                while (myReader.hasNextLine()){
-                    String line = myReader.nextLine();
-                    questionParts++;
-                    if(questionParts == 1)testQuestion.setQuestion(line);
-                    if(questionParts == 2)testQuestion.setPoints(Integer.valueOf(line));
-                    if(questionParts == 3 && !line.isEmpty()){
-                        questionParts--;
-                        if(line.charAt(0) == 'a' || line.charAt(0) == 'b' || line.charAt(0) == 'c'){
-                            TestAnswer testAnswer = new TestAnswer();
-                            testAnswer.setaChar(line.charAt(0));
-                            testAnswer.setAnswer(line.substring(3));
-                            boolean correctness = line.charAt(0) == char_answers.get(questionCounter);
-                            testAnswer.setCorrectness(correctness);
-                            testAnswers.add(testAnswer);
-                        }else {
-                            testQuestion.setImageURL(line);
+                    int questionCounter = 0;
+                    int questionParts = 0;
+                    TestQuestion testQuestion = new TestQuestion();
+                    List<TestAnswer> testAnswers = new ArrayList<TestAnswer>();
+                    myReader = new Scanner(test);
+
+                    while (myReader.hasNextLine()){
+                        String line = myReader.nextLine();
+                        questionParts++;
+                        if(questionParts == 1)testQuestion.setQuestion(line);
+                        if(questionParts == 2)testQuestion.setPoints(Integer.valueOf(line));
+                        if(questionParts == 3 && !line.isEmpty()){
+                            questionParts--;
+                            if(line.charAt(0) == 'a' || line.charAt(0) == 'b' || line.charAt(0) == 'c'){
+                                TestAnswer testAnswer = new TestAnswer();
+                                testAnswer.setaChar(line.charAt(0));
+                                testAnswer.setAnswer(line.substring(3));
+                                boolean correctness = line.charAt(0) == char_answers.get(questionCounter);
+                                testAnswer.setCorrectness(correctness);
+                                testAnswers.add(testAnswer);
+                            }else {
+                                testQuestion.setImageURL(line);
+                            }
+                        }
+
+                        if (line.isEmpty()){ //initialize question and his answers
+                            testQuestion.setTestgroup(getTestGroup(i));
+                            testQuestion.setAnswers(testAnswers);
+                            testQuestion.setTestnumber(i);
+                            all_Question_inTest.add(testQuestion);
+
+                            questionCounter++;
+                            questionParts = 0;
+                            testQuestion = new TestQuestion();
+                            testAnswers = new ArrayList<>();
+
                         }
                     }
 
-                    if (line.isEmpty()){ //initialize question and his answers
-                        testQuestion.setTestgroup(getTestGroup(i));
-                        testQuestion.setAnswers(testAnswers);
-                        testQuestion.setTestnumber(i);
-                        all_Question_inTest.add(testQuestion);
-
-                        questionCounter++;
-                        questionParts = 0;
-                        testQuestion = new TestQuestion();
-                        testAnswers = new ArrayList<>();
-
-                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                    System.out.println("Test fall down on :"+i);
                 }
 
-            }catch (Exception e){
-                e.printStackTrace();
-                System.out.println("Test fall down on :"+i);
+                all_Question_inTest.forEach(q -> {
+                    service.saveQuestion(q);
+                });
             }
-
-            all_Question_inTest.forEach(q -> {
-                service.saveQuestion(q);
-            });
         }
     }
 

@@ -42,25 +42,33 @@ public class TrafficSignController {
 
     @GetMapping("/loadTrafficSigns")
     public Iterable<TrafficSign> load_Write_LoadTrafficSigns(){
-
-        String Dodatkovétabuľky = "..\\datasource\\znacky\\Dodatkové tabuľky.txt";
-        String Dopravnézariadenia = "..\\datasource\\znacky\\Dopravné zariadenia.txt";
-        String Informačnéznačky = "..\\datasource\\znacky\\Informačné značky.txt";
-        String Regulačnéznačky = "..\\datasource\\znacky\\Regulačné značky.txt";
-        String Svetelnésignályapokyny = "..\\datasource\\znacky\\Svetelné signály a pokyny.txt";
-        String Vodorovnédopravnéznačky = "..\\datasource\\znacky\\Vodorovné dopravné značky.txt";
-        String Výstražnéznačky = "..\\datasource\\zaloha\\Výstražné značky.txt";
-
         List<TrafficSign> trafficSigns = new ArrayList<>();
-        trafficSigns.addAll(createObjectsFromTXT(Dodatkovétabuľky));
-        trafficSigns.addAll(createObjectsFromTXT(Dopravnézariadenia));
-        trafficSigns.addAll(createObjectsFromTXT(Informačnéznačky));
-        trafficSigns.addAll(createObjectsFromTXT(Regulačnéznačky));
-        trafficSigns.addAll(createObjectsFromTXT(Svetelnésignályapokyny));
-        trafficSigns.addAll(createObjectsFromTXT(Vodorovnédopravnéznačky));
-        trafficSigns.addAll(createObjectsFromTXT(Výstražnéznačky));
 
-        return service.insertTrafficSigns(trafficSigns);
+        if(service.getAllTrafficSigns().size() != 0) {
+            System.out.println("Already inserted Traffic signs");
+            return trafficSigns;
+        }else {
+            System.out.println("Inserting Traffic signs");
+
+            String Dodatkovétabuľky = "..\\datasource\\znacky\\Dodatkové tabuľky.txt";
+            String Dopravnézariadenia = "..\\datasource\\znacky\\Dopravné zariadenia.txt";
+            String Informačnéznačky = "..\\datasource\\znacky\\Informačné značky.txt";
+            String Regulačnéznačky = "..\\datasource\\znacky\\Regulačné značky.txt";
+            String Svetelnésignályapokyny = "..\\datasource\\znacky\\Svetelné signály a pokyny.txt";
+            String Vodorovnédopravnéznačky = "..\\datasource\\znacky\\Vodorovné dopravné značky.txt";
+            String Výstražnéznačky = "..\\datasource\\zaloha\\Výstražné značky.txt";
+
+            trafficSigns.addAll(createObjectsFromTXT(Dodatkovétabuľky));
+            trafficSigns.addAll(createObjectsFromTXT(Dopravnézariadenia));
+            trafficSigns.addAll(createObjectsFromTXT(Informačnéznačky));
+            trafficSigns.addAll(createObjectsFromTXT(Regulačnéznačky));
+            trafficSigns.addAll(createObjectsFromTXT(Svetelnésignályapokyny));
+            trafficSigns.addAll(createObjectsFromTXT(Vodorovnédopravnéznačky));
+            trafficSigns.addAll(createObjectsFromTXT(Výstražnéznačky));
+
+            return service.insertTrafficSigns(trafficSigns);
+
+        }
 
     }
 

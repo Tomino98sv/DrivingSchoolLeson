@@ -18,8 +18,8 @@ public class TestQuestionService {
         return  repozitory.save(test);
     }
 
-    public Iterable<TestQuestion> getAllQuestions(){
-        return repozitory.findAll();
+    public List<TestQuestion> getAllQuestions(){
+        return (List<TestQuestion>) repozitory.findAll();
     }
 
     public List<TestQuestion> getTestQuestionByStringQuestion(String question) {

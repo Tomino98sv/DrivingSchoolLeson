@@ -19,8 +19,8 @@ public class FirstAidService {
         return  repozitory.save(test);
     }
 
-    public Iterable<FirstAidQuestion> getAllQuestions(){
-        return repozitory.findAll();
+    public List<FirstAidQuestion> getAllQuestions(){
+        return (List<FirstAidQuestion>) repozitory.findAll();
     }
 
     public List<FirstAidQuestion> getAllQuestionBySection(String section){

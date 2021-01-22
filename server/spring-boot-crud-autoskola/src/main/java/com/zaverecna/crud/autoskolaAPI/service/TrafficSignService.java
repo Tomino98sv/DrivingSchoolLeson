@@ -13,8 +13,8 @@ public class TrafficSignService {
     @Autowired
     private TrafficSignRepozitory repozitory;
 
-    public Iterable<TrafficSign> getAllTrafficSigns(){
-        return repozitory.findAll();
+    public List<TrafficSign> getAllTrafficSigns(){
+        return (List<TrafficSign>) repozitory.findAll();
     }
 
     public Iterable<TrafficSign> insertTrafficSigns(List<TrafficSign> trafficSigns){
