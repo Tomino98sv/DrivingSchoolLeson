@@ -19,6 +19,8 @@ interface FirstAidAnswerModel {
   }
 
 function insertFirstAidAnswers(sqlTransaction:SQLTransaction, questionId: Number, answers: FirstAidAnswerModel[]) {
+      console.log("calling insertFirstAidAnswers")
+
             sqlTransaction.executeSql(
                   'CREATE TABLE IF NOT EXISTS FirstAidAnswer (id INTEGER PRIMARY KEY AUTOINCREMENT , answer TEXT, correctness BOOLEAN, join_to_question INTEGER REFERENCES FirstAidQuestion(id))',
                   [],
@@ -40,6 +42,7 @@ function insertFirstAidAnswers(sqlTransaction:SQLTransaction, questionId: Number
 }
 
 function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: any) {
+      console.log("calling insertFirstAidQuestions")
       db.transaction(tx => {
             tx.executeSql(
                   'CREATE TABLE IF NOT EXISTS FirstAidQuestion (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, sectionGroup TEXT, count INT)',
@@ -73,7 +76,7 @@ function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: a
 
 
 export const downloadFirstAidQuestions = (section: string, callback: any) => {
-      console.log("no toto")
+      console.log("calling downloadFirstAidQuestions "+section);
 
       const controller = new AbortController();
       var counter = 0;
@@ -125,7 +128,7 @@ export const downloadFirstAidQuestions = (section: string, callback: any) => {
 export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
 
       const firstAidQuestions: FirstAidQuestionModel[] = [];
-
+      console.log("calling getFirstAidQuestionsBySection "+section);
       db.transaction(tx => {
             tx.executeSql('SELECT fQ.id, fQ.question, fQ.sectionGroup, fQ.count, '+
             '\'[\' || GROUP_CONCAT(\'{"answer":\' || \'"\'  || fA.answer || \'",\' || \' "correctness":\' || fA.correctness || \'}\' ) || \']\' as answers '+
@@ -174,7 +177,7 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
             console.log("Transaction getFirstAidQuestionsBySection error", error);
           },
           () => {
-            console.log("Transaction getFirstAidQuestionsBySection done");
+            console.log("Transaction getFirstAidQuestionsBySection "+section+" done");
           })
 }
 
