@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 // import { Swiper, SwiperSlide} from 'swiper/react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, FlatList, Button, Alert, BackHandler   } from "react-native";
 
+import SwipeRender from "react-native-swipe-render";
 
 import {Colors} from '../../global/globalStyles';
 import Header from '../header';
@@ -12,17 +13,13 @@ import FirstAidAnswer_Evaluating from '../firstAid/firstAidAnswer_Evaluating';
 
 import ViewPager from '@react-native-community/viewpager';
 
-
-let countgenerateQuestions = 0;
-
-
 export default function FirstAidTest(props) {
 
       const {navigation} = props
       let mysharedStatesArray = Array();
       let completedAnswering = Array();
 
-
+      const categoryQuestion = navigation.state.params.title;
       const pauseTiming = useRef(false);
       const intervalTimer = useRef();
       const setPageOnViewPager = useRef();
@@ -41,7 +38,6 @@ export default function FirstAidTest(props) {
 
       useEffect(() => {
 
-                  console.log("ComponentMount FirstAidTest ",navigation.state.params.title);
                   initializeTimer();
                   BackHandler.addEventListener('hardwareBackPress', () => {
                         getAlert();
@@ -84,7 +80,7 @@ export default function FirstAidTest(props) {
       function initializeTimer() { 
             var counter = 0;
             intervalTimer.current = setInterval(() => {
-                  console.log("interval works")
+                  // console.log("interval works")
                         if(!pauseTiming.current) {
                               counter++;
                               var minutes = parseInt(counter / 60, 10);
@@ -101,8 +97,8 @@ export default function FirstAidTest(props) {
 
 
       function generateQuestions() {
-            countgenerateQuestions++;
-            console.log("calling generateQuestions  ",countgenerateQuestions," time ",time);
+            // countgenerateQuestions++;
+            // console.log("calling generateQuestions  ",countgenerateQuestions," time ",time);
 
             let {data} = navigation.state.params;
 
@@ -142,11 +138,11 @@ export default function FirstAidTest(props) {
                                     
 
                                           <View style={{flex:3}}><Text style={{color: Colors.white, textAlign: 'center', textAlignVertical: 'center', flex: 1, paddingLeft: 15, paddingRight: 15}}>{question.question}</Text></View>
-                                           <View style={{flex:3}}>
-                                           <FlatList
-                                                data={question.answers}
-                                                renderItem={({item, index}) => evaluation.current ? <FirstAidAnswer_Evaluating answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index}/> : <FirstAidAnswer indexQ={indexQuest} answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index} viewPager={setPageOnViewPager} currentPage={currentPage} category={question.sectionGroup} completed={completedAnswering[indexQuest]}/>}
-                                                keyExtractor={(item, indexAnswerArray) => indexAnswerArray.toString()}/>
+                                           <View style={{flex:3, marginTop: 5, alignSelf: 'stretch'}}>
+                                                <FlatList
+                                                      data={question.answers}
+                                                      renderItem={({item, index}) => evaluation.current ? <FirstAidAnswer_Evaluating answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index}/> : <FirstAidAnswer indexQ={indexQuest} answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index} viewPager={setPageOnViewPager} currentPage={currentPage} category={categoryQuestion} completed={completedAnswering[indexQuest]}/>}
+                                                      keyExtractor={(item, indexAnswerArray) => indexAnswerArray.toString()}/>
                                           </View>
                                           <View style={{flex: 1}}></View> 
                                     </View>
@@ -161,18 +157,25 @@ export default function FirstAidTest(props) {
       }
 
       function generateEvaluation() {
-            console.log("calling generateEvaluation");
-
             let countCorrectAnswer = 0
 
             mysharedStatesArray.forEach(arrayStateAnswers => {
                   // console.log("\n\none question: \n");
                   arrayStateAnswers.forEach(answerState => {
                         let [answer] = answerState;
-                        if(answer.answerChosen && answer.correctnessOfanswer){
-                              countCorrectAnswer++;
+
+                        if(categoryQuestion == "Otázky z jednou odpoveďou:" || categoryQuestion == "Otázky hodnotové s jednou odpoveďou" || categoryQuestion == "Otázky typu pravda/nepravda" || categoryQuestion == "Modelové situácie") {
+                              if(answer.answerChosen && answer.correctnessOfanswer){
+                                    countCorrectAnswer++;
+                              }
+                        }
+                        if ( categoryQuestion == "Otázky s viacnásobnou odpoveďou") {
+
                         }
                   })
+                  if ( categoryQuestion == "Otázky kde sú všetky odpovede správne") {
+                              countCorrectAnswer++;
+                  }
             })
 
             return <View style={{flexDirection:'column'}}>
@@ -236,7 +239,7 @@ export default function FirstAidTest(props) {
             <View style={styles.container}>
                   <ImageBackground source={require('../../assets/images/introBCKG.png')} style={styles.image}>
 
-                       <Header title={navigation.state.params.title} nav={navigation}/>
+                       <Header title={categoryQuestion} nav={navigation}/>
 
                       
                         {!evaluation.current && <View style={{
@@ -252,10 +255,10 @@ export default function FirstAidTest(props) {
                                                 <Text style={{fontFamily: 'MerriweatherSans-Medium'}}>Čas: {time}</Text>
                                           </View>
 
-                                          <View style={{flex: 1, margin: 2, alignItems: 'center', backgroundColor: Colors.white, borderTopRightRadius: 8, borderBottomLeftRadius: 0, borderBottomRightRadius: 16, borderTopLeftRadius: 0, padding: 5}}>
+                                          <View style={{flex: 1, flexGrow: 2, margin: 2, alignItems: 'center', backgroundColor: Colors.white, borderTopRightRadius: 8, borderBottomLeftRadius: 0, borderBottomRightRadius: 16, borderTopLeftRadius: 0, padding: 5}}>
                                                 <Text style={{fontFamily: 'MerriweatherSans-Medium'}}>Zodpovedané otázky: {answersCompleted}  / {navigation.state.params.data.length} </Text>
                                           </View>
-                                          <TouchableOpacity style={{flex: 1, alignItems: 'flex-end', marginTop: -10, marginEnd: -10, padding: 5}} onPress={() => {getAlert()}}>
+                                          <TouchableOpacity style={{flex: 1, alignItems: 'flex-end',  padding: 5}} onPress={() => {getAlert()}}>
                                                 <Image source={require('../../assets/icons/close.png')} style={{width: 35, height: 35}}/>
                                           </TouchableOpacity>
 
@@ -268,6 +271,8 @@ export default function FirstAidTest(props) {
                               
                         </ViewPager>
 
+
+                        <SwipeRender />
                   </ImageBackground>
             </View>  
 

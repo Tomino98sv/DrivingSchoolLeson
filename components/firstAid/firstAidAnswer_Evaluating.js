@@ -11,10 +11,6 @@ function FirstAidAnswer_Evaluating(props) {
 
       const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];
 
-
-      // answerChosen:false, correctnessOfanswer: false, answerI: index
-
-
          return (
             <View style={[
                   {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
@@ -33,11 +29,3 @@ function FirstAidAnswer_Evaluating(props) {
 }
 
 export default FirstAidAnswer_Evaluating;
-
-
-      // "Otázky z jednou odpoveďou:",
-      // "Otázky hodnotové s jednou odpoveďou",
-      // "Otázky typu pravda/nepravda",
-      // "Otázky s viacnásobnou odpoveďou",
-      // "Otázky kde sú všetky odpovede správne",
-      // "Modelové situácie"

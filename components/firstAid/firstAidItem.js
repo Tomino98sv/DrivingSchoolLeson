@@ -12,39 +12,19 @@ export default function FirstAidItem({nav,title}) {
 
       let data = new Array();
 
-      // return (
-      //       <View>
-      //             <TouchableOpacity onPress={() => {deleteFirstAidQuestionsBySection(title, confirm => {
-      //                   if(confirm) {
-      //                         setDownloaded(false) 
-      //                   }else {
-      //                         alert("error while deleting question and answers from ",title) 
-      //                   }
-      //             })}} style={{flex: 1,}}>
-      //                                       <ImageBackground source = {require('../../assets/images/deleteShapeWithShadows.png')} style={{ width: 90, height: 35, alignSelf: 'flex-end', alignItems: 'center', elevation: 5}}>
-      //                                       <Image
-      //                                           source={require('../../assets/icons/trashIconAngle.png')}
-      //                                           style={{width: 25, height: 25, margin: 5, marginLeft: 20}}
-      //                                           />                                            
-
-      //                                           </ImageBackground>
-
-      //             </TouchableOpacity>
-      //       </View>
-      // );
-
       useEffect(() => {
-            getFirstAidQuestionsBySection(title, result => {
-                  console.log("get question by section "+title);
+            console.log("Component FirstAidItem Mount ",title)
 
+            getFirstAidQuestionsBySection(title, result => {
                   if(result.length !== 0) {
-                        console.log("get question by section "+title+" length !== 0");
                         data = result;
                         setDownloaded(true)
-                  }else {
-                        console.log("get question by section "+title+" length == 0");
                   }
             })
+
+            return () => {
+                  console.log("Component FirstAidItem UnMount ",title)
+            }
           }); 
 
          return (
@@ -81,7 +61,6 @@ export default function FirstAidItem({nav,title}) {
                   <TouchableOpacity onPress={() => {  
                         setLoading(true);
                         downloadFirstAidQuestions(title, value => {
-                              console.log(value)
                               setLoading(false);
                               if(value) {
                                     setDownloaded(value) 

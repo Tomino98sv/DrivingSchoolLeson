@@ -14,19 +14,18 @@ function FirstAidAnswer(props) {
 
 
       useEffect(() => {
-
-            console.log("ComponentMount FirstAidAnswer answerIndex ",indexAnswer," question Index ",indexQ);
-
+            // console.log("ComponentMount FirstAidAnswer answerIndex ",indexAnswer," question Index ",indexQ);
       return () => {
-            console.log("ComponentUnMount FirstAidAnswer answerIndex",indexAnswer," question Index ",indexQ);
+            // console.log("ComponentUnMount FirstAidAnswer answerIndex",indexAnswer," question Index ",indexQ);
       }
 
       }, [completedRef.current])  
 
       function onPress() {
             sharedStates.forEach((value, indx, theArray) => {
+                  
                   const [answerIterating, setAnswer] = value;
-                   if(category == "Otázky z jednou odpoveďou:" || "Otázky hodnotové s jednou odpoveďou" || "Otázky typu pravda/nepravda") {
+                   if(category == "Otázky z jednou odpoveďou:" || category == "Otázky hodnotové s jednou odpoveďou" || category == "Otázky typu pravda/nepravda" || category == "Modelové situácie") {
                          if(indexAnswer == answerIterating.answerI){
                                var chosen = !answerIterating.answerChosen;
                                if(chosen) {
@@ -37,6 +36,35 @@ function FirstAidAnswer(props) {
                          }else {
                               setAnswer({answerChosen:false, answerI: answerIterating.answerI, correctnessOfanswer: answerIterating.correctnessOfanswer});
                          }
+                   }else if ( category == "Otázky s viacnásobnou odpoveďou") {
+
+                        if(indexAnswer == answerIterating.answerI){
+                              var chosen = !answerIterating.answerChosen;
+                              // if(chosen) {
+                              //      viewPager.current.setPage(currentPage+1)
+                              // }
+                              setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
+                              completedRef.current = chosen;
+                        }
+
+                   }else if ( category == "Otázky kde sú všetky odpovede správne") {
+                        if(indexAnswer == answerIterating.answerI){
+                              var chosen = !answerIterating.answerChosen;
+                              setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
+
+                              var allChosenCounter = chosen;
+                              sharedStates.forEach((value, indx, theArray) => {
+                                    const [controlAnswer, setControlAnswer] = value;
+                                    if (!(indexAnswer == controlAnswer.answerI) && controlAnswer.answerChosen) {
+                                          allChosenCounter++;
+                                    }
+                              })
+                              if(allChosenCounter == sharedStates.length) {
+                                    viewPager.current.setPage(currentPage+1);
+                                    completedRef.current = chosen;
+                               }
+                        }
+
                    }
              })
       }
@@ -46,7 +74,7 @@ function FirstAidAnswer(props) {
                <TouchableWithoutFeedback onPress={() => onPress()}>
 
             <View style={[
-                  {backgroundColor: Colors.acient, flexDirection: 'row', width: Dimensions.get("window").width, marginBottom: 20, padding: 10}, 
+                  {backgroundColor: Colors.acient, flexDirection: 'row', marginBottom: 20, padding: 10}, 
                   answer.answerChosen ?  
                                     rate_answr_immid ? 
                                                       correctness ? {borderColor: Colors.green, borderTopWidth: 5 }:{borderColor: Colors.red, borderTopWidth: 5 } 
@@ -61,11 +89,11 @@ function FirstAidAnswer(props) {
                         />
                   </TouchableOpacity>
 
-                  <Text style={{color: 'white', marginLeft: 10}}>{answerText}</Text>
+                  <Text style={{color: 'white', marginLeft: 10, flex: 1}}>{answerText}</Text>
             </View>
 
 
-               </TouchableWithoutFeedback>
+                </TouchableWithoutFeedback>
            ) 
 }
 
