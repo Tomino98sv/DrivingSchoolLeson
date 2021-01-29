@@ -177,7 +177,7 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
             console.log("Transaction getFirstAidQuestionsBySection error", error);
           },
           () => {
-            console.log("Transaction getFirstAidQuestionsBySection "+section+" done");
+            // console.log("Transaction getFirstAidQuestionsBySection "+section+" done");
           })
 }
 

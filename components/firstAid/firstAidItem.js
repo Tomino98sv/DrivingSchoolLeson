@@ -13,7 +13,7 @@ export default function FirstAidItem({nav,title}) {
       let data = new Array();
 
       useEffect(() => {
-            console.log("Component FirstAidItem Mount ",title)
+            // console.log("Component FirstAidItem Mount ",title)
 
             getFirstAidQuestionsBySection(title, result => {
                   if(result.length !== 0) {
@@ -23,7 +23,7 @@ export default function FirstAidItem({nav,title}) {
             })
 
             return () => {
-                  console.log("Component FirstAidItem UnMount ",title)
+                  // console.log("Component FirstAidItem UnMount ",title)
             }
           }); 
 

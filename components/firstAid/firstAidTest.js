@@ -2,9 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 
 // import { Swiper, SwiperSlide} from 'swiper/react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, FlatList, Button, Alert, BackHandler   } from "react-native";
-
-import SwipeRender from "react-native-swipe-render";
-
 import {Colors} from '../../global/globalStyles';
 import Header from '../header';
 import FirstAidAnswer from '../firstAid/firstAidAnswer';
@@ -18,6 +15,7 @@ export default function FirstAidTest(props) {
       const {navigation} = props
       let mysharedStatesArray = Array();
       let completedAnswering = Array();
+      const viewQuestArray = Array();
 
       const categoryQuestion = navigation.state.params.title;
       const pauseTiming = useRef(false);
@@ -25,19 +23,35 @@ export default function FirstAidTest(props) {
       const setPageOnViewPager = useRef();
       const evaluation = useRef(false);
       const [currentPage, setCurrentPage] = useState(0);
-      const [answersCompleted, setAnswersCompleted] = useState(0);
+      const indexOfQuestion = useRef(0)
+
+      const [answersCompletedCount, setanswersCompletedCount] = useState(0);
       const [backButton, setBackButton] = useState(false);
       const [time, setTime] = useState("00:00");
 
       const onPageScroll = (event) => {
             const {position} = event.nativeEvent;
+
               if(position !== currentPage) {
                   setCurrentPage(position);
+                  if (position == 2 && indexOfQuestion.current+1 < navigation.state.params.data.length) {
+                        console.log("zvysujem indexQuestion na ", indexOfQuestion.current);
+                        indexOfQuestion.current = indexOfQuestion.current +1;
+                  }else if(position == 0 && indexOfQuestion.current > 0) {
+                        console.log("znizujem indexQuestion na ", indexOfQuestion.current);
+                        indexOfQuestion.current = indexOfQuestion.current -1;
+                  }
+
+                  if( getPages().length == 2){
+                        console.log("podmienka lengthu a posicie presla");
+                        if(position == 1 && indexOfQuestion.current+1 < navigation.state.params.data.length) {
+                              indexOfQuestion.current = indexOfQuestion.current +1;
+                        }
+                  }
              }
-      } 
+      }    
 
       useEffect(() => {
-
                   initializeTimer();
                   BackHandler.addEventListener('hardwareBackPress', () => {
                         getAlert();
@@ -62,15 +76,15 @@ export default function FirstAidTest(props) {
             if(count == navigation.state.params.data.length) {
                   clearInterval(intervalTimer.current)
                   if(!evaluation.current){            //nejako to neprepina na poslednu stranu....viewpager indexuje od 0
-                        setPageOnViewPager.current.setPage(9)
+                        // setPageOnViewPager.current.setPage(9) 
+                        // setPage ne na 9 ale na poslednu stranu
                   }
                   pauseTiming.current = true;
                   evaluation.current = true;
             }
-            setAnswersCompleted(count);
+            setanswersCompletedCount(count);
 
       }, [completedAnswering])   
-      
 
       function getAlert() {
             pauseTiming.current = true;
@@ -97,15 +111,11 @@ export default function FirstAidTest(props) {
 
 
       function generateQuestions() {
-            // countgenerateQuestions++;
-            // console.log("calling generateQuestions  ",countgenerateQuestions," time ",time);
-
             let {data} = navigation.state.params;
 
-            return data.map((question, indexQuest) => {
+            data.forEach((question) => {
 
                   var answerStates = Array();
-
 
                   question.answers.forEach((value, index)=> {
                         answerStates.push(useState({answerChosen:false, correctnessOfanswer: false, answerI: index}))
@@ -113,7 +123,12 @@ export default function FirstAidTest(props) {
                   mysharedStatesArray.push(answerStates);
                   completedAnswering.push(useRef(false))
 
-                  return <View style={{flexDirection:'column'}} key={indexQuest}>
+            })
+
+            data.forEach((question, indexQuest) => {
+
+
+                  let questView = <View style={{flexDirection:'column'}} key={indexQuest}>
 
 
                              <View style={{flex:1}}></View>
@@ -153,7 +168,22 @@ export default function FirstAidTest(props) {
                               <View style={{flex:1}}></View> 
 
                   </View>
+
+                  if(indexOfQuestion.current == indexQuest) { // push current page quest
+                        viewQuestArray.push(questView);
+                  }
+                  if(indexOfQuestion.current-1 >= 0 && indexOfQuestion.current-1 == indexQuest){ // push previousle questPage if previous exists
+                              viewQuestArray.push(questView);
+                  }
+                  if(indexOfQuestion.current+1 < data.length && indexOfQuestion.current+1 == indexQuest){ //if future quest exists then push next questPage
+                              viewQuestArray.push(questView);
+                  }
+                  
             })
+      }
+
+      function getPages() {
+            return viewQuestArray;
       }
 
       function generateEvaluation() {
@@ -256,7 +286,7 @@ export default function FirstAidTest(props) {
                                           </View>
 
                                           <View style={{flex: 1, flexGrow: 2, margin: 2, alignItems: 'center', backgroundColor: Colors.white, borderTopRightRadius: 8, borderBottomLeftRadius: 0, borderBottomRightRadius: 16, borderTopLeftRadius: 0, padding: 5}}>
-                                                <Text style={{fontFamily: 'MerriweatherSans-Medium'}}>Zodpovedané otázky: {answersCompleted}  / {navigation.state.params.data.length} </Text>
+                                                <Text style={{fontFamily: 'MerriweatherSans-Medium'}}>Zodpovedané otázky: {answersCompletedCount}  / {navigation.state.params.data.length} </Text>
                                           </View>
                                           <TouchableOpacity style={{flex: 1, alignItems: 'flex-end',  padding: 5}} onPress={() => {getAlert()}}>
                                                 <Image source={require('../../assets/icons/close.png')} style={{width: 35, height: 35}}/>
@@ -266,13 +296,13 @@ export default function FirstAidTest(props) {
                        <ViewPager style={{backgroundColor: 'transparent', flex: 1,}} initialPage={0} onPageScroll={onPageScroll}
                         ref={(viewPager) => {setPageOnViewPager.current = viewPager}}>
 
+                                    {console.log("ViewPager rendering")}
                                     {generateQuestions()}
+                                    {getPages()}
                                     {evaluation.current && generateEvaluation()}
                               
                         </ViewPager>
 
-
-                        <SwipeRender />
                   </ImageBackground>
             </View>  
 
