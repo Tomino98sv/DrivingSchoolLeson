@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, TouchableWithoutFeedback  } from "react-native";
 import {Colors} from '../../global/globalStyles';
@@ -7,17 +7,27 @@ import { connect } from 'react-redux';
 
 function FirstAidAnswer(props) {
 
-      const {answerText, correctness, indexAnswer, sharedStates, category, completed, viewPager, currentPage, rate_answr_immid, indexQ} = props;
-
+      const {answerText, correctness, indexAnswer, sharedStates, category, completed, viewPager, currentPage, rate_answr_immid} = props;
+      const countCorrectAnswer = useRef(0);
       const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];
-      const completedRef = completed;
+      const completedRef = completed; 
 
 
       useEffect(() => {
-            // console.log("ComponentMount FirstAidAnswer answerIndex ",indexAnswer," question Index ",indexQ);
-      return () => {
-            // console.log("ComponentUnMount FirstAidAnswer answerIndex",indexAnswer," question Index ",indexQ);
-      }
+
+           if(category == "Otázky s viacnásobnou odpoveďou") {
+                 let count = 0;
+                  sharedStates.forEach((value, indx, theArray) => {
+                        const [answerIterating, setAnswer] = value;
+                        if(answerIterating.correct) {
+                              count++;
+                        }
+                  })
+                  countCorrectAnswer.current = count;
+           } 
+            
+            return () => {
+            }
 
       }, [completedRef.current])  
 
@@ -38,14 +48,24 @@ function FirstAidAnswer(props) {
                          }
                    }else if ( category == "Otázky s viacnásobnou odpoveďou") {
 
-                        if(indexAnswer == answerIterating.answerI){
+                        if(indexAnswer == answerIterating.answerI && !answerIterating.answerChosen){
                               var chosen = !answerIterating.answerChosen;
-                              // if(chosen) {
-                              //      viewPager.current.setPage(currentPage+1)
-                              // }
                               setAnswer({answerChosen:chosen, answerI: answerIterating.answerI, correctnessOfanswer: correctness});
-                              completedRef.current = chosen;
+
+
+                              var allChosenCounter = chosen;
+                              sharedStates.forEach((value, indx, theArray) => {
+                                    const [controlAnswer, setControlAnswer] = value;
+                                    if (!(indexAnswer == controlAnswer.answerI) && controlAnswer.answerChosen) { 
+                                          allChosenCounter++;
+                                    }
+                              })
+                              if(allChosenCounter == countCorrectAnswer.current) {
+                                    viewPager.current.setPage(currentPage+1);
+                                    completedRef.current = chosen;
+                               } 
                         }
+
 
                    }else if ( category == "Otázky kde sú všetky odpovede správne") {
                         if(indexAnswer == answerIterating.answerI){
@@ -55,14 +75,14 @@ function FirstAidAnswer(props) {
                               var allChosenCounter = chosen;
                               sharedStates.forEach((value, indx, theArray) => {
                                     const [controlAnswer, setControlAnswer] = value;
-                                    if (!(indexAnswer == controlAnswer.answerI) && controlAnswer.answerChosen) {
+                                    if (!(indexAnswer == controlAnswer.answerI) && controlAnswer.answerChosen) { 
                                           allChosenCounter++;
                                     }
                               })
                               if(allChosenCounter == sharedStates.length) {
                                     viewPager.current.setPage(currentPage+1);
                                     completedRef.current = chosen;
-                               }
+                               } 
                         }
 
                    }
@@ -71,7 +91,7 @@ function FirstAidAnswer(props) {
 
 
          return (
-               <TouchableWithoutFeedback onPress={() => onPress()}>
+               <TouchableWithoutFeedback onPress={() => onPress()} disabled={rate_answr_immid && completedRef.current}>
 
             <View style={[
                   {backgroundColor: Colors.acient, flexDirection: 'row', marginBottom: 20, padding: 10}, 

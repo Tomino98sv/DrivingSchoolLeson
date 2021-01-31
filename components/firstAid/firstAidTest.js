@@ -35,15 +35,15 @@ export default function FirstAidTest(props) {
               if(position !== currentPage) {
                   setCurrentPage(position);
                   if (position == 2 && indexOfQuestion.current+1 < navigation.state.params.data.length) {
-                        console.log("zvysujem indexQuestion na ", indexOfQuestion.current);
+                        // console.log("zvysujem indexQuestion na ", indexOfQuestion.current);
                         indexOfQuestion.current = indexOfQuestion.current +1;
                   }else if(position == 0 && indexOfQuestion.current > 0) {
-                        console.log("znizujem indexQuestion na ", indexOfQuestion.current);
+                        // console.log("znizujem indexQuestion na ", indexOfQuestion.current);
                         indexOfQuestion.current = indexOfQuestion.current -1;
                   }
 
                   if( getPages().length == 2){
-                        console.log("podmienka lengthu a posicie presla");
+                        // console.log("podmienka lengthu a posicie presla");
                         if(position == 1 && indexOfQuestion.current+1 < navigation.state.params.data.length) {
                               indexOfQuestion.current = indexOfQuestion.current +1;
                         }
@@ -116,9 +116,11 @@ export default function FirstAidTest(props) {
             data.forEach((question) => {
 
                   var answerStates = Array();
+                  let countCorrectAnswer = 0;
 
+                  
                   question.answers.forEach((value, index)=> {
-                        answerStates.push(useState({answerChosen:false, correctnessOfanswer: false, answerI: index}))
+                        answerStates.push(useState({answerChosen:false, correctnessOfanswer: false, answerI: index, correct: value.correctness}))
                   })
                   mysharedStatesArray.push(answerStates);
                   completedAnswering.push(useRef(false))
@@ -156,7 +158,7 @@ export default function FirstAidTest(props) {
                                            <View style={{flex:3, marginTop: 5, alignSelf: 'stretch'}}>
                                                 <FlatList
                                                       data={question.answers}
-                                                      renderItem={({item, index}) => evaluation.current ? <FirstAidAnswer_Evaluating answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index}/> : <FirstAidAnswer indexQ={indexQuest} answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index} viewPager={setPageOnViewPager} currentPage={currentPage} category={categoryQuestion} completed={completedAnswering[indexQuest]}/>}
+                                                      renderItem={({item, index}) => evaluation.current ? <FirstAidAnswer_Evaluating answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index}/> : <FirstAidAnswer answerText={item.answer} correctness={item.correctness} sharedStates={mysharedStatesArray[indexQuest]} indexAnswer={index} viewPager={setPageOnViewPager} currentPage={currentPage} category={categoryQuestion} completed={completedAnswering[indexQuest]}/>}
                                                       keyExtractor={(item, indexAnswerArray) => indexAnswerArray.toString()}/>
                                           </View>
                                           <View style={{flex: 1}}></View> 
@@ -191,6 +193,7 @@ export default function FirstAidTest(props) {
 
             mysharedStatesArray.forEach(arrayStateAnswers => {
                   // console.log("\n\none question: \n");
+                  let multiCorrect_findedFalse = false;
                   arrayStateAnswers.forEach(answerState => {
                         let [answer] = answerState;
 
@@ -200,10 +203,15 @@ export default function FirstAidTest(props) {
                               }
                         }
                         if ( categoryQuestion == "Otázky s viacnásobnou odpoveďou") {
-
+                              if(answer.answerChosen && !answer.correctnessOfanswer){
+                                    multiCorrect_findedFalse = true;
+                              }
                         }
                   })
                   if ( categoryQuestion == "Otázky kde sú všetky odpovede správne") {
+                              countCorrectAnswer++;
+                  }
+                  if (categoryQuestion == "Otázky s viacnásobnou odpoveďou" && !multiCorrect_findedFalse) {
                               countCorrectAnswer++;
                   }
             })
@@ -296,7 +304,6 @@ export default function FirstAidTest(props) {
                        <ViewPager style={{backgroundColor: 'transparent', flex: 1,}} initialPage={0} onPageScroll={onPageScroll}
                         ref={(viewPager) => {setPageOnViewPager.current = viewPager}}>
 
-                                    {console.log("ViewPager rendering")}
                                     {generateQuestions()}
                                     {getPages()}
                                     {evaluation.current && generateEvaluation()}
