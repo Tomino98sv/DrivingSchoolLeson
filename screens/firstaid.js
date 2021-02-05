@@ -18,7 +18,7 @@ export default function FirstAid({navigation}) {
                                     renderItem={({item, index}) => <FirstAidItem title={item} nav={navigation} />}
                                     keyExtractor={(item, index) => index.toString()}
 
-                        /> 
+                              /> 
 
                         </ImageBackground>
                   </View>  

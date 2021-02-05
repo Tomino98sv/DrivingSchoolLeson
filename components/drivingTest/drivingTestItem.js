@@ -3,19 +3,19 @@ import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator, Button  } from "react-native";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../../global/globalStyles';
-import { deleteFirstAidQuestionsBySection, downloadFirstAidQuestions, getFirstAidQuestionsBySection, resetDB} from '../../global/services';
+import { deleteDrivingTestQuestionsByNumber, downloadDrivingTestQuestions, getDrivingTestQuestionsByNumber} from '../../global/services';
 
-export default function FirstAidItem({nav,title}) {
-
+export default function DrivingTestItem({nav,numberTest}) {
+      
       const [downloaded, setDownloaded] = useState(false);
       const [loading, setLoading] = useState(false);
 
       let data = new Array();
 
       useEffect(() => {
-            // console.log("Component FirstAidItem Mount ",title)
-
-            getFirstAidQuestionsBySection(title, result => {
+           
+            getDrivingTestQuestionsByNumber(numberTest, result => {
+                  // console.log(numberTest," data: ",result)
                   if(result.length !== 0) {
                         data = result;
                         setDownloaded(true)
@@ -27,12 +27,12 @@ export default function FirstAidItem({nav,title}) {
             }
           }); 
 
-         return (
-            <TouchableOpacity style={styles.cardContainer} disabled={!downloaded} onPress={() => {nav.navigate('FirstAidTest',{title: title, data: data})}}>
+      return (
+            <TouchableOpacity style={styles.cardContainer} disabled={!downloaded} onPress={() => {}}>
 
                   <View style={{flex: 3, marginTop: 25, marginBottom: 25}}>
-                        <Text style={styles.title}>{title}</Text>
-                        {/* <View style={{flexDirection: 'row', width: (Dimensions.get('window').width/3), justifyContent: 'space-between',}}>
+                        <Text style={styles.title}>{numberTest}</Text>
+                        {/* <View style={{flexDirection: 'row', width: (Dimensions.get('window').width/3), justifyContent: 'space-between'}}>
 
                         </View> */}
                   </View>
@@ -40,11 +40,11 @@ export default function FirstAidItem({nav,title}) {
                   <View style={{flexDirection: 'column', flex: 1, justifyContent: 'space-between'}}>
 
                   {downloaded ? 
-                  <TouchableOpacity onPress={() => {deleteFirstAidQuestionsBySection(title, confirm => {
+                  <TouchableOpacity onPress={() => {deleteDrivingTestQuestionsByNumber(numberTest, confirm => {
                         if(confirm) {
                               setDownloaded(false) 
                         }else {
-                              alert("error while deleting question and answers from ",title) 
+                              alert("error while deleting question and answers from ",numberTest) 
                         }
                   })}} style={{flex: 1,}}>
                                             <ImageBackground source = {require('../../assets/images/deleteShapeWithShadows.png')} style={{ width: 90, height: 35, alignSelf: 'flex-end', alignItems: 'center', elevation: 5}}>
@@ -60,12 +60,12 @@ export default function FirstAidItem({nav,title}) {
       
                   <TouchableOpacity onPress={() => {  
                         setLoading(true);
-                        downloadFirstAidQuestions(title, value => {
+                        downloadDrivingTestQuestions(numberTest, value => {
                               setLoading(false);
                               if(value) {
                                     setDownloaded(value) 
                               }else {
-                                    alert("error while downloading question and answers from ",title) 
+                                    alert("error while downloading question and answers from ",numberTest) 
                                     setDownloaded(value)
                               }
                         })}
@@ -80,7 +80,8 @@ export default function FirstAidItem({nav,title}) {
                   </View>
 
             </TouchableOpacity>
-           ) 
+           )
+
 }
 
 const styles = StyleSheet.create({

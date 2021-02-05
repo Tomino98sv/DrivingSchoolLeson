@@ -21,7 +21,8 @@ export const Colors = {
       black: "black",
       header: "#BB968E",
       navigation: "#195F44",
-      brown: '#562D3F'
+      brown: '#562D3F',
+      acient_acient: '#50405D'
 }
 
 

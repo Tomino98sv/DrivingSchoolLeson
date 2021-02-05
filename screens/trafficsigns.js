@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, ImageBackground, FlatList, TouchableOpacity, Dimensions, Animated, ScrollView, SafeAreaView } from 'react-native';
-import { globalStyles } from '../global/globalStyles'
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Component } from 'react';
+import { StyleSheet, View, Text, ImageBackground, FlatList, Button } from 'react-native';
 import Header from '../components/header';
-import TrafficSignItem from '../components/trafficSignItem';
+import TrafficSignItem from '../components/trafficSign/trafficSignItem.js';
 import secNames from '../assets/sources/trafficSignSections';
+import { dropAssistImages, dropTrafficSign } from '../global/services';
+
 
 export default function TrafficSignScreen({navigation}) {
           
@@ -17,7 +16,7 @@ export default function TrafficSignScreen({navigation}) {
 
                        <FlatList
                         data={secNames}
-                        renderItem={({item, index}) => <TrafficSignItem title={item} />}
+                        renderItem={({item, index}) => <TrafficSignItem section={item} nav={navigation}/>}
                         keyExtractor={(item, index) => index.toString()}
 
                         /> 
