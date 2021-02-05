@@ -36,6 +36,7 @@ public class QuestionTestController {
         return service.getTestQuestions(testNbm);
     }
 
+    //A+B, C+D+T
     @GetMapping("/getNumbersOfTestsByGroup/{nameOfTestGroup}")
     public List<Integer> returnArrayOfTestsByGroup(@PathVariable("nameOfTestGroup") String name){
         return service.getAllNeededTestsNumberForGroup(name);
