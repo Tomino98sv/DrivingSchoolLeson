@@ -8,10 +8,11 @@ import {Colors} from '../global/globalStyles'
 
 import IntroScreen from '../screens/intro';
 import TrafficSignScreen from '../screens/trafficsigns';
+import TrafficSignsFromSection from '../components/trafficSign/trafficSignsFromSection';
 import FirstAid from '../screens/firstaid';
+import FirstAidTest from '../components/firstAid/firstAidTest';
 import Tests from '../screens/tests';
 import Settings from '../screens/settings';
-import FirstAidTest from '../components/firstAid/firstAidTest';
 
 const DrawerContent = (props) => (
       <View>
@@ -74,6 +75,16 @@ const RootDrawerNavigator = createDrawerNavigator({
                       )
             }
       },
+      TrafficSignsFromSection: {
+            screen: TrafficSignsFromSection,
+            navigationOptions: {
+                  drawerLockMode: 'locked-closed',
+                  drawerLabel: () => null,
+                  title: null,
+                  drawerIcon: () => null
+            }
+            
+      },
       FirstAid:{
             screen: FirstAid,
             navigationOptions: {
@@ -81,18 +92,6 @@ const RootDrawerNavigator = createDrawerNavigator({
                   drawerIcon: ({focused}) => (
                         <Image
                               source={!focused ? require('../assets/icons/prvapomoc.png') : require('../assets/icons/prvapomocActiveY.png')}
-                              style={[focused ? styles.drawerActive : styles.drawerInActive]}
-                              />
-                      )
-            }
-      },
-      Settings: {
-            screen: Settings,
-            navigationOptions: {
-                  drawerLabel: 'Nastavenia',
-                  drawerIcon: ({focused}) => (
-                        <Image
-                              source={!focused ? require('../assets/icons/setting.png') : require('../assets/icons/settingActiveY.png')}
                               style={[focused ? styles.drawerActive : styles.drawerInActive]}
                               />
                       )
@@ -107,6 +106,18 @@ const RootDrawerNavigator = createDrawerNavigator({
                   drawerIcon: () => null
             }
             
+      },
+      Settings: {
+            screen: Settings,
+            navigationOptions: {
+                  drawerLabel: 'Nastavenia',
+                  drawerIcon: ({focused}) => (
+                        <Image
+                              source={!focused ? require('../assets/icons/setting.png') : require('../assets/icons/settingActiveY.png')}
+                              style={[focused ? styles.drawerActive : styles.drawerInActive]}
+                              />
+                      )
+            }
       }
 },{
       drawerBackgroundColor: Colors.navigation,

@@ -1,11 +1,9 @@
 import * as SQLite from 'expo-sqlite';
-import { SQLStatementCallback, SQLTransaction } from 'expo-sqlite';
-import { useCallback } from 'react';
-const db = SQLite.openDatabase('db.autoskola') // returns Database object
+import { SQLStatementCallback, SQLTransaction, WebSQLDatabase } from 'expo-sqlite';
+const db: WebSQLDatabase = SQLite.openDatabase('db.autoskola') // returns Database object
+
 const apiURL = "http://192.168.10.107:8090/";
-
   //#region First Aid
-
   interface FirstAidAnswerModel {
       id: number,
       answer: string,
@@ -36,9 +34,17 @@ const apiURL = "http://192.168.10.107:8090/";
                               (txObj, resultSet) => {
                                     // console.log("insert answer complete")
       
-                                    },   
+                              },
+                              (TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                              } 
                               )
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )      
 }
@@ -46,6 +52,7 @@ const apiURL = "http://192.168.10.107:8090/";
 function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: any) {
       console.log("calling insertFirstAidQuestions")
       db.transaction(tx => {
+            console.log("start transaction");
             tx.executeSql(
                   'CREATE TABLE IF NOT EXISTS FirstAidQuestion (id INTEGER PRIMARY KEY AUTOINCREMENT, question TEXT, sectionGroup TEXT, count INT)',
                   [],
@@ -57,11 +64,19 @@ function insertFirstAidQuestions(dataArray: FirstAidQuestionModel[], callback: a
                               tx.executeSql('INSERT INTO FirstAidQuestion (question, sectionGroup, count) values ( ?, ?, ?)',
                               [data.question,data.sectionGroup,data.count],
                               (txObj, resultSet) => {
-                                    // console.log("insert question complete")
+                                    console.log("insert question complete")
                                     insertFirstAidAnswers(txObj, resultSet.insertId, data.answers)
-                                    }, 
+                                    },
+                                    (TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                                    }
                               ) 
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )
           },
@@ -131,6 +146,7 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
 
       const firstAidQuestions: FirstAidQuestionModel[] = [];
       console.log("calling getFirstAidQuestionsBySection "+section);
+
       db.transaction(tx => {
             tx.executeSql('SELECT fQ.id, fQ.question, fQ.sectionGroup, fQ.count, '+
             '\'[\' || GROUP_CONCAT(\'{"answer":\' || \'"\'  || fA.answer || \'",\' || \' "correctness":\' || fA.correctness || \'}\' ) || \']\' as answers '+
@@ -172,6 +188,10 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
                   }
                   // console.log(section,": ",firstAidQuestions.length)
                   callback(firstAidQuestions)
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
              )
           },
@@ -179,7 +199,7 @@ export const getFirstAidQuestionsBySection = (section: string,callback:any) => {
             console.log("Transaction getFirstAidQuestionsBySection error", error);
           },
           () => {
-            // console.log("Transaction getFirstAidQuestionsBySection "+section+" done");
+            console.log("Transaction getFirstAidQuestionsBySection "+section+" done");
           })
 }
 
@@ -195,8 +215,16 @@ export const deleteFirstAidQuestionsBySection = (section: string, callback: any)
                   (tx, results) => {
                         console.log('From table FirstAidQuestion deleted every question with section '+section)
                         callback(true)
-                        }
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
+                  }
                   )
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
             }
              )
           },
@@ -246,9 +274,16 @@ interface DrivingTestAnswerModel {
                               (txObj, resultSet) => {
                                     // console.log("insert answer complete")
       
-                                    },   
+                              },(TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                              } 
                               )
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )      
 }
@@ -269,9 +304,17 @@ function insertDrivingTestQuestions(dataArray: DrivingTestQuestionModel[], callb
                               (txObj, resultSet) => {
                                     // console.log("insert question complete")
                                     insertDrivingTestAnswers(txObj, resultSet.insertId, data.answers)
-                                    }, 
+                                    },
+                                    (TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                                    } 
                               ) 
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )
           },
@@ -382,6 +425,10 @@ export const getDrivingTestQuestionsByNumber = (testnumber: number,callback:any)
                         drivingTestQuestions.push(question)
                   }
                   callback(drivingTestQuestions)
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
              )
           },
@@ -405,8 +452,16 @@ export const deleteDrivingTestQuestionsByNumber = (testnumber: string, callback:
                   (tx, results) => {
                         console.log('From table TestQuestion deleted every question with testnumber '+testnumber)
                         callback(true)
-                        }
+                  },
+                  (TX, error)=>{
+                              console.log(error);
+                              return true;
+                  }
                   )
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
             }
              )
           },
@@ -447,16 +502,24 @@ interface assistantImgUrlModel {
                   function (tx, res) {
       
                         images.forEach(data=> {
-                              // console.log("inserting assistantImg");
+                              console.log("inserting assistantImg");
       
                               tx.executeSql('INSERT INTO AssistantTrafficSignImages (indX, url, join_to_trafficSign) values ( ?, ?, ?)',
                               [data.index, data.url, trafficSignId],
                               (txObj, resultSet) => {
-                                    // console.log("insert assistantImg complete")
+                                    console.log("insert assistantImg complete")
       
-                                    },    
+                              }, 
+                              (TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                              }   
                               )
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )      
 }
@@ -471,16 +534,26 @@ function insertTrafficSigns(dataArray: TrafficSignsModel[], callback: any) {
                   function (tx, res) {
 
                         dataArray.forEach(data=> {
-                              // console.log("inserting traffic sign");
+                              console.log("inserting traffic sign ",data.title);
 
                               tx.executeSql('INSERT INTO TrafficSigns (title, body, imgUrl, section) values ( ?, ?, ?, ?)',
                               [data.title,data.body,data.imgUrl,data.section],
                               (txObj, resultSet) => {
-                                    // console.log("insert traffic sign complete")
-                                    insertAssistantImgUrl(txObj, resultSet.insertId, data.assistantImages)
-                                    }, 
+                                    console.log("insert traffic sign complete ",data.title)
+                                    if(data.assistantImages.length != 0) {
+                                          insertAssistantImgUrl(txObj, resultSet.insertId, data.assistantImages)
+                                    }
+                              },
+                              (TX, error)=>{
+                                          console.log(error);
+                                          return true;
+                              } 
                               ) 
                         })
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
               )
           },
@@ -546,7 +619,7 @@ function insertTrafficSigns(dataArray: TrafficSignsModel[], callback: any) {
 
                   resultArray.push(trafficSignObject)
               });
-                  console.log("DownloadData completed");
+                  console.log("DownloadData completed array length ",resultArray.length);
             insertTrafficSigns(resultArray, (confirmed: boolean) => {
                     if(confirmed) {
                         callback(true)
@@ -578,10 +651,11 @@ export const getTrafficSignBySection = (section: number,callback:any) => {
 
       db.transaction(tx => {
             tx.executeSql('SELECT tS.id, tS.title, tS.body, tS.imgUrl, tS.section, '+
-                  '\'[\' || GROUP_CONCAT(\'{"url":\' || \'"\'  || aTSI.url || \'",\' || \' "index":\' || aTSI.indX  || \'}\' ) || \']\' as assisImages '+
-            'FROM TrafficSigns as tS INNER JOIN AssistantTrafficSignImages as aTSI ON tS.id = aTSI.join_to_trafficSign where tS.section LIKE ? GROUP BY tS.id',
+            '\'[\' || GROUP_CONCAT(\'{"url":\' || \'"\'  || aTSI.url || \'",\' || \' "index":\' || aTSI.indX  || \'}\' ) || \']\' as assisImages '+
+            'FROM TrafficSigns as tS LEFT JOIN AssistantTrafficSignImages as aTSI ON tS.id = aTSI.join_to_trafficSign where tS.section LIKE ? GROUP BY tS.id',
             [section],
             (tx, results) => {
+
                   for (let i = 0; i < results.rows.length; ++i) {
                         var assitImages: assistantImgUrlModel[] = [];
                         var trafficSign: TrafficSignsModel = {
@@ -593,18 +667,20 @@ export const getTrafficSignBySection = (section: number,callback:any) => {
                               assistantImages: [],
                         };
 
-                        var assitImagesStr: string = results.rows.item(i).assisImages;
-                        assitImagesStr =assitImagesStr.slice(1,assitImagesStr.length-1);
-
-                        var arrayOfStr = assitImagesStr.split("},")
-                        arrayOfStr.forEach( data => {
-                              if(data.charAt(data.length-1) !== '}') {
-                                    data += '}'
-                              }
-                              var assImg: assistantImgUrlModel = JSON.parse(data);
-                              assitImages.push(assImg);
-
-                        })
+                        if(results.rows.item(i).assisImages != null) {
+                              var assitImagesStr: string = results.rows.item(i).assisImages;
+                              assitImagesStr =assitImagesStr.slice(1,assitImagesStr.length-1);
+      
+                              var arrayOfStr = assitImagesStr.split("},")
+                              arrayOfStr.forEach( data => {
+                                    if(data.charAt(data.length-1) !== '}') {
+                                          data += '}'
+                                    }
+                                    var assImg: assistantImgUrlModel = JSON.parse(data);
+                                    assitImages.push(assImg);
+      
+                              })
+                        }
 
                         trafficSign.id = results.rows.item(i).id;
                         trafficSign.assistantImages = assitImages;
@@ -613,14 +689,18 @@ export const getTrafficSignBySection = (section: number,callback:any) => {
                         trafficSign.imgUrl = results.rows.item(i).imgUrl;
                         trafficSign.section = results.rows.item(i).section;
 
-                        trafficSigns.push(trafficSign)
+                        trafficSigns.push(trafficSign);
                   }
                   callback(trafficSigns)
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
                   }
              )
           },
           error => {
-            console.log("Transaction getTrafficSignBySection error", error);
+            console.log("Transaction getTrafficSignBySection ",section," error", error);
           },
           () => {
             console.log("Transaction getTrafficSignBySection "+section+" done");
@@ -638,8 +718,16 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
                   (tx, results) => {
                         console.log('From table TrafficSigns deleted every traffic sign with section '+section)
                         callback(true)
-                        }
+                  },
+                  (TX, error)=>{
+                              console.log(error);
+                              return true;
+                  }
                   )
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
             }
              )
           },
@@ -654,59 +742,3 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
 
 
 //#endregion
-
-export const dropTrafficSign = () => {
-
-      db.transaction(tx => {
-            tx.executeSql('DROP table TrafficSigns',
-            [],
-            (tx, results) => {
-                  console.log('dropped Traffic Sign table ')
-            }
-             )
-          },
-          error => {
-            console.log("Transaction dropTrafficSign error", error);
-          },
-          () => {
-            console.log("Transaction dropTrafficSign done");
-          })
-}
-
-export const dropAssistImages = () => {
-
-      db.transaction(tx => {
-            tx.executeSql('DROP table AssistantTrafficSignImages',
-            [],
-            (tx, results) => {
-                  console.log('dropped AssistantTrafficSignImages table ')
-            }
-             )
-          },
-          error => {
-            console.log("Transaction dropAssistImages error", error);
-          },
-          () => {
-            console.log("Transaction dropAssistImages done");
-          })
-}
-
-export const resetDB = (callback: any) => {
-      console.log("calling resetDB")
-      db.transaction(tx => {
-            tx.executeSql('DROP database autoskola)',
-            [],
-            (tx, results) => {
-                  console.log("database droped");
-                  callback(true)
-            }
-             )
-          },
-          error => {
-            console.log("Transaction resetDB error", error);
-            callback(false)
-          },
-          () => {
-            console.log("Transaction resetDB done");
-          })
-}

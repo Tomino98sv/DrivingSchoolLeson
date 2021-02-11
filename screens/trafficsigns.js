@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, ImageBackground, FlatList, Button } from 'react-native';
+import { StyleSheet, View, ImageBackground, FlatList, Button } from 'react-native';
 import Header from '../components/header';
 import TrafficSignItem from '../components/trafficSign/trafficSignItem.js';
 import secNames from '../assets/sources/trafficSignSections';
-import { dropAssistImages, dropTrafficSign } from '../global/services';
-
 
 export default function TrafficSignScreen({navigation}) {
           
@@ -20,7 +18,6 @@ export default function TrafficSignScreen({navigation}) {
                         keyExtractor={(item, index) => index.toString()}
 
                         /> 
-
 
                   </ImageBackground>
             </View>  

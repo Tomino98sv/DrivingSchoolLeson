@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator, Button  } from "react-native";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { StyleSheet, View, Text, Image, TouchableOpacity, ImageBackground, ActivityIndicator  } from "react-native";
 import {Colors} from '../../global/globalStyles';
 import { deleteDrivingTestQuestionsByNumber, downloadDrivingTestQuestions, getDrivingTestQuestionsByNumber} from '../../global/services';
 
