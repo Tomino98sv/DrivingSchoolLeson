@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator  } from "react-native";
 import {Colors} from '../../global/globalStyles';
-import { connect } from 'react-redux';
 
 
 function FirstAidAnswer_Evaluating(props) {

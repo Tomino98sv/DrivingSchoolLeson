@@ -11,6 +11,7 @@ export const globalStyles = StyleSheet.create({
 
 export const Colors = {
       primary: "#241C30",
+      light_primary: '#2B223A',
       acient: "#44345C",
       lightYellow: "#FCBA42",
       yellow: "#FFB800",  
@@ -40,3 +41,10 @@ export const Colors = {
 //  }, [props.counter]); // checks for changes in the values in this array
 
 // the ability to persist a value across renders without causing a re-render is so fundamental that React comes with a built-in Hook for it called useRef
+// stanov jednu velkost a resizeMode riesi
+
+//toto na auto image size
+// flex: 1,
+// width: null, 
+// height: null,
+// resizeMode: 'contain'

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import * as ExpoFileSystem from 'expo-file-system';
 
-import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator, Button  } from "react-native";
+import { StyleSheet, View, Text, Image, TouchableOpacity, Dimensions, ImageBackground, ActivityIndicator, Alert   } from "react-native";
 import { Avatar  } from 'react-native-elements';
 import {Colors} from '../../global/globalStyles';
 import { downloadTrafficSigns, deleteTrafficSignsBySection, getTrafficSignBySection} from '../../global/services';
@@ -11,22 +11,32 @@ export default function TrafficSignItem({nav,section}) {
       
       const [downloaded, setDownloaded] = useState(false);
       const [loading, setLoading] = useState(false);
+
       const [operationInProcess, setOperationInProcess] = useState('');
+      const errorOccure = useRef(false);
 
       let data = new Array();
+
+      const exampleTraff = useRef([]);
 
       useEffect(() => {
            
             getTrafficSignBySection(section, result => {
-                  // console.log(numberTest," data: ",result)
                   if(result.length !== 0) {
                         
                         data = result;
 
-                        console.log("result ", result.length);
-                        console.log("data ", data.length);
+                        exampleTraff.current.push(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+data[0].title);
+                        exampleTraff.current.push(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+data[1].title);
+                        exampleTraff.current.push(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+data[2].title);
 
-                        setDownloaded(true);
+                        console.log(exampleTraff.current);
+                        if(operationInProcess=='') { //to je kvoli tomu ze ked sa stahuju obrazky je useEffect zavolany a downloaded bude true skor ako by mal
+                              setDownloaded(true)
+                        }
+
+                        console.log("downloaded: ",downloaded);
+                        console.log("data[2]: ",data[2].title);
                   }
             })
 
@@ -42,66 +52,94 @@ export default function TrafficSignItem({nav,section}) {
             const metaDataDir = await ExpoFileSystem.getInfoAsync(imgDir);
             const isDir = metaDataDir.isDirectory;
             if (!isDir) {
-                  console.log(" not exists" );
                 try {
                     await ExpoFileSystem.makeDirectoryAsync(
                         imgDir,
                         { intermediates: true }
                     ).then(() => {
-                          console.log("directory created");
+                        var arrayUri_UrlImages = [];
+
                         data.forEach((traff) => {
                               var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title;
+                              arrayUri_UrlImages.push({Url: traff.imgUrl, Uri: uri});
+
                               traff.assistantImages.forEach(assistImg => {
                                     var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title+"__"+assistImg.index;
-                                    storeImage(assistImg.url,uri);
-
+                                    arrayUri_UrlImages.push({Url: assistImg.url, Uri: uri});
                               })
-                              storeImage(traff.imgUrl,uri);
-                        })
+                        });
+                        storeImages(arrayUri_UrlImages);
                     });
                 } catch (e) {
                     console.info("ERROR", e);
                 }
             }else {
-                  console.log(" exists" );
-                  data.forEach((traff) => {
-                        var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title;
-                        traff.assistantImages.forEach(assistImg => {
-                              var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title+"__"+assistImg.index;
-                              storeImage(assistImg.url,uri);
+                        var arrayUri_UrlImages = [];
 
-                        })
-                        storeImage(traff.imgUrl,uri);
-                  })
+                        data.forEach((traff) => {
+                              var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title;
+                              arrayUri_UrlImages.push({Url: traff.imgUrl, Uri: uri});
+
+                              traff.assistantImages.forEach(assistImg => {
+                                    var uri = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+traff.title+"__"+assistImg.index;
+                                    arrayUri_UrlImages.push({Url: assistImg.url, Uri: uri});
+                              })
+                        });
+                        storeImages(arrayUri_UrlImages);
             }
       }    
 
-      async function storeImage(url,uri) {
-            console.log("calling storeImage ");
-            
-            await ExpoFileSystem.getInfoAsync(uri)
-            .then(result => {
-                  console.log(result);
+      async function storeImages(arrayUri_UrlImages) {
+
+            var count = 0;
+            var allImages = arrayUri_UrlImages.length;
+
+            arrayUri_UrlImages.forEach((obj) => { 
+
+                  ExpoFileSystem.getInfoAsync(obj.Uri)
+                  .then(result => {
                   if(result.exists){
-                        console.log("file exists");
                   }else {
-                        console.log("file not exists");
-                        ExpoFileSystem.downloadAsync(url,uri)
+                        errorOccure.current == false ?
+                        ExpoFileSystem.downloadAsync(obj.Url,obj.Uri)
                         .then(({ uri }) => {
-                              console.log("Finished downloading ");
+                              count++;
+
+                              if(count == allImages){
+                                    setLoading(false);
+                                    setDownloaded(true);
+                                    setOperationInProcess('');
+                              }
                         })
                         .catch((error) => {
                               console.error(error);
-                        });
+                              setLoading(false);
+                              exampleTraff.current=[]; 
+                              setDownloaded(false);
+                              setOperationInProcess('');
+                              if(!errorOccure.current) {
+                                    Alert.alert(
+                                          'Problem with downloading images',
+                                          'Check your network connection',
+                                          [
+                                            { text: 'OK', onPress: () => {} }
+                                          ],
+                                          { cancelable: true }
+                                        );
+                                        errorOccure.current = true;
+
+                              }
+                        }) : null;
                   }
             })
+
+            });
 
       }
 
       async function removeDirectoryWithImages() {
             var imgDir = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/";
             return await ExpoFileSystem.deleteAsync(imgDir);
-
       }
 
 
@@ -111,9 +149,11 @@ export default function TrafficSignItem({nav,section}) {
                   <View style={{flex: 3, marginTop: 25, marginBottom: 25}}>
                         <Text style={styles.title}>{section}</Text>
                         <View style={{flexDirection: 'row', width: (Dimensions.get('window').width/3), justifyContent: 'space-between'}}>
-                              <Avatar rounded source={require('../../assets/icons/correct.png')} size={40}/>
-                              <Avatar rounded source={require('../../assets/icons/correct.png')} size={40}/>
-                              <Avatar rounded source={require('../../assets/icons/correct.png')} size={40}/>
+
+                             { downloaded ? <Avatar imageProps={{resizeMode: 'contain'}} rounded source={{uri: exampleTraff.current[0]}} size={40}/> : null }
+                             { downloaded ? <Avatar imageProps={{resizeMode: 'contain'}} rounded source={{uri: exampleTraff.current[1]}} size={40}/> : null }
+                             { downloaded ? <Avatar imageProps={{resizeMode: 'contain'}} rounded source={{uri: exampleTraff.current[2]}} size={40}/> : null } 
+                              
                         </View>
                   </View>
 
@@ -123,8 +163,8 @@ export default function TrafficSignItem({nav,section}) {
                   <TouchableOpacity onPress={() => {deleteTrafficSignsBySection(section, confirm => {
                         if(confirm) {
                               removeDirectoryWithImages().then(() => {
-                                    console.log("directory destroyed");
-                                    setDownloaded(false) 
+                                    exampleTraff.current=[]; 
+                                    setDownloaded(false);
                                 });;
                         }else {
                               alert("error while deleting traffic signs and assists images of ",section) 
@@ -145,25 +185,25 @@ export default function TrafficSignItem({nav,section}) {
                         setOperationInProcess("Loading data...");
                         setLoading(true);
                         downloadTrafficSigns(section, value => {
-                              setLoading(false);
-                              setOperationInProcess("");
                               if(value) {
-                                    setDownloaded(value);
                                     getTrafficSignBySection(section, result => {
-                                          // console.log(numberTest," data: ",result)
                                           if(result.length !== 0) {                    
                                                 data = result;
+                                                setOperationInProcess("Downloading images");
                                                 findOutIfImagesIsAlreadyStored();
                                           }
                                     })
 
                               }else {
-                                    alert("error while downloading traffic signs of ",section) 
-                                    setDownloaded(value)
+                                    alert("error while downloading traffic signs of ",section);
+                                    exampleTraff.current=[]; 
+                                    setDownloaded(false);
+                                    setLoading(false);
+                                    setOperationInProcess("");
                               }
                         })}
                         } style={{alignItems: 'center', justifyContent: 'center', flex: 3}} disabled={downloaded}>
-                              { loading ? <View><ActivityIndicator size="large" color={Colors.yellow}/><Text style={{color:Colors.white, fontSize: 5}}>{operationInProcess}</Text></View> : <Image
+                              { loading ? <View><ActivityIndicator size="large" color={Colors.yellow}/><Text style={{color:Colors.white, fontSize: 15}}>{operationInProcess}</Text></View> : <Image
                               source={downloaded ? require('../../assets/icons/correct.png') : require('../../assets/icons/icloud-download-475016_orange.png')}
                               style={styles.iconDownload}
                               />}

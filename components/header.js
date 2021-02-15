@@ -3,9 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity, Dimensions } from "react-nati
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import {Colors} from '../global/globalStyles'
 
-
-
-export default function Header({title, nav}) {
+export default function Header({title, searchBar, nav}) {
 
            return (
             <View style={styles.header}>
@@ -16,6 +14,9 @@ export default function Header({title, nav}) {
                   </TouchableOpacity>
 
                   <Text style={styles.title}>{title}</Text>
+                  
+
+                  {searchBar ? <MaterialCommunityIcons onPress={() => {searchBar.setEnableSearch(!searchBar.enableSearch)}} name="feature-search" size={34} color={Colors.black} style={{alignSelf: 'flex-end', marginRight: 5}}/>: null}
             </View>
            ) 
 }
