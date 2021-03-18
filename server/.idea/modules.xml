@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/server.iml" filepath="$PROJECT_DIR$/.idea/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-crud-autoskola/spring-boot-crud-autoskola.iml" filepath="$PROJECT_DIR$/spring-boot-crud-autoskola/spring-boot-crud-autoskola.iml" />
     </modules>
   </component>
