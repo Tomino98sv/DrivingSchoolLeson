@@ -6,6 +6,13 @@ import {Colors} from '../../global/globalStyles';
 
 function FirstAidAnswer_Evaluating(props) {
 
+      useEffect(() => {
+
+            return () => {
+                  // console.log("Component FirstAidAnswer_Evaluating UnMount ")
+            }
+      });
+
       const {answerText, correctness, indexAnswer, sharedStates} = props;
 
       const [answer, setCurrentAnswer] =  sharedStates[indexAnswer];

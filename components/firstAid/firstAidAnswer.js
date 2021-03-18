@@ -26,10 +26,13 @@ function FirstAidAnswer(props) {
                   countCorrectAnswer.current = count;
            } 
             
-            return () => {
-            }
-
       }, [completedRef.current])  
+
+      useEffect(() => {
+            return () => {
+                  // console.log("Component FirstAidAnswer UnMount ")
+            }
+      })
 
       function onPress() {
             sharedStates.forEach((value, indx, theArray) => {

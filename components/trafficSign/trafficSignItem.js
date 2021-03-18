@@ -30,13 +30,10 @@ export default function TrafficSignItem({nav,section}) {
                         exampleTraff.current.push(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+data[1].title);
                         exampleTraff.current.push(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/"+data[2].title);
 
-                        console.log(exampleTraff.current);
                         if(operationInProcess=='') { //to je kvoli tomu ze ked sa stahuju obrazky je useEffect zavolany a downloaded bude true skor ako by mal
                               setDownloaded(true)
                         }
 
-                        console.log("downloaded: ",downloaded);
-                        console.log("data[2]: ",data[2].title);
                   }
             })
 
@@ -47,14 +44,14 @@ export default function TrafficSignItem({nav,section}) {
 
       async function findOutIfImagesIsAlreadyStored() {
 
-            var imgDir = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/";
+            var sectionDir = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/";
 
-            const metaDataDir = await ExpoFileSystem.getInfoAsync(imgDir);
+            const metaDataDir = await ExpoFileSystem.getInfoAsync(sectionDir);
             const isDir = metaDataDir.isDirectory;
             if (!isDir) {
                 try {
                     await ExpoFileSystem.makeDirectoryAsync(
-                        imgDir,
+                        sectionDir,
                         { intermediates: true }
                     ).then(() => {
                         var arrayUri_UrlImages = [];
@@ -138,8 +135,8 @@ export default function TrafficSignItem({nav,section}) {
       }
 
       async function removeDirectoryWithImages() {
-            var imgDir = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/";
-            return await ExpoFileSystem.deleteAsync(imgDir);
+            var sectionDir = ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+section+"/";
+            return await ExpoFileSystem.deleteAsync(sectionDir);
       }
 
 

@@ -14,12 +14,20 @@ export default function TrafficSignDetails({trafficSignObject}) {
       const [modalUri, setModalUri] = useState("");
 
 
+      useEffect(() => {
+            
+            // Specify how to clean up after this effect:
+            return () => {
+                  // console.log("Component TrafficSignDetails UnMount ")
+            }
+          });
+
       function createTextWithImages() {
             var arrayTxt = trafficSignObject.body.split(/({\d+})/);
 
             arrayTxt.forEach((item, index) => {
                   if(item.startsWith("{")){
-                        arrayTxt[index] = <TouchableOpacity onPress={() => {setModalUri(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+trafficSignObject.section+"/"+trafficSignObject.title+"__"+item.charAt(1));setModalVisible(true)}}>
+                        arrayTxt[index] = <TouchableOpacity key={"Touchable_"+trafficSignObject.title+"__"+item.charAt(1)} onPress={() => {setModalUri(ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+trafficSignObject.section+"/"+trafficSignObject.title+"__"+item.charAt(1));setModalVisible(true)}}>
                                                 <Image 
                                                       key={trafficSignObject.title+"__"+item.charAt(1)}
                                                       source={{uri: ExpoFileSystem.documentDirectory+"/images/trafficSigns/"+trafficSignObject.section+"/"+trafficSignObject.title+"__"+item.charAt(1)}}

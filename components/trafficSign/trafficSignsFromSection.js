@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, View, ImageBackground, FlatList, Text, Dimensions} from 'react-native';
+import { StyleSheet, View, ImageBackground, FlatList, Text, Dimensions, BackHandler} from 'react-native';
 import { TextInput } from 'react-native-paper';
 import * as FileSystem from 'expo-file-system';
 
@@ -19,6 +19,19 @@ export default function TrafficSignsFromSection({navigation}) {
                   setFilterResult(traffSigns);
             }
       },[enableSearch]);
+
+      // useEffect(() => {
+
+      //       // BackHandler.addEventListener('hardwareBackPress', () => {
+      //       //       navigation.navigate("TrafficSign");
+      //       //       return true;
+      //       // });
+
+      //       return () => {
+      //             // console.log("Component TrafficSignsFromSection UnMount ")
+      //             navigation.navigate('TrafficSign');
+      //       }
+      // });
 
       return (
             <View style={styles.container}>
