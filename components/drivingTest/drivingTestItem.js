@@ -16,7 +16,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
       const [operationInProcess, setOperationInProcess] = useState('');
       const errorOccure = useRef(false);
 
-      let data = new Array();
+      const data = useRef([]);
 
       useEffect(() => {
            
@@ -26,7 +26,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
                   if(alreadyDownloaded && !isDataFiiled.current){
                               getDrivingTestQuestionsByNumber(numberTest, result => {
                                     if(result.length !== 0) {
-                                          data = result;
+                                          data.current = result;
                                           isDataFiiled.current = true;
                                     }
                               })
@@ -51,7 +51,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
                     ).then(() => {
                         var arrayUri_UrlImages = [];
 
-                        data.forEach((driveTest) => {
+                        data.current.forEach((driveTest) => {
                               if(driveTest.imageURL != null) {
                                     var uri = ExpoFileSystem.documentDirectory+"/images/drivingTests/tstNumb_"+numberTest+"/img_questID_"+driveTest.id;
                                     arrayUri_UrlImages.push({Url: driveTest.imageURL, Uri: uri});
@@ -66,7 +66,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
             }else {
                   var arrayUri_UrlImages = [];
 
-                  data.forEach((driveTest) => {
+                  data.current.forEach((driveTest) => {
                         if(driveTest.imageURL != null) {
                               var uri = ExpoFileSystem.documentDirectory+"/images/drivingTests/tstNumb_"+numberTest+"/img_questID_"+driveTest.id;
                               arrayUri_UrlImages.push({Url: driveTest.imageURL, Uri: uri});
@@ -129,7 +129,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
       }
 
       return (
-            <TouchableOpacity style={styles.cardContainer} disabled={!downloaded} onPress={() => {}}>
+            <TouchableOpacity style={styles.cardContainer} disabled={!downloaded} onPress={() => {nav.navigate('DrivingTest',{title: numberTest, data: data.current})}}>
 
                   <View style={{flex: 3, marginTop: 25, marginBottom: 25}}>
                         <Text style={styles.title}>{numberTest}</Text>
@@ -168,7 +168,7 @@ export default function DrivingTestItem({nav,numberTest,alreadyDownloaded}) {
                               if(value) {
                                     getDrivingTestQuestionsByNumber(numberTest, result => {
                                           if(result.length !== 0) {
-                                                data = result;
+                                                data.current = result;
                                                 isDataFiiled.current = true;
                                                 setOperationInProcess("Downloading images");
                                                 downloadImages();

@@ -12,6 +12,7 @@ import TrafficSignsFromSection from '../components/trafficSign/trafficSignsFromS
 import FirstAid from '../screens/firstaid';
 import FirstAidTest from '../components/firstAid/firstAidTest';
 import Tests from '../screens/tests';
+import DrivingTestTest from '../components/drivingTest/drivingTestTest';
 import Settings from '../screens/settings';
 
 const DrawerContent = (props) => (
@@ -61,6 +62,15 @@ const RootDrawerNavigator = createDrawerNavigator({
                               style={[focused ? styles.drawerActive : styles.drawerInActive]}
                               />
                   )
+            }
+      },
+      DrivingTest: {
+            screen: DrivingTestTest,
+            navigationOptions: {
+                  drawerLockMode: 'locked-closed',
+                  drawerLabel: () => null,
+                  title: null,
+                  drawerIcon: () => null
             }
       },
       TrafficSign: {
