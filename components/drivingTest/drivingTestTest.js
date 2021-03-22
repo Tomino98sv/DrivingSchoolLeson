@@ -237,7 +237,7 @@ export default function DrivingTestTest(props) {
 
                                                 <View style={{flexDirection: 'column', width: '100%', paddingLeft: 15, paddingRight: 15, paddingTop: 5, paddingBottom: 10 }}>     
                                                                         <Text style={{color: 'white', fontSize: 15, textAlign: 'center'}}>{navigation.state.params.title} absolvovaný</Text>
-                                                                        <Text style={{color: gatheredPoints.current/(50/100) > 89 ? Colors.green : Colors.red, fontSize: 15, textAlign: 'center'}}> {gatheredPoints.current/(50/100) > 89 ? 'Úspešne' : 'Neúspešne'}</Text>
+                                                                        <Text style={{color: Math.round(gatheredPoints.current/(50/100)) > 89 ? Colors.green : Colors.red, fontSize: 15, textAlign: 'center'}}> {Math.round(gatheredPoints.current/(50/100)) > 89 ? 'Úspešne' : 'Neúspešne'}</Text>
                                                 </View>
 
                                                 <View style={{flex:7, width: '100%', backgroundColor: Colors.acient, flexDirection: 'column'}}>
@@ -265,7 +265,7 @@ export default function DrivingTestTest(props) {
                                                             <View style={{flexDirection: 'row', padding: 15}}>
                                                                   <Text style={{flex: 3, textAlign: 'left', fontSize: 15, fontFamily: 'MerriweatherSans-Medium', color: Colors.white}}>Percentuálna úspešnosť:</Text>
                                                                   <View style={{flex: 1, alignItems: 'center',backgroundColor: Colors.white, borderRadius: 8,}}>
-                                                                        <Text style={{padding: 10, fontSize: 12, fontFamily: 'MerriweatherSans-Medium'}}>{gatheredPoints.current/(50/100)} %</Text>
+                                                                        <Text style={{padding: 10, fontSize: 12, fontFamily: 'MerriweatherSans-Medium'}}>{Math.round(gatheredPoints.current/(50/100))} %</Text>
                                                                   </View>
                                                             </View>     
 
