@@ -30,7 +30,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/iconkine.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "useNextNotificationsApi": true
     }
   }
 }

@@ -20,7 +20,6 @@ export default function App() {
 
 const [fontLoaded,setFontLoaded] = useState(false);
 
-
     if(fontLoaded) {
         return <Provider store={configureStore()}>
                     <Drawer/>

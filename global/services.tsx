@@ -892,5 +892,57 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
           })
 }
 
+// function updateStatusOfNotidications(status: bool, callback: any) {
+//       console.log("calling insertTrafficSigns")
+
+//       db.transaction(tx => {
+//             tx.executeSql(
+//                   'CREATE TABLE IF NOT EXISTS Notifications (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, body TEXT, imgUrl TEXT, section TEXT)',
+//                   [],
+//                   function (tx, res) {
+
+
+//                         try {
+
+//                               dataArray.forEach(data=> {
+//                                     console.log("inserting traffic sign ",data.title);
+      
+//                                     tx.executeSql('INSERT INTO TrafficSigns (title, body, imgUrl, section) values ( ?, ?, ?, ?)',
+//                                     [data.title,data.body,data.imgUrl,data.section],
+//                                     (txObj, resultSet) => {
+//                                           console.log("insert traffic sign complete ",data.title)
+//                                           if(data.assistantImages.length != 0) {
+//                                                 insertAssistantImgUrl(txObj, resultSet.insertId, data.assistantImages)
+//                                           }
+//                                     },
+//                                     (TX, error)=>{
+//                                                 console.log(error);
+//                                                 return true;
+//                                     } 
+//                                     ) 
+//                               })
+
+//                         } catch (error) {
+//                           console.error(error);
+//                         }
+
+//                   },
+//                   (TX, error)=>{
+//                         console.log(error);
+//                         return true;
+//                   }
+//               )
+//           },
+//           error => {
+//             console.log("Transaction insertTrafficSigns error", error);
+//             callback(false)
+//           },
+//           () => {
+//             console.log("Transaction insertTrafficSigns done");
+//             callback(true)
+//           }
+//           )
+// }
+
 
 //#endregion

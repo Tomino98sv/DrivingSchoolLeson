@@ -14,6 +14,14 @@ npm-debug.log
 yarn-error.log
 yarn.lock # include if you are using yarn - don't use both npm and yarn
 
+# Expo
+.expo
+__generated__
+web-build
+
+# macOS
+.DS_Store
+
 # BUCK
 buck-out/
 \.buckd/
