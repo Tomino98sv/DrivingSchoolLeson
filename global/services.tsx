@@ -892,6 +892,17 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
           })
 }
 
+interface NotificationModel {
+      id: number,
+      testKind: string, 
+      testCathegory: string, 
+      testNumb: number,
+      active: boolean,
+      startDate: Date,
+      endDate: Date,
+  }
+
+
 // function updateStatusOfNotidications(status: bool, callback: any) {
 //       console.log("calling insertTrafficSigns")
 
@@ -943,6 +954,161 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
 //           }
 //           )
 // }
+
+export function insertNotidication(testKind: string, testCathegory: string, testNumb: number, startDate: Date, endDate: Date, callback: any) {
+      console.log("calling insertNotidication")
+
+      db.transaction(tx => {
+            tx.executeSql(
+                  'CREATE TABLE IF NOT EXISTS Notifications (id INTEGER PRIMARY KEY AUTOINCREMENT, testKind TEXT, testCathegory TEXT, testNumb INTEGER, active BOOLEAN, startDate INTEGER, endDate INTEGER)',
+                  [],
+                  function (tx, res) {
+
+
+                        try {
+
+                                    console.log("inserting Notification ");
+      
+                                    tx.executeSql('INSERT INTO Notifications (testKind, testCathegory, testNumb, active, startDate, endDate) values ( ?, ?, ?, ?, ?, ?)',
+                                    [testKind,testCathegory,testNumb,true,startDate.getTime(), endDate.getTime()],
+                                    (txObj, resultSet) => {
+                                          console.log("insert Notification complete ")
+                                    },
+                                    (TX, error)=>{
+                                                console.log(error);
+                                                return true;
+                                    } 
+                                    ) 
+
+                        } catch (error) {
+                          console.error(error);
+                        }
+
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
+                  }
+              )
+          },
+          error => {
+            console.log("Transaction insertNotidication error", error);
+            callback(false)
+          },
+          () => {
+            console.log("Transaction insertNotidication done");
+            callback(true)
+          }
+          )
+}
+
+export function deleteNotidicationById(id: number, callback: any) {
+      console.log("calling deleteNotidication")
+
+      db.transaction(tx => {
+            tx.executeSql('DELETE FROM Notifications where Notifications.id = ?',
+            [id],
+            (tx, results) => {
+                  console.log('From table Notifications deleted with id '+id)
+                  callback(true)
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
+            }
+             )
+          },
+          error => {
+            console.log("Transaction deleteNotidication error", error);
+            callback(false)
+          },
+          () => {
+            console.log("Transaction deleteNotidication done");
+          })
+}
+
+export function deleteTableNotidication(callback: any) {
+      console.log("calling deleteNotidication")
+
+      db.transaction(tx => {
+            tx.executeSql('DROP TABLE Notifications',
+            [],
+            (tx, results) => {
+                  console.log('Droped table Notifications ')
+                  callback(true)
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
+            }
+             )
+          },
+          error => {
+            console.log("Transaction deleteTableNotidication error", error);
+            callback(false)
+          },
+          () => {
+            console.log("Transaction deleteTableNotidication done");
+          })
+}
+
+export const getAllNotifications = (callback:any) => {
+
+      const notifications: NotificationModel[] = [];
+      console.log("calling getAllNotifications ");
+
+      db.transaction(tx => {
+            tx.executeSql('SELECT nt.id, nt.testKind, nt.testCathegory, nt.testNumb, nt.active, nt.startDate, nt.endDate '+
+            'FROM Notifications nt',
+            [],
+            (tx, results) => {
+
+                  try {
+
+                        for (let i = 0; i < results.rows.length; ++i) {
+                              var notif: NotificationModel = {
+                                    id:0,
+                                    testKind: "",
+                                    testCathegory: "",
+                                    testNumb: 0,
+                                    active: false,
+                                    startDate: new Date('1970-01-01Z00:00:00:000'),
+                                    endDate: new Date('1970-01-01Z00:00:00:000'),
+                              };
+      
+                              notif.id = results.rows.item(i).id;
+                              notif.testKind = results.rows.item(i).testKind;
+                              notif.testCathegory = results.rows.item(i).testCathegory;
+                              notif.testNumb = results.rows.item(i).testNumb;
+                              notif.active = results.rows.item(i).active;
+                              notif.startDate = results.rows.item(i).startDate;
+                              notif.endDate = results.rows.item(i).endDate;
+      
+                              // console.log(question)
+      
+                              notifications.push(notif)
+                        }
+                        // console.log(section,": ",firstAidQuestions.length)
+                        callback(notifications)
+
+                  } catch (error) {
+                    console.error(error);
+                  }
+
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
+                  }
+             )
+          },
+          error => {
+            console.log("Transaction getAllNotifications error", error);
+          },
+          () => {
+            console.log("Transaction getAllNotifications done");
+          })
+}
 
 
 //#endregion
