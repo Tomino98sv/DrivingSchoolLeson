@@ -36,7 +36,7 @@ import usePermissions from "expo-permissions-hooks";
 import moment from "moment";
 import firstAidSec from "../assets/sources/firstAidSections";
 import trafSec from "../assets/sources/trafficSignSections";
-import {getAllNotifications, insertNotidication, deleteNotidicationById, deleteTableNotidication} from "../global/services";
+import {getAllNotifications, insertNotifications, deleteNotificationById, deleteTableNotification, updateStatusNotification, getDrivingTestQuestionsByNumber, getFirstAidQuestionsBySection} from "../global/services";
 
 function Settings(props) {
   // const [permission, askForPermission] = usePermissions(Permissions.NOTIFICATIONS, { ask: true });
@@ -57,6 +57,7 @@ function Settings(props) {
   const [currChosenTestNumb, setcurrChosenTestNumb] = useState("");
 
   const [notificationsViews, setNotificationsViews] = useState([]);
+  const [notifStatus, setNotifStatus] = useState([]);
 
   const dropDownCat = useRef();
   const dropDownKind = useRef();
@@ -71,17 +72,75 @@ function Settings(props) {
   const [date, setDate] = useState(new Date(1598051730000));
   const [show, setShow] = useState(false);
 
-  sendNotificationImmediately = async () => {
+  // useEffect(()=>{
+  //   console.log("useEffect");
+  //   console.log(notifStatus);
+
+  // },[notifStatus])
+
+  sendNotificationImmediately = async (startDate, endDate) => {
     let notificationId = await Notifications2.presentLocalNotificationAsync({
       title: "schoolDrivingLesson",
       body:
         "Notifikacie nastavene od " +
-        formatDate(daterangePick.startDate) +
+        format(startDate, "dd.MM.yyyy HH:mm") +
         " do " +
-        formatDate(daterangePick.endDate),
+        format(endDate, "dd.MM.yyyy HH:mm"),
     });
     //console.log(notificationId); // can be saved in AsyncStorage or send to server
   };
+
+
+  function saveNotification(notifId){
+     scheduleNotification(date,currChosenTestKind,currChosenTestCatheg,currChosenTestNumb,dataObject).then(
+                             (notifId) => {
+                               console.log(notifId);
+                               insertNotifications(
+                                 currChosenTestKind,
+                                 currChosenTestCatheg,
+                                 currChosenTestNumb,
+                                 startDateWithTime,
+                                 endDateWithTime,
+                                 notifId,
+                                 (confirmed) => {
+                                   if (confirmed) {
+                                     setAddingNotif(false);
+                                     getNotifications();
+                                   } else {
+                                     console.log("error");
+                                   }
+                                 }
+                               );
+                             }
+                           );
+  }
+  
+   async function scheduleNotification(date,currChosenTestKind,currChosenTestCatheg,currChosenTestNumb, dataObject) {
+    console.log("chosen test question: "+dataObject);
+    if(currChosenTestKind == "tests"){
+      let answerCorr = dataObject.answers.find(ele => {
+        return ele.correctness;
+      })
+      console.log("asnwerCor: ",answerCorr);
+      let notificationId = Notifications2.scheduleLocalNotificationAsync(
+        {
+          title: currChosenTestKind+": "+currChosenTestCatheg+": test č."+currChosenTestNumb,
+          // body: Math.floor(Math.random() * 10)+""
+          body: dataObject.question + "\nOdpoveď: "+answerCorr.answer,
+        },
+        {
+          time: date.getTime(),
+        },
+      );
+      console.log(notificationId);
+      return notificationId;
+    }
+  };
+
+  async function scheduleCancel(identifier) {
+    
+    return Notifications2.cancelScheduledNotificationAsync(identifier);
+  }
 
   askPermissions = async () => {
     console.log("ASK PERMISIONS");
@@ -99,20 +158,26 @@ function Settings(props) {
     return true;
   };
 
-  function setNotifiDates() {
+  function setNotifiDates(startDate, endDate) {
     askPermissions().then((res) => {
       if (res) {
-        sendNotificationImmediately();
+        sendNotificationImmediately(startDate, endDate);
       } else {
-        getAlert();
+        getAlert("Notifications permission are denied","For receiving notifications allow notifications permission for this app",);
       }
     });
   }
 
-  function getAlert() {
+  function getAlert(title, body) {
     Alert.alert(
       "Notifications permission are denied",
       "For receiving notifications allow notifications permission for this app",
+      [{ text: "Ok", onPress: () => {} }],
+      { cancelable: true }
+    );
+    Alert.alert(
+      title,
+      body,
       [{ text: "Ok", onPress: () => {} }],
       { cancelable: true }
     );
@@ -164,27 +229,63 @@ function Settings(props) {
 
   function getNotifications() {
 
-      // id: number,
-      // testKind: string, 
-      // testCathegory: string, 
-      // testNumb: number,
-      // active: boolean,
-      // startDate: Date,
-      // endDate: Date,
+    // interface NotificationScheduleDayModel {
+    //   notificationJoinID: number,
+    //   notificationID: string,
+    //   scheduledDate: number
+    // }
+
+    // interface NotificationModel {
+    //       id: number,
+    //       testKind: string, 
+    //       testCathegory: string, 
+    //       testNumb: number,
+    //       active: boolean,
+    //       startDate: Date,
+    //       endDate: Date,
+    //       scheduledDates: Array<NotificationScheduleDayModel>
+    // }
 
       getAllNotifications(result => {
-            console.log(result);
+        console.log("getAllNotifications");
             if(result.length !== 0) {
                   const filterRender=result.map((element,index) => {
+                    let initialNotifStatus = notifStatus;
+                    initialNotifStatus.push(element.active);
+                    setNotifStatus(initialNotifStatus);
+                    console.log("notifStatus[index]");
+                    console.log(notifStatus[index]);
+                    console.log(index);
                         return (<View key={index} style={{backgroundColor: Colors.primary, padding: 5, marginBottom: 2, width: Dimensions.get("window").width, flexDirection: 'column'}}>
                               <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testKind}</Text>
                               <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testCathegory}</Text>
                               {element.testKind == "tests" && <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testNumb}</Text>}
                               <Switch
                                 color={Colors.yellow}
-                                value={element.active}
+                                value={notifStatus[index]}
                                 onValueChange={(changed) => {
-                                  
+                                  // console.log(changed);
+                                  // let notifStatusArr = notifStatus;
+                                  // notifStatusArr[index]=!changed;
+                                  // setNotifStatus(notifStatusArr);
+
+                                  // console.log("onChange");
+                                  // console.log(notifStatusArr);
+                                  // console.log(notifStatusArr[index]);
+
+                                  // console.log(notifStatus);
+                                  // console.log(notifStatus[index]);
+
+
+                                  // if(!changed){
+                                  //   console.log("cancel called");
+                                  //   scheduleCancel(element.notifID).then(()=>{
+                                  //     console.log("Notification canceled");
+                                  //     updateStatusNotification(true,element.notifID,element.id,()=>{
+                                  //       console.log("Notification updated");
+                                  //     });
+                                  //   });;
+                                  // }
                                 }}
                               />
                               <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>Od: {format(new Date(element.startDate), "dd.MM.yyyy HH:mm")}</Text>
@@ -192,9 +293,14 @@ function Settings(props) {
 
                         </View>);
                   });
-                  console.log(filterRender);
                   setNotificationsViews(filterRender);
             }})
+  }
+
+  function addDays(dateBase,days) {
+    var date = new Date(dateBase.valueOf());
+    date.setDate(date.getDate() + days);
+    return date;
   }
 
     return (
@@ -240,6 +346,13 @@ function Settings(props) {
             value={props.sched_notifi}
             onValueChange={(changed) => {
               props.switchValueFor_SCHENOT(changed);
+              console.log(changed);
+              if(!changed){
+                console.log(changed);
+                Notifications2.cancelAllScheduledNotificationsAsync().then(()=>{
+                  console.log("cancelAllScheduledNotificationsAsync");
+                });
+              }
             }}
           />
           <Text style={{ color: "white", alignSelf: "center", flex: 5 }}>
@@ -519,19 +632,109 @@ function Settings(props) {
                               date.getMinutes(),	
                               date.getSeconds()
                            );   
+                           
                            /*console.log(format(startDateWithTime, "dd.MM.yyyy HH:mm"));
                            console.log(format(endDateWithTime, "dd.MM.yyyy HH:mm"));*/
 
-                              insertNotidication(currChosenTestKind,currChosenTestCatheg,currChosenTestNumb, startDateWithTime, endDateWithTime, (confirmed) => {
-                                    console.log(currChosenTestKind," ",currChosenTestCatheg," ",currChosenTestNumb," ",startDateWithTime," ",endDateWithTime,);
-                                    if(confirmed) {
-                                          console.log("inserted");
-                                          setAddingNotif(false);
-                                          getNotifications();
-                                    }else {
-                                          console.log("error");
-                                    }
-                              });
+                          let DatesSeparated = [];
+                          
+                          var currentDate = startDateWithTime;
+                          while (currentDate <= endDateWithTime) {
+                            DatesSeparated.push(new Date (currentDate));
+                              currentDate = addDays(currentDate,1);
+                          }
+
+                          if (currChosenTestKind == "tests") {
+                            getDrivingTestQuestionsByNumber(
+                              currChosenTestNumb,
+                              (result) => {
+                                if (result.length !== 0) {
+                                  console.log(result);
+
+                                  var notificationIDs = [];
+
+                                  DatesSeparated.forEach((date, dateIndex) => {
+                                    console.log("scheduling date: "+format(date, "dd.MM.yyyy HH:mm"));
+                                    scheduleNotification(
+                                      date,
+                                      currChosenTestKind,
+                                      currChosenTestCatheg,
+                                      currChosenTestNumb,
+                                      result[Math.floor(Math.random() * result.length)]
+                                    ).then((notifId) => {
+
+                                      notificationIDs[dateIndex] = notifID;
+                                      console.log(notifId);
+
+
+                                      if(notificationIDs.length == DatesSeparated.length)
+                                      {
+                                        insertNotifications(
+                                          currChosenTestKind,
+                                          currChosenTestCatheg,
+                                          currChosenTestNumb,
+                                          startDateWithTime,
+                                          endDateWithTime,
+                                          notificationIDs,
+                                          DatesSeparated,
+                                          (confirmed) => {
+                                            if (confirmed) {
+                                              getNotifications();
+                                              setAddingNotif(false);
+                                            } else {
+                                              console.log("error");
+                                            }
+                                          }
+                                        );
+                                      }
+
+                                      
+                                    });
+                                  });
+                                } else {
+                                  getAlert(
+                                    "Test č." +
+                                      currChosenTestNumb +
+                                      " nieje stiahnuty",
+                                    "Test je možné stiahnuť v sekcií Testy"
+                                  );
+                                }
+                              }
+                            );
+                          }else if(currChosenTestKind == "firstAid"){ 
+                            getFirstAidQuestionsBySection(currChosenTestCatheg, result => {
+                              if(result.length !== 0) {
+                                console.log(result);
+                              }else {
+                                getAlert(""+currChosenTestCatheg+" niesú stiahnuté","Otázky je možné stiahnuť v sekcií Prvá pomoc");
+                              }
+                        })
+                          }else if(currChosenTestKind == "trafSigns"){
+
+                          }
+
+                          //  scheduleNotification(startDateWithTime,currChosenTestKind,currChosenTestCatheg,currChosenTestNumb).then(
+                          //    (notifId) => {
+                          //      console.log(notifId);
+                          //      insertNotifications(
+                          //        currChosenTestKind,
+                          //        currChosenTestCatheg,
+                          //        currChosenTestNumb,
+                          //        startDateWithTime,
+                          //        endDateWithTime,
+                          //        notifId,
+                          //        (confirmed) => {
+                          //          if (confirmed) {
+                          //            setAddingNotif(false);
+                          //            getNotifications();
+                          //          } else {
+                          //            console.log("error");
+                          //          }
+                          //        }
+                          //      );
+                          //    }
+                          //  );
+                              
                       }} />
                     </View>
                   </View>
@@ -548,7 +751,7 @@ function Settings(props) {
                  <Button
                   title="DELETE TABLE notifikaciu"
                   onPress={() => {
-                        deleteTableNotidication((response) => {
+                        deleteTableNotification((response) => {
                               console.log(response);
                         })
                   }}

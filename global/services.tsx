@@ -892,6 +892,12 @@ export const deleteTrafficSignsBySection = (section: string, callback: any) => {
           })
 }
 
+interface NotificationScheduleDayModel {
+      notificationJoinID: number,
+      notificationID: string,
+      scheduledDate: number
+  }
+
 interface NotificationModel {
       id: number,
       testKind: string, 
@@ -900,62 +906,10 @@ interface NotificationModel {
       active: boolean,
       startDate: Date,
       endDate: Date,
-  }
+      scheduledDates: Array<NotificationScheduleDayModel>
+}
 
-
-// function updateStatusOfNotidications(status: bool, callback: any) {
-//       console.log("calling insertTrafficSigns")
-
-//       db.transaction(tx => {
-//             tx.executeSql(
-//                   'CREATE TABLE IF NOT EXISTS Notifications (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, body TEXT, imgUrl TEXT, section TEXT)',
-//                   [],
-//                   function (tx, res) {
-
-
-//                         try {
-
-//                               dataArray.forEach(data=> {
-//                                     console.log("inserting traffic sign ",data.title);
-      
-//                                     tx.executeSql('INSERT INTO TrafficSigns (title, body, imgUrl, section) values ( ?, ?, ?, ?)',
-//                                     [data.title,data.body,data.imgUrl,data.section],
-//                                     (txObj, resultSet) => {
-//                                           console.log("insert traffic sign complete ",data.title)
-//                                           if(data.assistantImages.length != 0) {
-//                                                 insertAssistantImgUrl(txObj, resultSet.insertId, data.assistantImages)
-//                                           }
-//                                     },
-//                                     (TX, error)=>{
-//                                                 console.log(error);
-//                                                 return true;
-//                                     } 
-//                                     ) 
-//                               })
-
-//                         } catch (error) {
-//                           console.error(error);
-//                         }
-
-//                   },
-//                   (TX, error)=>{
-//                         console.log(error);
-//                         return true;
-//                   }
-//               )
-//           },
-//           error => {
-//             console.log("Transaction insertTrafficSigns error", error);
-//             callback(false)
-//           },
-//           () => {
-//             console.log("Transaction insertTrafficSigns done");
-//             callback(true)
-//           }
-//           )
-// }
-
-export function insertNotidication(testKind: string, testCathegory: string, testNumb: number, startDate: Date, endDate: Date, callback: any) {
+export function insertNotifications(testKind: string, testCathegory: string, testNumb: number, startDate: Date, endDate: Date, notifIDs: string[], scheduledDates: Date[], callback: any) {
       console.log("calling insertNotidication")
 
       db.transaction(tx => {
@@ -973,6 +927,7 @@ export function insertNotidication(testKind: string, testCathegory: string, test
                                     [testKind,testCathegory,testNumb,true,startDate.getTime(), endDate.getTime()],
                                     (txObj, resultSet) => {
                                           console.log("insert Notification complete ")
+                                          insertScheduledOneDayNotification(txObj,resultSet.insertId,notifIDs,scheduledDates)
                                     },
                                     (TX, error)=>{
                                                 console.log(error);
@@ -1002,7 +957,48 @@ export function insertNotidication(testKind: string, testCathegory: string, test
           )
 }
 
-export function deleteNotidicationById(id: number, callback: any) {
+export function insertScheduledOneDayNotification(sqlTransaction:SQLTransaction,notificationJoinID: number, notificationIDs: string[], scheduledDates: Date[]) {
+      console.log("calling insertScheduledOneDayNotification")
+
+            sqlTransaction.executeSql(
+                  'CREATE TABLE IF NOT EXISTS NotifSchedDay (notificationJoinID INTEGER PRIMARY KEY, notificationID TEXT, scheduledDate INTEGER)',
+                  [],
+                  function (tx, res) {
+
+                        try {
+                              console.log("notificationIDs length",notificationIDs.length);
+                              console.log("scheduledDates length",scheduledDates.length);
+
+                              scheduledDates.forEach((dateSchel, index)=> {
+                                    console.log("inserting insertScheduledOneDayNotification with date "+dateSchel);
+
+                                    tx.executeSql('INSERT INTO NotifSchedDay (notificationJoinID, notificationID, scheduledDate) values ( ?, ?, ?)',
+                                    [notificationJoinID,notificationIDs[index],dateSchel.getTime()],
+                                    (txObj, resultSet) => {
+                                          
+                                          console.log("insert insertScheduledOneDayNotification with date "+dateSchel+" completed ")
+                                    },
+                                    (TX, error)=>{
+                                                console.log(error);
+                                                return true;
+                                    } 
+                                    ) 
+                              })
+
+                        } catch (error) {
+                          console.error(error);
+                        }
+
+                  },
+                  (TX, error)=>{
+                        console.log(error);
+                        return true;
+                  }
+              )
+
+}
+
+export function deleteNotificationById(id: number, callback: any) {
       console.log("calling deleteNotidication")
 
       db.transaction(tx => {
@@ -1027,15 +1023,24 @@ export function deleteNotidicationById(id: number, callback: any) {
           })
 }
 
-export function deleteTableNotidication(callback: any) {
-      console.log("calling deleteNotidication")
+export function deleteTableNotification(callback: any) {
+      console.log("calling deleteNotidication tables")
 
       db.transaction(tx => {
             tx.executeSql('DROP TABLE Notifications',
             [],
             (tx, results) => {
-                  console.log('Droped table Notifications ')
-                  callback(true)
+                  tx.executeSql('DROP TABLE NotifSchedDay',
+                  [],
+                  (tx, results) => {
+                        console.log('deleteNotidication tables done good')
+                        callback(true)
+                  },
+                  (TX, error)=>{
+                              console.log(error);
+                              return true;
+                  }
+                  )
             },
             (TX, error)=>{
                   console.log(error);
@@ -1058,14 +1063,16 @@ export const getAllNotifications = (callback:any) => {
       console.log("calling getAllNotifications ");
 
       db.transaction(tx => {
-            tx.executeSql('SELECT nt.id, nt.testKind, nt.testCathegory, nt.testNumb, nt.active, nt.startDate, nt.endDate '+
-            'FROM Notifications nt',
+            tx.executeSql('SELECT nt.id, nt.testKind, nt.testCathegory, nt.testNumb, nt.active, nt.startDate, nt.endDate, '+
+            '\'[\' || GROUP_CONCAT(\'{"notificationID":\' || \'"\'  || nsd.notificationID || \'",\' || \' "scheduledDate":\' || nsd.scheduledDate  || \'}\' ) || \']\' as scheduledDates '+
+            'FROM Notifications AS nt LEFT JOIN NotifSchedDay AS nsd ON nt.id = nsd.notificationJoinID GROUP BY nt.id',
             [],
             (tx, results) => {
 
                   try {
 
                         for (let i = 0; i < results.rows.length; ++i) {
+                              var schedDates: NotificationScheduleDayModel[] = [];
                               var notif: NotificationModel = {
                                     id:0,
                                     testKind: "",
@@ -1074,8 +1081,25 @@ export const getAllNotifications = (callback:any) => {
                                     active: false,
                                     startDate: new Date('1970-01-01Z00:00:00:000'),
                                     endDate: new Date('1970-01-01Z00:00:00:000'),
+                                    scheduledDates: new Array<NotificationScheduleDayModel>()
                               };
       
+                              
+                              if(results.rows.item(i).scheduledDates != null) {
+                                    var schedDatesStr: string = results.rows.item(i).scheduledDates;
+                                    schedDatesStr =schedDatesStr.slice(1,schedDatesStr.length-1);
+            
+                                    var arrayOfStr = schedDatesStr.split("},")
+                                    arrayOfStr.forEach( data => {
+                                          if(data.charAt(data.length-1) !== '}') {
+                                                data += '}'
+                                          }
+                                          var schedDateDay: NotificationScheduleDayModel = JSON.parse(data);
+                                          schedDates.push(schedDateDay);
+            
+                                    })
+                              }
+
                               notif.id = results.rows.item(i).id;
                               notif.testKind = results.rows.item(i).testKind;
                               notif.testCathegory = results.rows.item(i).testCathegory;
@@ -1083,12 +1107,11 @@ export const getAllNotifications = (callback:any) => {
                               notif.active = results.rows.item(i).active;
                               notif.startDate = results.rows.item(i).startDate;
                               notif.endDate = results.rows.item(i).endDate;
+                              notif.scheduledDates = schedDates;
       
-                              // console.log(question)
       
                               notifications.push(notif)
                         }
-                        // console.log(section,": ",firstAidQuestions.length)
                         callback(notifications)
 
                   } catch (error) {
@@ -1107,6 +1130,31 @@ export const getAllNotifications = (callback:any) => {
           },
           () => {
             console.log("Transaction getAllNotifications done");
+          })
+}
+
+export const updateStatusNotification = (status: boolean, notifID: string, id:number, callback: any) => {
+      console.log("calling updateStatusNotification")
+
+      db.transaction(tx => {
+            tx.executeSql('UPDATE Notifications SET active = ? WHERE Notifications.id = ? AND Notifications.notifID = ?',
+            [status,id,notifID],
+            (tx, results) => {
+                  console.log('Notification status updated to'+status+" where id = "+id+" and notifID = "+notifID)
+                  callback(true)
+            },
+            (TX, error)=>{
+                  console.log(error);
+                  return true;
+            }
+             )
+          },
+          error => {
+            console.log("Transaction updateStatusNotification error", error);
+            callback(false)
+          },
+          () => {
+            console.log("Transaction updateStatusNotification done");
           })
 }
 

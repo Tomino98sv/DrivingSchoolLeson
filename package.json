@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@react-native-community/cli-debugger-ui": "^4.13.1",
-    "@react-native-community/datetimepicker": "^3.4.7",
+    "@react-native-community/datetimepicker": "3.0.4",
     "@react-native-community/viewpager": "4.2.0",
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
@@ -41,7 +41,8 @@
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "use-linked-state": "^1.1.2"
+    "use-linked-state": "^1.1.2",
+    "undefined": "react-native-community/datetimepicker"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
