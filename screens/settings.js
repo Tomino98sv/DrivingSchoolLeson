@@ -57,7 +57,7 @@ function Settings(props) {
   const [currChosenTestNumb, setcurrChosenTestNumb] = useState("");
 
   const [notificationsViews, setNotificationsViews] = useState([]);
-  const [notifStatus, setNotifStatus] = useState([]);
+  const [notifStatus, setNotifStatus] = useState([{index: false}]);
 
   const dropDownCat = useRef();
   const dropDownKind = useRef();
@@ -89,39 +89,12 @@ function Settings(props) {
     });
     //console.log(notificationId); // can be saved in AsyncStorage or send to server
   };
-
-
-  function saveNotification(notifId){
-     scheduleNotification(date,currChosenTestKind,currChosenTestCatheg,currChosenTestNumb,dataObject).then(
-                             (notifId) => {
-                               console.log(notifId);
-                               insertNotifications(
-                                 currChosenTestKind,
-                                 currChosenTestCatheg,
-                                 currChosenTestNumb,
-                                 startDateWithTime,
-                                 endDateWithTime,
-                                 notifId,
-                                 (confirmed) => {
-                                   if (confirmed) {
-                                     setAddingNotif(false);
-                                     getNotifications();
-                                   } else {
-                                     console.log("error");
-                                   }
-                                 }
-                               );
-                             }
-                           );
-  }
   
    async function scheduleNotification(date,currChosenTestKind,currChosenTestCatheg,currChosenTestNumb, dataObject) {
-    console.log("chosen test question: "+dataObject);
     if(currChosenTestKind == "tests"){
       let answerCorr = dataObject.answers.find(ele => {
         return ele.correctness;
       })
-      console.log("asnwerCor: ",answerCorr);
       let notificationId = Notifications2.scheduleLocalNotificationAsync(
         {
           title: currChosenTestKind+": "+currChosenTestCatheg+": test č."+currChosenTestNumb,
@@ -132,7 +105,6 @@ function Settings(props) {
           time: date.getTime(),
         },
       );
-      console.log(notificationId);
       return notificationId;
     }
   };
@@ -169,12 +141,12 @@ function Settings(props) {
   }
 
   function getAlert(title, body) {
-    Alert.alert(
-      "Notifications permission are denied",
-      "For receiving notifications allow notifications permission for this app",
-      [{ text: "Ok", onPress: () => {} }],
-      { cancelable: true }
-    );
+    // Alert.alert(
+    //   "Notifications permission are denied",
+    //   "For receiving notifications allow notifications permission for this app",
+    //   [{ text: "Ok", onPress: () => {} }],
+    //   { cancelable: true }
+    // );
     Alert.alert(
       title,
       body,
@@ -250,21 +222,24 @@ function Settings(props) {
         console.log("getAllNotifications");
             if(result.length !== 0) {
                   const filterRender=result.map((element,index) => {
-                    let initialNotifStatus = notifStatus;
-                    initialNotifStatus.push(element.active);
-                    setNotifStatus(initialNotifStatus);
-                    console.log("notifStatus[index]");
-                    console.log(notifStatus[index]);
-                    console.log(index);
+                    
+                    setNotifStatus([{...notifStatus, [`index${index}`]:element.active} ]);
+                    console.log(notifStatus)
+
                         return (<View key={index} style={{backgroundColor: Colors.primary, padding: 5, marginBottom: 2, width: Dimensions.get("window").width, flexDirection: 'column'}}>
                               <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testKind}</Text>
                               <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testCathegory}</Text>
                               {element.testKind == "tests" && <Text style={{fontWeight: 'bold', color: Colors.white, textAlign: 'center'}}>{element.testNumb}</Text>}
                               <Switch
                                 color={Colors.yellow}
-                                value={notifStatus[index]}
+                                value={notifStatus  == 1 ? true : false}
                                 onValueChange={(changed) => {
-                                  // console.log(changed);
+
+                                  getAlert(element.testKind+"  "+element.testNumb, element.active+"  "+changed);
+
+                                  console.log("changed ",changed);
+                                  console.log("changed ",notifStatus);
+
                                   // let notifStatusArr = notifStatus;
                                   // notifStatusArr[index]=!changed;
                                   // setNotifStatus(notifStatusArr);
@@ -346,12 +321,10 @@ function Settings(props) {
             value={props.sched_notifi}
             onValueChange={(changed) => {
               props.switchValueFor_SCHENOT(changed);
-              console.log(changed);
               if(!changed){
-                console.log(changed);
-                Notifications2.cancelAllScheduledNotificationsAsync().then(()=>{
-                  console.log("cancelAllScheduledNotificationsAsync");
-                });
+                // Notifications2.cancelAllScheduledNotificationsAsync().then(()=>{
+                //   console.log("cancelAllScheduledNotificationsAsync");
+                // });
               }
             }}
           />
@@ -649,12 +622,10 @@ function Settings(props) {
                               currChosenTestNumb,
                               (result) => {
                                 if (result.length !== 0) {
-                                  console.log(result);
 
                                   var notificationIDs = [];
 
                                   DatesSeparated.forEach((date, dateIndex) => {
-                                    console.log("scheduling date: "+format(date, "dd.MM.yyyy HH:mm"));
                                     scheduleNotification(
                                       date,
                                       currChosenTestKind,
@@ -663,8 +634,8 @@ function Settings(props) {
                                       result[Math.floor(Math.random() * result.length)]
                                     ).then((notifId) => {
 
-                                      notificationIDs[dateIndex] = notifID;
-                                      console.log(notifId);
+                                      notificationIDs[dateIndex] = notifId;
+                                      console.log("notifId ",notifId);
 
 
                                       if(notificationIDs.length == DatesSeparated.length)
@@ -704,7 +675,6 @@ function Settings(props) {
                           }else if(currChosenTestKind == "firstAid"){ 
                             getFirstAidQuestionsBySection(currChosenTestCatheg, result => {
                               if(result.length !== 0) {
-                                console.log(result);
                               }else {
                                 getAlert(""+currChosenTestCatheg+" niesú stiahnuté","Otázky je možné stiahnuť v sekcií Prvá pomoc");
                               }
